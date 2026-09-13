@@ -28,26 +28,25 @@ body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);c
 .hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:56px;pointer-events:none}
 
 /* Main */
-main{flex:1;max-width:900px;margin:2.2rem auto 4rem;padding:0 1.2rem;width:100%;display:flex;flex-direction:column;align-items:center}
-.section-label{font-size:.82rem;font-weight:700;color:var(--txm);margin-bottom:.85rem;width:100%;max-width:620px;padding-left:2px}
+main{flex:1;max-width:960px;margin:2.2rem auto 4rem;padding:0 1.4rem;width:100%}
+.section-label{font-size:.78rem;font-weight:800;color:var(--txm);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.8rem;padding-left:2px}
 
-.resource-list{display:flex;flex-direction:column;gap:.85rem;width:100%;max-width:620px;margin-bottom:2.2rem}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-bottom:2.2rem}
 
 /* Cards */
-.resource-card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);text-decoration:none;color:var(--tx);display:flex;align-items:stretch;transition:transform .18s,box-shadow .18s;border:1.5px solid var(--bdr)}
+.resource-card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);text-decoration:none;color:var(--tx);display:flex;flex-direction:column;padding:1.15rem 1.15rem 1rem;transition:transform .18s,box-shadow .18s;border:1.5px solid var(--bdr)}
 .resource-card:hover{transform:translateY(-3px);box-shadow:var(--sh2);border-color:#b3bcef}
 
-.rc-icon-col{background:linear-gradient(160deg,#4a1d96,#9333ea);display:flex;align-items:center;justify-content:center;width:64px;flex-shrink:0;border-radius:calc(var(--r) - 1.5px) 0 0 calc(var(--r) - 1.5px)}
-.rc-icon-col svg{width:28px;height:28px}
+.rc-icon{background:linear-gradient(160deg,#4a1d96,#9333ea);border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;margin-bottom:.85rem;flex-shrink:0}
+.rc-icon svg{width:22px;height:22px}
 
-.rc-body{padding:.95rem 1.15rem;flex:1}
-.rc-title{font-size:.97rem;font-weight:800;margin-bottom:.22rem;color:var(--tx)}
-.rc-desc{font-size:.83rem;color:var(--txm);line-height:1.5;font-weight:600}
-.rc-pills{display:flex;flex-wrap:wrap;gap:.32rem;margin-top:.5rem}
-.rc-pill{background:var(--bg);border:1px solid var(--bdr);border-radius:20px;padding:.12rem .55rem;font-size:.71rem;font-weight:700;color:var(--txm)}
+.rc-title{font-size:.95rem;font-weight:800;margin-bottom:.3rem;color:var(--tx);line-height:1.3}
+.rc-desc{font-size:.8rem;color:var(--txm);line-height:1.5;font-weight:600;flex:1}
+.rc-pills{display:flex;flex-wrap:wrap;gap:.28rem;margin-top:.65rem}
+.rc-pill{background:var(--bg);border:1px solid var(--bdr);border-radius:20px;padding:.1rem .5rem;font-size:.68rem;font-weight:700;color:var(--txm)}
 
-.rc-arrow{display:flex;align-items:center;padding:0 1rem;color:var(--pr);font-size:1.2rem;opacity:.45;transition:opacity .15s;flex-shrink:0}
-.resource-card:hover .rc-arrow{opacity:1}
+@media(max-width:640px){.resource-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:400px){.resource-grid{grid-template-columns:1fr}}
 
 /* Footer */
 footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
@@ -87,234 +86,177 @@ footer a{color:var(--pr);text-decoration:none}
 <main>
 
   <div class="section-label">Revision toolkit</div>
-  <div class="resource-list">
+  <div class="resource-grid">
 
     <a href="practice.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <circle cx="12" cy="12" r="6"/>
-          <circle cx="12" cy="12" r="2" fill="white" stroke="none"/>
+          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="white" stroke="none"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Tiered practice questions</div>
-        <div class="rc-desc">Multiple-choice questions across all 9 topics. Submit your answers and get an instant score with explanations.</div>
-        <div class="rc-pills">
-          <span class="rc-pill">9 topics</span>
-          <span class="rc-pill">3 tiers</span>
-          <span class="rc-pill">Up to 20 questions each</span>
-          <span class="rc-pill">Instant feedback</span>
-        </div>
+      <div class="rc-title">Tiered practice questions</div>
+      <div class="rc-desc">MCQs across all 9 topics. Instant score with explanations.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">9 topics</span><span class="rc-pill">3 tiers</span><span class="rc-pill">Instant feedback</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
     <a href="flashcards/index.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="5" y="7" width="16" height="13" rx="2"/>
           <path d="M5 10V5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2h-1" opacity=".5" stroke-width="1.5"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Flashcards</div>
-        <div class="rc-desc">Flip cards to test yourself question by question. Shuffle the deck and work through at your own pace.</div>
-        <div class="rc-pills">
-          <span class="rc-pill">9 topics</span>
-          <span class="rc-pill">3 tiers</span>
-          <span class="rc-pill">Tap or keyboard</span>
-          <span class="rc-pill">Shuffle mode</span>
-        </div>
+      <div class="rc-title">Flashcards</div>
+      <div class="rc-desc">Flip cards to test yourself. Shuffle the deck and work at your own pace.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">9 topics</span><span class="rc-pill">3 tiers</span><span class="rc-pill">Shuffle mode</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
     <a href="reference.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
           <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Equations &amp; glossary</div>
-        <div class="rc-desc">Every key equation with common exam errors flagged. Full A–Z glossary of all definitions, searchable.</div>
-        <div class="rc-pills">
-          <span class="rc-pill">17 equations</span>
-          <span class="rc-pill">110+ definitions</span>
-          <span class="rc-pill">Examiner errors</span>
-          <span class="rc-pill">Searchable</span>
-        </div>
+      <div class="rc-title">Equations &amp; glossary</div>
+      <div class="rc-desc">Every key equation and 110+ definitions. Searchable, with common exam errors flagged.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">17 equations</span><span class="rc-pill">110+ definitions</span><span class="rc-pill">Searchable</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
   </div>
 
   <div class="section-label">Exam practice</div>
-  <div class="resource-list">
+  <div class="resource-grid">
 
     <a href="combined-paper1.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="3" y="4" width="11" height="16" rx="2"/>
           <rect x="10" y="2" width="11" height="16" rx="2" opacity=".5"/>
-          <line x1="6" y1="9" x2="11" y2="9"/>
-          <line x1="6" y1="12" x2="11" y2="12"/>
-          <line x1="6" y1="15" x2="9" y2="15"/>
+          <line x1="6" y1="9" x2="11" y2="9"/><line x1="6" y1="12" x2="11" y2="12"/><line x1="6" y1="15" x2="9" y2="15"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Combined Science: Paper 1</div>
-        <div class="rc-desc">Targeted practice for the 5 topics examined in Paper 1. Includes examiner warnings for the most common errors in each topic.</div>
-        <div class="rc-pills">
-          <span class="rc-pill">Topics 1–5</span>
-          <span class="rc-pill">3 tiers</span>
-          <span class="rc-pill">Examiner warnings</span>
-          <span class="rc-pill">Combined sci. (1SC0)</span>
-        </div>
+      <div class="rc-title">Combined Science: Paper 1</div>
+      <div class="rc-desc">Targeted practice for Topics 1–5 with examiner warnings for the most common errors.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">Topics 1–5</span><span class="rc-pill">3 tiers</span><span class="rc-pill">Combined sci.</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
     <a href="examiner.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Hints &amp; tips</div>
-        <div class="rc-desc">Hints and tips for every topic, based on examiner feedback</div>
-        <div class="rc-pills">
-          <span class="rc-pill">637 tips</span>
-          <span class="rc-pill">All 9 topics</span>
-          <span class="rc-pill">Searchable</span>
-        </div>
+      <div class="rc-title">Hints &amp; tips</div>
+      <div class="rc-desc">637 hints and tips for every topic, drawn from examiner feedback reports.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">637 tips</span><span class="rc-pill">All 9 topics</span><span class="rc-pill">Searchable</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
     <a href="pastpapers.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="3" y="4" width="13" height="17" rx="2"/>
           <rect x="8" y="2" width="13" height="17" rx="2" opacity=".5"/>
-          <line x1="6" y1="9" x2="13" y2="9"/>
-          <line x1="6" y1="12" x2="13" y2="12"/>
-          <line x1="6" y1="15" x2="10" y2="15"/>
+          <line x1="6" y1="9" x2="13" y2="9"/><line x1="6" y1="12" x2="13" y2="12"/><line x1="6" y1="15" x2="10" y2="15"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Past papers</div>
-        <div class="rc-desc">Question papers, mark schemes and examiner reports for every series. Separate science (1CH0) and combined science (1SC0).</div>
-        <div class="rc-pills">
-          <span class="rc-pill">9 series</span>
-          <span class="rc-pill">Paper 1 &amp; 2</span>
-          <span class="rc-pill">F &amp; H</span>
-          <span class="rc-pill">Mark schemes</span>
-        </div>
+      <div class="rc-title">Past papers</div>
+      <div class="rc-desc">Papers, mark schemes and examiner reports for every series. Separate and combined science.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">9 series</span><span class="rc-pill">Paper 1 &amp; 2</span><span class="rc-pill">F &amp; H</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
   </div>
 
-  <div class="section-label">Specification overview</div>
-  <div class="resource-list">
+  <div class="section-label">Specification &amp; practicals</div>
+  <div class="resource-grid">
 
     <a href="papers.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="3" width="8" height="14" rx="1.5"/>
-          <rect x="13" y="3" width="8" height="14" rx="1.5"/>
-          <line x1="5" y1="7" x2="9" y2="7"/>
-          <line x1="5" y1="10" x2="9" y2="10"/>
-          <line x1="15" y1="7" x2="19" y2="7"/>
-          <line x1="15" y1="10" x2="19" y2="10"/>
-          <line x1="7" y1="17" x2="7" y2="21"/>
-          <line x1="17" y1="17" x2="17" y2="21"/>
-          <line x1="3" y1="21" x2="21" y2="21"/>
+          <rect x="3" y="3" width="8" height="14" rx="1.5"/><rect x="13" y="3" width="8" height="14" rx="1.5"/>
+          <line x1="5" y1="7" x2="9" y2="7"/><line x1="5" y1="10" x2="9" y2="10"/>
+          <line x1="15" y1="7" x2="19" y2="7"/><line x1="15" y1="10" x2="19" y2="10"/>
+          <line x1="7" y1="17" x2="7" y2="21"/><line x1="17" y1="17" x2="17" y2="21"/><line x1="3" y1="21" x2="21" y2="21"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">What is on each paper?</div>
-        <div class="rc-desc">Which topics are examined in Paper 1 and Paper 2, with Foundation and Higher differences. Includes a combined science summary.</div>
-        <div class="rc-pills">
-          <span class="rc-pill">Paper 1 &amp; 2</span>
-          <span class="rc-pill">Sep. &amp; combined sci.</span>
-          <span class="rc-pill">F &amp; H differences</span>
-        </div>
+      <div class="rc-title">What is on each paper?</div>
+      <div class="rc-desc">Topics by paper, Foundation vs Higher differences. Includes combined science summary.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">Paper 1 &amp; 2</span><span class="rc-pill">F &amp; H</span><span class="rc-pill">Sep. &amp; combined</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
     <a href="speclist.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 11l3 3L22 4"/>
           <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Specification point list</div>
-        <div class="rc-desc">Every specification point listed by topic, with tier (foundation/higher) and which paper it appears on. Filter by paper 1 or paper 2.</div>
-        <div class="rc-pills">
-          <span class="rc-pill">185 spec points</span>
-          <span class="rc-pill">Paper 1 &amp; 2</span>
-          <span class="rc-pill">F / H / F+H</span>
-        </div>
+      <div class="rc-title">Specification point list</div>
+      <div class="rc-desc">All 185 spec points by topic, with tier and paper. Filterable by Paper 1 or 2.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">185 spec points</span><span class="rc-pill">Paper 1 &amp; 2</span><span class="rc-pill">F / H / F+H</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
-  </div>
-
-
-  <div class="section-label">Core practicals</div>
-  <div class="resource-list">
     <a href="core-practicals/index.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M10 2h4"/><path d="M10 2v6.8L5.2 17A2.5 2.5 0 007.6 21h8.8a2.5 2.5 0 002.4-4L14 8.8V2"/><line x1="8" y1="16" x2="16" y2="16" stroke-width="1.5" opacity=".7"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Core Practical Revision (CP1 to CP8)</div>
-        <div class="rc-desc">Revision notes, exam-style questions, mark schemes and examiner tips for all 8 core practicals. Foundation and Higher tier.</div>
-        <div class="rc-pills">
-          <span class="rc-pill">8 practicals</span>
-          <span class="rc-pill">F &amp; H tier</span>
-          <span class="rc-pill">Mark schemes</span>
-          <span class="rc-pill">Examiner tips</span>
-        </div>
+      <div class="rc-title">Core practicals (CP1–CP8)</div>
+      <div class="rc-desc">Revision notes, exam questions, mark schemes and examiner tips for all 8 practicals.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">8 practicals</span><span class="rc-pill">F &amp; H</span><span class="rc-pill">Mark schemes</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
+
   </div>
 
-  <div class="section-label">Topic guides</div>
-  <div class="resource-list">
+  <div class="section-label">Mrs Platt's resources</div>
+  <div class="resource-grid">
+
+    <a href="revision-notes/index.html" class="resource-card">
+      <div class="rc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+      </div>
+      <div class="rc-title">Mrs Platt's revision notes</div>
+      <div class="rc-desc">Printable revision sheets for every topic — key facts, model answers, diagrams and exam tips.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">Topics 1–9</span><span class="rc-pill">F + H</span><span class="rc-pill">Print &amp; download</span>
+      </div>
+    </a>
 
     <a href="electrolysis.html" class="resource-card">
-      <div class="rc-icon-col">
+      <div class="rc-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
         </svg>
       </div>
-      <div class="rc-body">
-        <div class="rc-title">Electrolysis — complete guide</div>
-        <div class="rc-desc">Student-friendly walkthrough of all electrolysis topics: PANIC mnemonic, molten vs aqueous, decision flowchart, CuSO&#8324; practical, industrial uses and half-equations.</div>
-        <div class="rc-pills">
-          <span class="rc-pill">Topic 3.2</span>
-          <span class="rc-pill">F + H</span>
-          <span class="rc-pill">Diagrams</span>
-          <span class="rc-pill">Quick checks</span>
-        </div>
+      <div class="rc-title">Electrolysis: complete guide</div>
+      <div class="rc-desc">PANIC mnemonic, molten vs aqueous, decision flowchart, CuSO₄ practical, industrial uses and half-equations.</div>
+      <div class="rc-pills">
+        <span class="rc-pill">Topic 3.2</span><span class="rc-pill">F + H</span><span class="rc-pill">Diagrams</span>
       </div>
-      <div class="rc-arrow">&#8250;</div>
     </a>
 
   </div>
