@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RS 2.2 Methods of Separating Mixtures Revision Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; color: #1a1a1a; background: #fff; padding: 16px; max-width: 820px; margin: 0 auto; }
+.page-header { background: linear-gradient(135deg, #1b5e20, #388e3c); color: #fff; padding: 14px 20px; border-radius: 8px; margin-bottom: 14px; }
+.page-header h1 { font-family: 'Poppins', sans-serif; font-size: 17pt; font-weight: 700; }
+.page-header .sub { font-size: 9pt; opacity: 0.85; margin-top: 2px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.chip { background: rgba(255,255,255,0.22); padding: 2px 10px; border-radius: 12px; font-size: 8.5pt; }
+h2 { font-family: 'Poppins', sans-serif; font-size: 11.5pt; font-weight: 700; color: #1b5e20; border-left: 4px solid #388e3c; padding-left: 8px; margin: 13px 0 7px; }
+table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10pt; }
+th { background: #1b5e20; color: #fff; padding: 6px 10px; text-align: left; font-family: 'Poppins', sans-serif; font-size: 9.5pt; }
+td { padding: 5px 10px; border: 1px solid #c8e6c9; vertical-align: top; line-height: 1.4; }
+tr:nth-child(even) td { background: #f1f8e9; }
+.tip-box { background: #fff8e1; border-left: 4px solid #f9a825; padding: 8px 12px; margin: 8px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+.tip-box strong { color: #b35c00; font-family: 'Poppins', sans-serif; }
+.warn-box { background: #fce4ec; border-left: 4px solid #c62828; padding: 8px 12px; margin: 8px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+.warn-box strong { color: #b71c1c; font-family: 'Poppins', sans-serif; }
+.key-box { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 8px 12px; margin: 8px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+.key-box strong { color: #1b5e20; font-family: 'Poppins', sans-serif; }
+.higher-box { background: #e3f2fd; border-left: 4px solid #1565c0; padding: 8px 12px; margin: 8px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+.higher-box strong { color: #0d47a1; font-family: 'Poppins', sans-serif; }
+.method-card { display: grid; grid-template-columns: 210px 1fr; gap: 14px; border: 1px solid #c8e6c9; border-radius: 6px; padding: 10px; margin: 9px 0; background: #fafffe; align-items: start; }
+.method-card h3 { font-family: 'Poppins', sans-serif; font-size: 10.5pt; font-weight: 700; color: #1b5e20; margin-bottom: 4px; }
+.diagram-col { display: flex; flex-direction: column; align-items: center; }
+.diagram-label { font-family: 'Poppins', sans-serif; font-size: 8pt; font-weight: 700; color: #1b5e20; text-align: center; margin-top: 4px; }
+ul { padding-left: 16px; }
+ul li { line-height: 1.5; margin-bottom: 2px; }
+@media print {
+  body { padding: 8px; max-width: 100%; }
+  @page { size: A4 portrait; margin: 10mm 10mm 10mm 12mm; }
+  .page-header, th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .tip-box, .warn-box, .key-box, .higher-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .method-card { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="sub">Edexcel GCSE Chemistry (1CH0) &nbsp;|&nbsp; Paper 1 &nbsp;|&nbsp; Topic 2.2</div>
+  <h1>Methods of Separating Mixtures</h1>
+  <div class="chips">
+    <span class="chip">Foundation + Higher</span>
+    <span class="chip">Spec 2.20–2.26</span>
+    <span class="chip">CP1 Chromatography</span>
+  </div>
+</div>
+
+<!-- DECISION GUIDE -->
+<h2>Which Method Do I Use?</h2>
+<table>
+  <thead><tr><th>Mixture to separate</th><th>Method</th><th>Key property being exploited</th></tr></thead>
+  <tbody>
+    <tr><td>Insoluble solid + liquid</td><td><strong>Filtration</strong></td><td>Particle size (solid is too large to pass through filter paper)</td></tr>
+    <tr><td>Soluble solid from its solution (as crystals)</td><td><strong>Crystallisation</strong></td><td>Solubility decreases on cooling</td></tr>
+    <tr><td>Solvent from a solution (e.g. water from salt water)</td><td><strong>Simple Distillation</strong></td><td>Difference in boiling points between solvent and solute</td></tr>
+    <tr><td>Two or more miscible liquids with different boiling points</td><td><strong>Fractional Distillation</strong></td><td>Different boiling points — each fraction collected separately</td></tr>
+    <tr><td>Dyes, inks, amino acids — small amounts of mixtures in solution</td><td><strong>Paper Chromatography</strong></td><td>Different solubilities in mobile and stationary phase</td></tr>
+  </tbody>
+</table>
+
+<!-- FILTRATION -->
+<h2>Filtration</h2>
+<div class="method-card">
+  <div class="diagram-col">
+    <img src="images/filtration.png" alt="Filtration apparatus showing solid and liquid mixture poured through filter paper in a filter funnel, with filtrate collected below" style="max-height:240px; width:auto; max-width:100%;"/>
+    <div class="diagram-label">Filtration</div>
+  </div>
+  <div>
+    <h3>Filtration</h3>
+    <ul style="font-size:9.5pt;">
+      <li><strong>Separates:</strong> insoluble solid from a liquid</li>
+      <li>The liquid + dissolved substances pass through the filter paper as the <strong>filtrate</strong></li>
+      <li>The insoluble solid is left behind on the filter paper as the <strong>residue</strong></li>
+      <li>Works because the solid particles are too large to pass through the tiny holes in the paper</li>
+    </ul>
+    <div class="tip-box" style="margin-top:6px;"><strong>Exam tip:</strong> State what is in the <em>residue</em> AND what is in the <em>filtrate</em> in your answers. "The sand is left in the filter paper as residue; the salt solution passes through as filtrate."</div>
+  </div>
+</div>
+
+<!-- CRYSTALLISATION -->
+<h2>Crystallisation</h2>
+<div class="method-card">
+  <div class="diagram-col">
+    <img src="images/crystallisation.png" alt="Crystallisation apparatus showing evaporating basin over heat with crystals forming as solvent evaporates" style="max-height:200px; width:auto; max-width:100%;"/>
+    <div class="diagram-label">Crystallisation</div>
+  </div>
+  <div>
+    <h3>Crystallisation</h3>
+    <ul style="font-size:9.5pt;">
+      <li><strong>Separates:</strong> a dissolved solid from its solution (gives pure crystals)</li>
+      <li>Heat the solution in an evaporating basin to <strong>drive off most of the water</strong></li>
+      <li>Stop heating when you see the first crystals forming at the edges (or reduce volume to ~⅓)</li>
+      <li>Allow to <strong>cool slowly</strong> — large, well-formed crystals grow as solubility decreases</li>
+      <li>Filter off the crystals and pat dry between filter paper</li>
+    </ul>
+    <div class="warn-box" style="margin-top:6px;"><strong>Never evaporate to complete dryness!</strong> Heating crystals can cause them to decompose or shatter. Stop when you see crystallisation beginning at the edges of the liquid.</div>
+  </div>
+</div>
+
+<!-- SIMPLE DISTILLATION -->
+<h2>Simple Distillation</h2>
+<div class="method-card">
+  <div class="diagram-col">
+    <img src="images/simple_distillation.png" alt="Simple distillation apparatus showing round-bottom flask with salty water, thermometer at 100°C, condenser with cooling water, and pure water collected" style="max-height:230px; width:auto; max-width:100%;"/>
+    <div class="diagram-label">Simple Distillation</div>
+  </div>
+  <div>
+    <h3>Simple Distillation</h3>
+    <ul style="font-size:9.5pt;">
+      <li><strong>Separates:</strong> a solvent from a solution (e.g. pure water from salt water)</li>
+      <li>Heat the solution — the solvent <strong>evaporates</strong>, leaving the solute behind</li>
+      <li>Vapour passes through the condenser where it <strong>cools and condenses</strong> back to liquid</li>
+      <li>Pure solvent is collected in the receiving flask</li>
+    </ul>
+    <div class="key-box" style="margin-top:6px;">
+      <strong>Key exam point — Thermometer position:</strong> The thermometer bulb must be placed at the <strong>side-arm exit</strong> (not in the liquid). This measures the temperature of the vapour leaving — when it matches the solvent's boiling point, you know the pure vapour is condensing.
+    </div>
+    <div class="tip-box"><strong>Limitation:</strong> If two liquids have similar boiling points, simple distillation cannot separate them — use <em>fractional distillation</em> instead.</div>
+  </div>
+</div>
+
+<!-- FRACTIONAL DISTILLATION -->
+<h2>Fractional Distillation</h2>
+<div class="method-card">
+  <div class="diagram-col">
+    <img src="images/fractional_distillation.png" alt="Fractional distillation apparatus showing round-bottom flask with water and ethanol, fractionating column, thermometer at 78°C, condenser, and pure ethanol collected" style="max-height:260px; width:auto; max-width:100%;"/>
+    <div class="diagram-label">Fractional Distillation</div>
+  </div>
+  <div>
+    <h3>Fractional Distillation</h3>
+    <ul style="font-size:9.5pt;">
+      <li><strong>Separates:</strong> two or more <strong>miscible liquids</strong> with different boiling points (e.g. ethanol + water, crude oil fractions)</li>
+      <li>The mixture is heated — the most volatile liquid (lowest b.p.) evaporates first</li>
+      <li>The <strong>fractionating column</strong> maintains a temperature gradient (hot at bottom, cooler at top)</li>
+      <li>Vapours with a higher b.p. <strong>condense on the glass beads</strong> and drip back down</li>
+      <li>Only the vapour with the lowest b.p. reaches the top and enters the condenser first</li>
+      <li>Collect fractions in separate containers as temperature increases</li>
+    </ul>
+    <div class="key-box" style="margin-top:5px;">
+      <strong>Difference from simple distillation:</strong> The fractionating column (packed with glass beads) allows repeated condensation/evaporation cycles — this gives much better separation of liquids with similar b.p.s.
+    </div>
+  </div>
+</div>
+
+<!-- PAPER CHROMATOGRAPHY -->
+<h2>Paper Chromatography</h2>
+<div class="method-card">
+  <div class="diagram-col">
+    <img src="images/chromatography.png" alt="Paper chromatography shown in 3 steps: setting up paper with pencil baseline and ink spots, lowering into beaker of solvent, then analysing the resulting chromatogram" style="max-height:280px; width:auto; max-width:100%;"/>
+    <div class="diagram-label">Paper Chromatography (CP1)</div>
+  </div>
+  <div>
+    <h3>Paper Chromatography</h3>
+    <ul style="font-size:9.5pt;">
+      <li><strong>Separates:</strong> mixtures of dyes, pigments, amino acids, food colourings</li>
+      <li><strong>Stationary phase:</strong> the paper (water adsorbed on paper fibres)</li>
+      <li><strong>Mobile phase:</strong> the solvent (moves up the paper by capillary action)</li>
+      <li>Draw the baseline in <strong>pencil</strong> (not pen — pen would dissolve in the solvent)</li>
+      <li>The baseline must be <strong>above the solvent level</strong> in the beaker at all times</li>
+      <li>Substances more soluble in the mobile phase travel <strong>further</strong> up the paper</li>
+      <li>A <strong>pure substance</strong> gives only <strong>one spot</strong>; a mixture gives multiple spots</li>
+    </ul>
+    <div class="higher-box" style="margin-top:5px;">
+      <strong>[H] Rf (Retardation Factor) — Higher Tier Only</strong><br>
+      <div style="display:flex; align-items:center; gap:16px; margin:4px 0;">
+        <span style="font-size:11pt; font-family:Poppins,sans-serif; font-weight:700; color:#0d47a1;">R<sub>f</sub> = <span style="font-size:8.5pt;">distance moved by substance ÷ distance moved by solvent front</span></span>
+      </div>
+      <div style="margin-top:4px; font-size:9pt;">
+        Rf has <strong>no units</strong> (it is a ratio) &nbsp;|&nbsp; Rf is always between 0 and 1<br>
+        <strong>Example:</strong> Spot moves 3.0 cm; solvent front moves 8.0 cm → R<sub>f</sub> = 3.0 ÷ 8.0 = <strong>0.375</strong><br>
+        Rf values can be used to <strong>identify unknown substances</strong> by comparing with known values from a data table.
+      </div>
+    </div>
+    <div class="warn-box" style="margin-top:4px;"><strong>Common error:</strong> Measuring from the <em>top of the paper</em> instead of from the <em>pencil baseline</em>. Always measure from the baseline.</div>
+  </div>
+</div>
+
+<!-- KEY COMPARISONS TABLE -->
+<h2>Key Comparisons Summary</h2>
+<table style="font-size:9.5pt;">
+  <thead><tr><th>Method</th><th>What is separated</th><th>Essential equipment</th><th>Key exam term</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Filtration</strong></td>
+      <td>Insoluble solid from liquid</td>
+      <td>Filter funnel, filter paper, conical flask</td>
+      <td>Residue (solid); Filtrate (liquid)</td>
+    </tr>
+    <tr>
+      <td><strong>Crystallisation</strong></td>
+      <td>Dissolved solid from solution</td>
+      <td>Evaporating basin, Bunsen/water bath</td>
+      <td>"Do NOT evaporate to dryness"</td>
+    </tr>
+    <tr>
+      <td><strong>Simple Distillation</strong></td>
+      <td>Solvent from solution</td>
+      <td>Round-bottom flask, condenser, thermometer</td>
+      <td>Thermometer at side-arm exit</td>
+    </tr>
+    <tr>
+      <td><strong>Fractional Distillation</strong></td>
+      <td>Miscible liquids (different b.p.)</td>
+      <td>Fractionating column with glass beads</td>
+      <td>Temperature gradient in column</td>
+    </tr>
+    <tr>
+      <td><strong>Chromatography</strong></td>
+      <td>Dyes / mixtures in solution</td>
+      <td>Chromatography paper, solvent, pencil</td>
+      <td>Baseline in pencil; <span style="color:#1565c0;">[H] R<sub>f</sub> value</span></td>
+    </tr>
+  </tbody>
+</table>
+<div class="tip-box" style="margin-top:8px;"><strong>Paper 1 exam strategy:</strong> Questions on separating mixtures often ask you to "explain" your choice of method — always state BOTH what you are separating AND the property that makes the method work (e.g., "I would use fractional distillation because ethanol and water are miscible liquids with different boiling points, so they can be separated by their different volatilities in the column"). (Nov 2021 examiner report)</div>
+</body>
+</html>

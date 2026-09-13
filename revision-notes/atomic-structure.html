@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RS 1.1 Atomic Structure Revision Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; color: #1a1a1a; background: #fff; padding: 16px; max-width: 820px; margin: 0 auto; }
+.page-header { background: linear-gradient(135deg, #1a3c6b, #2d5a9e); color: #fff; padding: 14px 20px; border-radius: 8px; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: flex-start; }
+.page-header h1 { font-family: 'Poppins', sans-serif; font-size: 17pt; font-weight: 700; }
+.page-header .sub { font-size: 9pt; opacity: 0.85; margin-top: 2px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.chip { background: rgba(255,255,255,0.22); padding: 2px 10px; border-radius: 12px; font-size: 8.5pt; white-space: nowrap; }
+h2 { font-family: 'Poppins', sans-serif; font-size: 11.5pt; font-weight: 700; color: #1a3c6b; border-left: 4px solid #1a3c6b; padding-left: 8px; margin: 13px 0 7px; }
+table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10pt; }
+th { background: #1a3c6b; color: #fff; padding: 6px 10px; text-align: left; font-family: 'Poppins', sans-serif; font-size: 9.5pt; }
+td { padding: 5px 10px; border: 1px solid #c5d1e8; vertical-align: top; line-height: 1.4; }
+tr:nth-child(even) td { background: #edf2fb; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 7px 0; }
+.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 7px 0; }
+.tip-box { background: #fff8e1; border-left: 4px solid #f9a825; padding: 8px 12px; margin: 8px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+.tip-box strong { color: #b35c00; font-family: 'Poppins', sans-serif; }
+.warn-box { background: #fce4ec; border-left: 4px solid #c62828; padding: 8px 12px; margin: 8px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+.warn-box strong { color: #b71c1c; font-family: 'Poppins', sans-serif; }
+.higher-box { background: #e3f2fd; border-left: 4px solid #1565c0; padding: 8px 12px; margin: 8px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+.higher-box strong { color: #0d47a1; font-family: 'Poppins', sans-serif; }
+.key-box { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 8px 12px; margin: 8px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+.key-box strong { color: #1b5e20; font-family: 'Poppins', sans-serif; }
+.diagram-col { display: flex; flex-direction: column; align-items: center; }
+.diagram-label { font-family: 'Poppins', sans-serif; font-size: 8.5pt; font-weight: 700; color: #1a3c6b; text-align: center; margin-top: 5px; }
+.formula-pill { background: #1a3c6b; color: #fff; padding: 5px 14px; border-radius: 20px; font-family: 'Poppins', sans-serif; font-size: 10pt; font-weight: 600; display: inline-block; margin: 4px 0; }
+ul { padding-left: 16px; margin: 4px 0; }
+li { margin: 2px 0; }
+@media print {
+  body { padding: 8px; max-width: 100%; }
+  @page { size: A4 portrait; margin: 10mm 10mm 10mm 12mm; }
+  .two-col, .three-col { page-break-inside: avoid; }
+  .page-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .tip-box, .warn-box, .higher-box, .key-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div>
+    <div class="sub">Edexcel GCSE Chemistry (1CH0) &nbsp;|&nbsp; Paper 1 &nbsp;|&nbsp; Topic 1.1</div>
+    <h1>Atomic Structure</h1>
+    <div class="chips">
+      <span class="chip">Foundation + Higher</span>
+      <span class="chip">Spec 1.1–1.12</span>
+      <span class="chip">1CH0 + 1SC0</span>
+    </div>
+  </div>
+</div>
+
+<!-- HISTORY OF MODELS -->
+<h2>History of the Atomic Model</h2>
+<div class="two-col" style="gap:10px;">
+  <table>
+    <thead><tr><th>Scientist</th><th>Date</th><th>Model &amp; Change</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Dalton</strong></td><td>~1803</td><td>Solid indivisible sphere; all atoms of one element identical</td></tr>
+      <tr><td><strong>Thomson</strong></td><td>1897</td><td><em>Plum pudding:</em> sphere of + charge with electrons embedded. Evidence: discovery of the electron</td></tr>
+      <tr><td><strong>Rutherford</strong></td><td>1909</td><td><em>Nuclear model:</em> tiny, dense, + nucleus at centre; mostly empty space. Evidence: alpha-scattering</td></tr>
+      <tr><td><strong>Bohr</strong></td><td>1913</td><td>Electrons orbit in fixed <em>shells</em> (energy levels). Evidence: line spectra of hot gases</td></tr>
+      <tr><td><strong>Chadwick</strong></td><td>1932</td><td>Discovered the <em>neutron.</em> Explained extra nuclear mass &amp; isotopes</td></tr>
+    </tbody>
+  </table>
+
+  <div class="diagram-col">
+    <img src="images/atomic_models_timeline.png" alt="Timeline of atomic models from Dalton to the current nuclear model" style="max-height:300px; width:auto; max-width:100%;"/>
+    <div class="diagram-label">Development of the Atomic Model</div>
+  </div>
+</div>
+
+<div class="tip-box"><strong>Exam tip:</strong> For "give two differences between Dalton's model and today's model" — name positive content: the modern model has <em>protons, neutrons, electrons in shells</em>. Never just say "it's made of smaller particles."</div>
+
+<!-- ATOMIC STRUCTURE -->
+<h2>Structure of the Atom</h2>
+<div class="two-col">
+  <div class="diagram-col">
+    <img src="images/atom_structure.png" alt="Diagram of an atom showing negatively charged orbiting electrons and a positively charged nucleus" style="max-height:220px; width:auto; max-width:100%;"/>
+    <div class="diagram-label">Atom structure — electrons orbit the nucleus in shells</div>
+  </div>
+  <div>
+    <table>
+      <thead><tr><th>Particle</th><th>Location</th><th>Mass</th><th>Charge</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Proton</strong></td><td>Nucleus</td><td>1</td><td><strong style="color:#c62828;">+1</strong></td></tr>
+        <tr><td><strong>Neutron</strong></td><td>Nucleus</td><td>1</td><td><strong>0</strong></td></tr>
+        <tr><td><strong>Electron</strong></td><td>Shells</td><td>negligible</td><td><strong style="color:#1565c0;">−1</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px; font-size:10pt; line-height:1.7;">
+      <p>&#10003; <strong>Neutral atom:</strong> protons = electrons (charges cancel)</p>
+      <p>&#10003; <strong>Most mass</strong> is in the nucleus (protons + neutrons)</p>
+      <p>&#10003; <strong>Most volume</strong> is empty space</p>
+      <p>&#10003; <strong>Shell capacities:</strong> 1st = 2, 2nd = 8, 3rd = 8</p>
+      <p style="margin-top:6px;">&#9888; The nucleus is <em>very small</em> compared to the whole atom — about 10,000&times; smaller in diameter</p>
+    </div>
+    <div class="key-box" style="margin-top:8px;"><strong>Alpha-scattering (Rutherford, 1909):</strong> Most &#945; particles passed straight through gold foil (atom = mostly empty space). A few bounced back (tiny, dense, + nucleus at centre).</div>
+  </div>
+</div>
+
+<!-- ATOMIC NUMBER AND MASS NUMBER -->
+<h2>Atomic Number and Mass Number</h2>
+<div class="two-col">
+  <div class="diagram-col">
+    <img src="images/mass_atomic_number.png" alt="Diagram showing mass number 7 at top left and atomic number 3 at bottom left for Lithium" style="max-height:180px; width:auto; max-width:100%;"/>
+    <div style="text-align:center; margin-top:6px;">
+      <span class="formula-pill" style="font-size:9.5pt;">Neutrons = A − Z</span>
+    </div>
+    <div class="diagram-label" style="margin-top:5px;">Mass number (top left) = p + n &nbsp;|&nbsp; Atomic number (bottom left) = p</div>
+  </div>
+  <div>
+    <table>
+      <thead><tr><th></th><th>Atomic number (Z)</th><th>Mass number (A)</th></tr></thead>
+      <tbody>
+        <tr><td>What it counts</td><td>Protons only</td><td>Protons + neutrons</td></tr>
+        <tr><td>Position in symbol</td><td>Bottom left</td><td>Top left</td></tr>
+        <tr><td>Unique to element?</td><td><strong>Yes</strong></td><td>No (isotopes differ)</td></tr>
+        <tr><td>= electrons (neutral)?</td><td><strong>Yes</strong></td><td>No</td></tr>
+      </tbody>
+    </table>
+    <div class="tip-box" style="margin-top:8px;"><strong>Worked example:</strong> Chlorine-37 &nbsp;(Z = 17, A = 37)<br>Protons = 17 &nbsp;|&nbsp; Electrons = 17 &nbsp;|&nbsp; Neutrons = 37 − 17 = <strong>20</strong></div>
+    <div class="warn-box"><strong>Higher exam trap:</strong> If given an <em>ion</em> (e.g. ¹²⁵X²⁻), proton count does NOT change — only the electron count changes. A 2− ion has 2 extra electrons.</div>
+  </div>
+</div>
+
+<!-- ISOTOPES -->
+<h2>Isotopes and Relative Atomic Mass</h2>
+<div class="two-col">
+  <div>
+    <p style="font-size:10pt; margin-bottom:6px;"><strong>Isotopes</strong> = atoms of the <em>same element</em>, same number of protons, <em>different</em> number of neutrons.</p>
+    <table>
+      <thead><tr><th>Property</th><th>Chlorine-35</th><th>Chlorine-37</th></tr></thead>
+      <tbody>
+        <tr><td>Protons (Z)</td><td>17</td><td>17</td></tr>
+        <tr><td>Neutrons</td><td>18</td><td>20</td></tr>
+        <tr><td>Electrons</td><td>17</td><td>17</td></tr>
+        <tr><td>Chemistry</td><td colspan="2" style="text-align:center;"><em>Identical</em> (same electrons)</td></tr>
+        <tr><td>Mass</td><td colspan="2" style="text-align:center;">Different (different neutrons)</td></tr>
+      </tbody>
+    </table>
+    <div class="warn-box" style="margin-top:6px;"><strong>Common errors:</strong> (1) Saying "same neutrons" — wrong! Same protons, different neutrons. (2) Mixing isotopes with ions — completely different things.</div>
+  </div>
+  <div>
+    <p style="font-size:10pt; margin-bottom:6px;"><strong>Why A<sub>r</sub> is not a whole number:</strong></p>
+    <p style="font-size:10pt; line-height:1.6;">Elements are <em>mixtures of isotopes</em> with different masses. Relative atomic mass (A<sub>r</sub>) is the <strong>weighted average</strong> mass of all naturally occurring isotopes, compared to ¹/₁₂ of carbon-12.</p>
+    <div style="background:#edf2fb; border-radius:6px; padding:10px; margin-top:8px; font-size:10pt;">
+      <p><strong>Chlorine:</strong> ~75% Cl-35 and ~25% Cl-37</p>
+      <p style="margin-top:4px;">A<sub>r</sub> = 35.5 &nbsp;(between 35 and 37, closer to 35)</p>
+      <p style="margin-top:6px;"><strong>Bromine:</strong> ~50% Br-79, ~50% Br-81 → A<sub>r</sub> ≈ 80</p>
+    </div>
+    <div class="higher-box" style="margin-top:8px;">
+      <strong>[H] A<sub>r</sub> formula:</strong><br>
+      <code style="font-size:9.5pt;">A<sub>r</sub> = (mass₁ × %abund₁ + mass₂ × %abund₂) ÷ 100</code><br>
+      <span style="font-size:9pt; margin-top:4px; display:block;"><strong>Li example:</strong> (6 × 7.59 + 7 × 92.41) ÷ 100 = <strong>6.92</strong> (give to 2 d.p.)</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
