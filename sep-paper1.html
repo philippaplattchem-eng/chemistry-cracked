@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Separate Science: Paper 1 Revision | Chemistry Cracked</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#9333ea;--pr-dk:#6d28d9;--bg:#f4f6fb;--card:#fff;--tx:#1c1f3a;--txm:#6b7280;--bdr:#dde1f0;--r:12px;--sh:0 2px 10px rgba(147,51,234,.09);--sh2:0 6px 24px rgba(147,51,234,.16)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;min-height:100vh;display:flex;flex-direction:column}
+
+.topbar{background:#4a1d96;color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;gap:.8rem}
+.topbar-back{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.22rem .7rem;border-radius:20px;transition:background .15s;white-space:nowrap}
+.topbar-back:hover{background:rgba(255,255,255,.12)}
+.topbar-title{font-size:.88rem;font-weight:600;opacity:.65}
+
+.hero{position:relative;overflow:hidden;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiPjxwb2x5Z29uIHBvaW50cz0iMzAsMiA1OCwxNyA1OCw0NyAzMCw2MiAyLDQ3IDIsMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMDcpIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxwb2x5Z29uIHBvaW50cz0iMCw1NCAyOCw2OSAyOCw5OSAwLDExNCAtMjgsOTkgLTI4LDY5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA3KSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cG9seWdvbiBwb2ludHM9IjYwLDU0IDg4LDY5IDg4LDk5IDYwLDExNCAzMiw5OSAzMiw2OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LC4wNykiIHN0cm9rZS13aWR0aD0iMS40Ii8+PC9zdmc+") center/60px 104px repeat,linear-gradient(135deg,#4a1d96 0%,#6d28d9 45%,#9333ea 80%,#c084fc 100%);color:#fff;padding:3rem 1.5rem 5.5rem;text-align:center}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-40px;left:-40px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(192,132,252,.35) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.hero-icon{font-size:2.9rem;display:block;margin-bottom:.55rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.3))}
+.hero h1{font-size:1.95rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.4rem;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.hero p{font-size:.97rem;opacity:.87;max-width:480px;margin:0 auto;font-weight:600}
+.hero-sub{margin-top:.35rem;font-size:.85rem;opacity:.65;font-weight:400}
+.hero-pills{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:.95rem}
+.hero-pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:.18rem .65rem;font-size:.78rem;font-weight:700}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:56px;pointer-events:none}
+
+main{flex:1;max-width:900px;margin:0 auto;padding:1.6rem 1.2rem 5rem;width:100%}
+
+.controls{display:flex;gap:.6rem;margin-bottom:1.6rem;flex-wrap:wrap;align-items:center}
+.ctrl-btn{background:var(--card);border:1.5px solid var(--bdr);border-radius:8px;padding:.38rem .9rem;font-size:.8rem;font-weight:700;color:var(--txm);cursor:pointer;font-family:inherit;transition:background .15s,border-color .15s}
+.ctrl-btn:hover{background:#f0ecff;border-color:#c4b5fd;color:var(--pr-dk)}
+.ctrl-label{font-size:.78rem;font-weight:700;color:var(--txm);margin-left:auto}
+
+/* Topic blocks */
+.topic-block{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);margin-bottom:1.6rem;overflow:hidden;border:1.5px solid var(--bdr)}
+.topic-header{padding:1rem 1.3rem;border-left:5px solid var(--pr);display:flex;align-items:center;gap:.8rem}
+.topic-block.t2 .topic-header{border-left-color:#1e6e4a}
+.topic-block.t3 .topic-header{border-left-color:#9c2727}
+.topic-block.t4 .topic-header{border-left-color:#5a3080}
+.topic-block.t5 .topic-header{border-left-color:#b85c00}
+.topic-num{font-size:.7rem;font-weight:800;padding:.2rem .55rem;border-radius:6px;background:var(--pr);color:#fff;white-space:nowrap;flex-shrink:0}
+.t2 .topic-num{background:#1e6e4a}
+.t3 .topic-num{background:#9c2727}
+.t4 .topic-num{background:#5a3080}
+.t5 .topic-num{background:#b85c00}
+.topic-name{font-weight:800;font-size:1rem;color:var(--tx);flex:1}
+.topic-qcount{font-size:.75rem;font-weight:700;color:var(--txm);white-space:nowrap}
+.sep-badge{display:inline-block;background:#b85c00;color:#fff;font-size:.68rem;font-weight:800;padding:.1rem .45rem;border-radius:4px;margin-left:.4rem;vertical-align:middle}
+
+/* Section labels */
+.section-label{font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--txm);padding:.7rem 1.3rem .35rem;background:#faf8ff;border-top:1px solid var(--bdr)}
+
+/* Question items */
+.q-item{border-top:1px solid var(--bdr);padding:.85rem 1.3rem .7rem}
+.q-row{display:flex;align-items:flex-start;gap:.7rem;margin-bottom:.5rem}
+.q-num{font-size:.72rem;font-weight:800;color:#fff;background:var(--txm);border-radius:5px;padding:.16rem .48rem;flex-shrink:0;margin-top:.1rem;min-width:26px;text-align:center}
+.q-text{font-size:.91rem;line-height:1.65;flex:1;font-weight:600;color:#1c1f3a}
+.marks-badge{font-size:.74rem;font-weight:800;color:var(--txm);background:var(--bg);border:1px solid var(--bdr);border-radius:5px;padding:.1rem .42rem;white-space:nowrap;flex-shrink:0;margin-top:.1rem}
+.calc-badge{font-size:.68rem;font-weight:800;color:#fff;background:#1d6fa5;border-radius:4px;padding:.1rem .38rem;margin-right:.35rem;vertical-align:middle}
+
+/* Mark scheme toggle */
+.ms-btn{display:inline-flex;align-items:center;gap:.35rem;background:none;border:1.5px solid #c4b5fd;border-radius:7px;padding:.28rem .75rem;font-size:.78rem;font-weight:800;color:var(--pr-dk);cursor:pointer;font-family:inherit;transition:background .15s,border-color .15s;margin-left:calc(.72rem + 26px + .7rem)}
+.ms-btn:hover{background:#f0ecff}
+.ms-btn.open{background:#f0ecff;border-color:var(--pr)}
+.ms-btn svg{width:12px;height:12px;transition:transform .2s;flex-shrink:0}
+.ms-btn.open svg{transform:rotate(180deg)}
+
+.ms-content{display:none;margin:.5rem 0 .2rem calc(.72rem + 26px + .7rem);background:#faf8ff;border:1.5px solid #ddd6fe;border-radius:8px;padding:.75rem 1rem}
+.ms-content.open{display:block}
+.ms-content ul{padding-left:1.1rem;list-style:none}
+.ms-content li{font-size:.87rem;line-height:1.65;color:#374151;margin-bottom:.25rem;padding-left:.2rem;position:relative}
+.ms-content li::before{content:'✓';position:absolute;left:-1rem;color:#7c3aed;font-weight:800;font-size:.78rem}
+.ms-content .mp{font-weight:800;color:#5b21b6}
+.ms-content .accept{font-style:italic;color:#6b7280;font-size:.84rem}
+.ms-content .eq{font-family:'Courier New',monospace;background:#ede9fe;padding:.1rem .35rem;border-radius:3px;font-size:.84rem}
+
+footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
+footer a{color:var(--pr);text-decoration:none}
+
+@media(max-width:600px){
+  .hero h1{font-size:1.5rem}
+  .ms-btn{margin-left:0;margin-top:.4rem}
+  .ms-content{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="home.html" class="topbar-back">&#8592; Home</a>
+  <span class="topbar-title">Separate Science: Paper 1 Revision Questions</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-icon">📝</span>
+    <h1>Separate Science: Paper 1</h1>
+    <p>Revision questions with full mark schemes for every topic</p>
+    <p class="hero-sub">Click "Show mark scheme" under any question to check your answer</p>
+    <div class="hero-pills">
+      <span class="hero-pill">Topics 1–5</span>
+      <span class="hero-pill">85 questions</span>
+      <span class="hero-pill">Separate science</span>
+      <span class="hero-pill">Mark schemes included</span>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 C240,56 480,0 720,28 C960,56 1200,0 1440,28 L1440,56 L0,56 Z" fill="#f4f6fb"/>
+  </svg>
+</div>
+
+<main>
+
+<div class="controls">
+  <button class="ctrl-btn" onclick="toggleAll(true)">Expand all mark schemes</button>
+  <button class="ctrl-btn" onclick="toggleAll(false)">Collapse all mark schemes</button>
+  <span class="ctrl-label">85 questions across 5 topics</span>
+</div>
+
+<!-- ===== TOPIC 1 ===== -->
+<div class="topic-block t1">
+  <div class="topic-header">
+    <span class="topic-num">T1</span>
+    <div class="topic-name">Key Concepts in Chemistry</div>
+    <span class="topic-qcount">29 questions</span>
+  </div>
+
+  <div class="section-label">Atomic Structure &amp; the Periodic Table</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">1</span><div class="q-text">State the relative charge and relative mass of a proton, neutron and electron.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Proton:</span> charge +1, relative mass 1</li>
+      <li><span class="mp">Neutron:</span> charge 0, relative mass 1</li>
+      <li><span class="mp">Electron:</span> charge −1, relative mass negligible / 1/1840 <span class="accept">(accept "very small")</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">2</span><div class="q-text">What is meant by the term <em>atomic number</em>?</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>The <span class="mp">number of protons</span> in the nucleus of an atom</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">3</span><div class="q-text">Explain what is meant by the term <em>isotope</em>.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Atoms of the <span class="mp">same element</span> (same number of protons)</li>
+      <li>with <span class="mp">different numbers of neutrons</span> / different mass numbers</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">4</span><div class="q-text">Write the electronic structure of: (a) sodium (Z = 11) &nbsp; (b) chlorine (Z = 17).</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>(a) Sodium: <span class="eq">2, 8, 1</span></li>
+      <li>(b) Chlorine: <span class="eq">2, 8, 7</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">5</span><div class="q-text">Explain why elements in the same group of the periodic table have similar chemical properties.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>They have the <span class="mp">same number of electrons in their outer shell</span></li>
+      <li>Outer shell electrons <span class="mp">determine how an element reacts</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">6</span><div class="q-text"><span class="calc-badge">CALC</span>Chlorine has two isotopes: <sup>35</sup>Cl (75%) and <sup>37</sup>Cl (25%). Calculate the relative atomic mass of chlorine.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>RAM = (35 × 75 + 37 × 25) ÷ 100 <span class="mp">[1 for correct method]</span></li>
+      <li>= 3550 ÷ 100 = <span class="mp">35.5 [1]</span></li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Ionic Bonding &amp; Structure</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">7</span><div class="q-text">Describe how an ionic bond is formed between sodium and chlorine. State what happens to the electrons.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Sodium <span class="mp">loses one electron</span> to form Na<sup>+</sup></li>
+      <li>Chlorine <span class="mp">gains one electron</span> to form Cl<sup>−</sup></li>
+      <li><span class="mp">Electrostatic attraction</span> between oppositely charged ions forms the ionic bond</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">8</span><div class="q-text">Draw a dot-and-cross diagram to show the ionic bonding in magnesium oxide (MgO).</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Mg shown losing 2 electrons → <span class="mp">Mg<sup>2+</sup> with empty outer shell</span></li>
+      <li>O shown gaining 2 electrons → <span class="mp">O<sup>2−</sup> with full outer shell (8 electrons)</span></li>
+      <li>Charges <span class="mp">2+ and 2− correctly labelled</span>; crosses from Mg shown on O</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">9</span><div class="q-text">Sodium chloride has a giant ionic lattice structure. Explain why it has a high melting point.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>There are <span class="mp">many strong electrostatic forces of attraction</span> between oppositely charged ions</li>
+      <li>These forces act in <span class="mp">all directions throughout the lattice</span></li>
+      <li>A large amount of energy is needed to <span class="mp">overcome / break these forces</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">10</span><div class="q-text">Explain why sodium chloride does not conduct electricity when solid but does conduct when dissolved in water or when molten.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>When solid, ions are held in <span class="mp">fixed positions and cannot move</span></li>
+      <li>Conductivity requires <span class="mp">free-moving charged particles</span></li>
+      <li>When dissolved or molten, ions are <span class="mp">free to move and carry charge</span></li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Covalent Bonding &amp; Simple Molecular Structures</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">11</span><div class="q-text">Describe what is meant by a covalent bond.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>A <span class="mp">shared pair of electrons</span> between two atoms</li>
+      <li>Each atom contributes <span class="mp">one electron</span> to the shared pair</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">12</span><div class="q-text">Draw a dot-and-cross diagram to show the bonding in: (a) water (H<sub>2</sub>O) &nbsp; (b) ammonia (NH<sub>3</sub>).</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>H<sub>2</sub>O: oxygen shown with <span class="mp">2 bonding pairs</span> and 2 lone pairs [1]; H atoms shown with <span class="mp">full outer shell (2 electrons)</span> [1]</li>
+      <li>NH<sub>3</sub>: nitrogen shown with <span class="mp">3 bonding pairs</span> and 1 lone pair [1]; H atoms shown with <span class="mp">full outer shell</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">13</span><div class="q-text">Explain why simple molecular substances such as iodine have low melting points.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Simple molecules have <span class="mp">weak intermolecular forces</span> between molecules</li>
+      <li>Only a small amount of energy is needed to <span class="mp">overcome these forces</span></li>
+      <li>The strong covalent bonds <span class="mp">within</span> the molecules are <span class="mp">not broken</span> on melting</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">14</span><div class="q-text">Explain why simple molecular substances do not conduct electricity.</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>No <span class="mp">free electrons or ions</span>; all electrons are involved in covalent bonds</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Giant Covalent Structures</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">15</span><div class="q-text">Compare the structures of diamond and graphite. Explain why graphite conducts electricity but diamond does not.</div><span class="marks-badge">[5]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Diamond: each carbon bonded to <span class="mp">4 others</span> in a tetrahedral arrangement [1]</li>
+      <li>Graphite: each carbon bonded to <span class="mp">3 others in flat layers</span> [1]</li>
+      <li>Graphite has <span class="mp">one delocalised electron per carbon</span> (unused 4th bond) [1]</li>
+      <li>Delocalised electrons are <span class="mp">free to move and carry charge</span> → graphite conducts [1]</li>
+      <li>Diamond has <span class="mp">no free electrons</span> → cannot conduct [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">16</span><div class="q-text">Explain why diamond has a very high melting point.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Every carbon atom is <span class="mp">covalently bonded to 4 others</span> throughout the giant structure</li>
+      <li>A very large amount of energy is needed to <span class="mp">break the many strong covalent bonds</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">17</span><div class="q-text">Silicon dioxide (SiO<sub>2</sub>) is a giant covalent structure. Predict its melting point and ability to conduct electricity. Justify your answer.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Very high melting point</span> [1]</li>
+      <li><span class="mp">Does not conduct electricity</span> [1]</li>
+      <li>Giant covalent structure: many strong covalent bonds need large energy to break; <span class="mp">no free electrons or ions</span> to carry charge [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Metallic Bonding &amp; Structure</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">18</span><div class="q-text">Describe the structure and bonding in a metal, including the role of delocalised electrons.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Regular lattice of <span class="mp">positive metal ions</span></li>
+      <li>Surrounded by a <span class="mp">sea of delocalised electrons</span></li>
+      <li>Strong <span class="mp">electrostatic attraction</span> between ions and electrons holds the structure together</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">19</span><div class="q-text">Explain why metals are good conductors of electricity.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Delocalised electrons are <span class="mp">free to move</span> through the structure</li>
+      <li>Moving electrons <span class="mp">carry charge / constitute a current</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">20</span><div class="q-text">Explain why metals are malleable (can be shaped) but ionic compounds are brittle when a force is applied.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>In metals, layers of ions can <span class="mp">slide over each other</span> when a force is applied [1]</li>
+      <li>Delocalised electrons move with the layers, <span class="mp">maintaining metallic bonds</span> throughout [1]</li>
+      <li>In ionic compounds, when layers shift, <span class="mp">like charges align</span> next to each other [1]</li>
+      <li>Electrostatic <span class="mp">repulsion causes the crystal to shatter</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Formulae &amp; Equations</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">21</span><div class="q-text">Write the formula for: (a) magnesium chloride &nbsp; (b) iron(III) oxide &nbsp; (c) ammonium sulfate.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>(a) <span class="eq">MgCl<sub>2</sub></span></li>
+      <li>(b) <span class="eq">Fe<sub>2</sub>O<sub>3</sub></span></li>
+      <li>(c) <span class="eq">(NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub></span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">22</span><div class="q-text">Balance the equation: &nbsp; __ Na &nbsp;+&nbsp; __ O<sub>2</sub> &nbsp;→&nbsp; __ Na<sub>2</sub>O</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="eq">4Na + O<sub>2</sub> → 2Na<sub>2</sub>O</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">23</span><div class="q-text">What is the difference between an empirical formula and a molecular formula?</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Empirical formula: the <span class="mp">simplest whole number ratio</span> of atoms of each element</li>
+      <li>Molecular formula: the <span class="mp">actual number</span> of each type of atom in one molecule</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Moles &amp; Calculations</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">24</span><div class="q-text"><span class="calc-badge">CALC</span>Calculate the M<sub>r</sub> of calcium carbonate, CaCO<sub>3</sub>. (Ca = 40, C = 12, O = 16)</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>40 + 12 + (3 × 16) = <span class="mp">100</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">25</span><div class="q-text"><span class="calc-badge">CALC</span>Calculate the number of moles in 11 g of CO<sub>2</sub>. (M<sub>r</sub> = 44)</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>moles = mass ÷ M<sub>r</sub> = 11 ÷ 44 <span class="mp">[1 for method]</span></li>
+      <li>= <span class="mp">0.25 mol [1]</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">26</span><div class="q-text"><span class="calc-badge">CALC</span>What mass of magnesium oxide (MgO) is produced when 12 g of magnesium burns completely? (Mg = 24, O = 16)</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Equation: 2Mg + O<sub>2</sub> → 2MgO; moles of Mg = 12 ÷ 24 = <span class="mp">0.5 mol [1]</span></li>
+      <li>1:1 molar ratio → moles of MgO = <span class="mp">0.5 mol [1]</span></li>
+      <li>Mass = 0.5 × 40 = <span class="mp">20 g [1]</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">27</span><div class="q-text">Define <em>percentage yield</em> and state one reason why it is rarely 100%.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>% yield = <span class="mp">(actual yield ÷ theoretical yield) × 100</span> [1]</li>
+      <li>Rarely 100% because: <span class="mp">reversible reactions don't go to completion</span> [1]</li>
+      <li><span class="accept">Accept: product lost during transfer / filtration / side reactions occur</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">28</span><div class="q-text"><span class="calc-badge">CALC</span>In the reaction N<sub>2</sub> + 3H<sub>2</sub> → 2NH<sub>3</sub>, calculate the atom economy for producing NH<sub>3</sub>. (N = 14, H = 1)</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Atom economy = (M<sub>r</sub> of desired products ÷ total M<sub>r</sub> of all products) × 100 <span class="mp">[1 for formula]</span></li>
+      <li>M<sub>r</sub> of 2NH<sub>3</sub> = 2 × 17 = 34; only product is NH<sub>3</sub> <span class="mp">[1]</span></li>
+      <li>= 34 ÷ 34 × 100 = <span class="mp">100% [1]</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">29</span><div class="q-text">State one advantage of a high atom economy for industry.</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Less waste produced / more sustainable / cheaper <span class="accept">(any one)</span></li>
+    </ul></div>
+  </div>
+</div>
+
+<!-- ===== TOPIC 2 ===== -->
+<div class="topic-block t2">
+  <div class="topic-header">
+    <span class="topic-num">T2</span>
+    <div class="topic-name">States of Matter and Mixtures</div>
+    <span class="topic-qcount">12 questions</span>
+  </div>
+
+  <div class="section-label">States of Matter</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">1</span><div class="q-text">Describe the arrangement and movement of particles in a solid.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Particles are <span class="mp">closely packed in a regular arrangement</span></li>
+      <li>Particles <span class="mp">vibrate about fixed positions</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">2</span><div class="q-text">Explain, using particle theory, why gases can be compressed but liquids cannot.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>In gases, particles are <span class="mp">far apart with large spaces</span>, so can be pushed closer together</li>
+      <li>In liquids, particles are <span class="mp">already close together</span> with little space between them</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">3</span><div class="q-text">A substance melts sharply at 156 °C. What does this suggest about the purity of the substance?</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>The substance is <span class="mp">pure</span> (no impurities present)</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">4</span><div class="q-text">How does the presence of impurities affect the melting point and boiling point of a substance?</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Impurities <span class="mp">lower the melting point</span> and <span class="mp">raise the boiling point</span></li>
+      <li>Melting / boiling occurs over a <span class="mp">range of temperatures</span> rather than at a fixed point</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Separation Techniques</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">5</span><div class="q-text">Describe how you would separate a mixture of sand and salt.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Add water to <span class="mp">dissolve the salt</span> (sand does not dissolve) [1]</li>
+      <li><span class="mp">Filter</span> to separate sand (residue) from salt solution (filtrate) [1]</li>
+      <li><span class="mp">Evaporate</span> the filtrate to concentrate the solution [1]</li>
+      <li>Leave to <span class="mp">crystallise</span>; filter and dry the crystals [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">6</span><div class="q-text">Explain how simple distillation is used to obtain pure water from salt water.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Heat the salt water; <span class="mp">water evaporates</span> and the steam/vapour rises [1]</li>
+      <li>Steam passes through a <span class="mp">condenser</span> and cools back to liquid water [1]</li>
+      <li>Pure water <span class="mp">collected in a separate flask</span>; salt remains [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">7</span><div class="q-text">Explain why fractional distillation, rather than simple distillation, is used to separate ethanol and water.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Ethanol and water have <span class="mp">similar / close boiling points</span> (78 °C and 100 °C)</li>
+      <li>A <span class="mp">fractionating column</span> maintains a temperature gradient, allowing effective separation of liquids with close boiling points</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">8</span><div class="q-text">Describe how paper chromatography works to separate a mixture of dyes.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Sample placed as a spot on the <span class="mp">baseline</span> of chromatography paper [1]</li>
+      <li>Paper placed in solvent below the baseline; <span class="mp">solvent moves up</span> by capillary action [1]</li>
+      <li>Components travel at <span class="mp">different rates</span> depending on solubility in solvent and attraction to paper [1]</li>
+      <li>Components <span class="mp">separate into distinct spots</span> at different heights [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">9</span><div class="q-text"><span class="calc-badge">CALC</span>In a chromatography experiment, the solvent front travels 9.0 cm and a spot travels 6.3 cm. Calculate the R<sub>f</sub> value.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>R<sub>f</sub> = distance moved by spot ÷ distance moved by solvent front <span class="mp">[1 for method]</span></li>
+      <li>= 6.3 ÷ 9.0 = <span class="mp">0.70 [1]</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">10</span><div class="q-text">A student compares the R<sub>f</sub> value of a food dye to a reference sample and the values match. What conclusion can the student draw?</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>The food dye is likely to be <span class="mp">the same substance</span> as the reference sample <span class="accept">(accept "may contain the same compound")</span></li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Water Treatment</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">11</span><div class="q-text">State the three main stages used to make water safe to drink.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Sedimentation</span>: chemicals added to make particles clump and settle [1]</li>
+      <li><span class="mp">Filtration</span>: through sand / gravel to remove remaining particles [1]</li>
+      <li><span class="mp">Chlorination</span>: chlorine added to kill bacteria / microorganisms [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">12</span><div class="q-text">Explain why water is treated with chlorine. State one risk associated with chlorination.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Kills <span class="mp">bacteria / microorganisms</span> that could cause disease [1]</li>
+      <li>Risk: chlorine can react with organic compounds to form <span class="mp">toxic / potentially carcinogenic</span> compounds [1]</li>
+    </ul></div>
+  </div>
+</div>
+
+<!-- ===== TOPIC 3 ===== -->
+<div class="topic-block t3">
+  <div class="topic-header">
+    <span class="topic-num">T3</span>
+    <div class="topic-name">Chemical Changes</div>
+    <span class="topic-qcount">16 questions</span>
+  </div>
+
+  <div class="section-label">Reactivity Series &amp; Displacement</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">1</span><div class="q-text">List the following metals in order of reactivity, most reactive first: copper, iron, zinc, magnesium, potassium.</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Potassium, magnesium, zinc, iron, copper</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">2</span><div class="q-text">Iron filings are added to copper sulfate solution. Write a word equation for the reaction.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>iron + copper sulfate → <span class="mp">iron sulfate</span> + <span class="mp">copper</span> (1 mark each product)</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">3</span><div class="q-text">Explain why aluminium is extracted by electrolysis rather than reduction with carbon.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Aluminium is <span class="mp">more reactive than carbon</span></li>
+      <li>So carbon <span class="mp">cannot displace aluminium</span> from its ore</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Oxidation &amp; Reduction</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">4</span><div class="q-text">Define oxidation and reduction in terms of electron transfer.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Oxidation: loss of electrons</span></li>
+      <li><span class="mp">Reduction: gain of electrons</span> <span class="accept">(OIL RIG)</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">5</span><div class="q-text">In the reaction CuO + H<sub>2</sub> → Cu + H<sub>2</sub>O, identify which substance is oxidised and which is reduced. Explain your answer.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">CuO is reduced</span>: Cu<sup>2+</sup> gains electrons to form Cu [1]; or loses oxygen [1]</li>
+      <li><span class="mp">H<sub>2</sub> is oxidised</span>: hydrogen loses electrons / gains oxygen [1]</li>
+      <li>This is a <span class="mp">redox reaction</span> (oxidation and reduction occurring simultaneously) [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Acids, Alkalis &amp; Neutralisation</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">6</span><div class="q-text">State the pH of a neutral solution and describe what happens to pH as a solution becomes more acidic.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>pH <span class="mp">7</span></li>
+      <li>As solution becomes more acidic, pH <span class="mp">decreases / gets lower</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">7</span><div class="q-text">Write word equations for the reaction of dilute hydrochloric acid with: (a) zinc &nbsp; (b) copper oxide &nbsp; (c) sodium hydroxide &nbsp; (d) calcium carbonate.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>(a) zinc + hydrochloric acid → <span class="mp">zinc chloride + hydrogen</span></li>
+      <li>(b) copper oxide + hydrochloric acid → <span class="mp">copper chloride + water</span></li>
+      <li>(c) sodium hydroxide + hydrochloric acid → <span class="mp">sodium chloride + water</span></li>
+      <li>(d) calcium carbonate + hydrochloric acid → <span class="mp">calcium chloride + water + carbon dioxide</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">8</span><div class="q-text">Name the salt formed when: (a) sulfuric acid + potassium hydroxide &nbsp; (b) nitric acid + magnesium oxide.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>(a) <span class="mp">Potassium sulfate</span></li>
+      <li>(b) <span class="mp">Magnesium nitrate</span></li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Salt Preparation</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">9</span><div class="q-text">Describe how to prepare a pure, dry sample of copper sulfate crystals using copper oxide and dilute sulfuric acid.</div><span class="marks-badge">[5]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Add <span class="mp">excess copper oxide</span> to warm dilute sulfuric acid and stir [1]</li>
+      <li><span class="mp">Filter</span> off the excess copper oxide [1]</li>
+      <li><span class="mp">Heat the filtrate</span> to evaporate some water / concentrate the solution [1]</li>
+      <li>Leave to <span class="mp">cool and crystallise</span> [1]</li>
+      <li>Filter off the crystals and <span class="mp">dry</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">10</span><div class="q-text">Explain why copper sulfate cannot be made by reacting copper metal with dilute sulfuric acid.</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Copper is <span class="mp">below hydrogen in the reactivity series</span> and does not react with dilute acids</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Electrolysis</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">11</span><div class="q-text">Define the term <em>electrolyte</em>.</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>A liquid or solution that <span class="mp">conducts electricity and is decomposed by it</span> <span class="accept">(must include free-moving ions)</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">12</span><div class="q-text">State the products at each electrode when molten lead bromide is electrolysed.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Cathode (−): <span class="mp">lead</span></li>
+      <li>Anode (+): <span class="mp">bromine</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">13</span><div class="q-text">State the products at each electrode when dilute sulfuric acid is electrolysed using inert electrodes.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Cathode: <span class="mp">hydrogen</span></li>
+      <li>Anode: <span class="mp">oxygen</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">14</span><div class="q-text">State the products at each electrode when concentrated sodium chloride solution is electrolysed. Explain why chlorine is produced at the anode rather than oxygen.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Cathode: <span class="mp">hydrogen</span> [1]; Anode: <span class="mp">chlorine</span> [1]</li>
+      <li>Cl<sup>−</sup> ions are present in <span class="mp">higher concentration</span> than OH<sup>−</sup> ions, so Cl<sup>−</sup> is <span class="mp">preferentially discharged</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">15</span><div class="q-text">Describe what happens to the anode and cathode when copper sulfate solution is electrolysed using copper electrodes.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Cathode: copper is <span class="mp">deposited</span>; cathode <span class="mp">increases in mass</span> [1]</li>
+      <li>Anode: copper <span class="mp">dissolves</span> into solution; anode <span class="mp">decreases in mass</span> [1]</li>
+      <li>Concentration of Cu<sup>2+</sup> ions <span class="mp">remains constant</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">16</span><div class="q-text">Write the half-equation for the discharge of copper ions at the cathode during electrolysis.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="eq">Cu<sup>2+</sup> + 2e<sup>−</sup> → Cu</span> <span class="accept">(1 mark correct species, 1 mark balanced)</span></li>
+    </ul></div>
+  </div>
+</div>
+
+<!-- ===== TOPIC 4 ===== -->
+<div class="topic-block t4">
+  <div class="topic-header">
+    <span class="topic-num">T4</span>
+    <div class="topic-name">Extracting Metals and Equilibria</div>
+    <span class="topic-qcount">14 questions</span>
+  </div>
+
+  <div class="section-label">Metal Extraction, Alloys &amp; LCA</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">1</span><div class="q-text">Explain what is meant by a life cycle assessment (LCA).</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>A method to assess the <span class="mp">total environmental impact</span> of a product</li>
+      <li>Over its <span class="mp">entire life</span> from raw material extraction to disposal</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">2</span><div class="q-text">State four stages considered in an LCA.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Extraction and processing of raw materials</span> [1]</li>
+      <li><span class="mp">Manufacturing and packaging</span> [1]</li>
+      <li><span class="mp">Use of the product</span> [1]</li>
+      <li><span class="mp">Disposal / end of life</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">3</span><div class="q-text">Give one limitation of using an LCA to compare two products.</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Some data is <span class="mp">difficult to quantify / involves value judgements</span> <span class="accept">(accept: data may be incomplete / biased; hard to compare different types of environmental impact)</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">4</span><div class="q-text">Give two environmental and one economic reason why metals should be recycled.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Environmental: <span class="mp">reduces mining and associated habitat destruction</span> [1]</li>
+      <li>Environmental: <span class="mp">reduces energy use and CO<sub>2</sub> emissions</span> compared to extraction [1]</li>
+      <li>Economic: <span class="mp">cheaper than extracting from ore / metal ores are finite</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">5</span><div class="q-text">Define the term <em>alloy</em>. Give one example and state its component metals.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>A <span class="mp">mixture of a metal with one or more other elements</span> [1]</li>
+      <li>Example: <span class="mp">steel</span> [1]; components: <span class="mp">iron + carbon</span> [1] <span class="accept">(accept brass = Cu + Zn; bronze = Cu + Sn; stainless steel = Fe + Cr/Ni)</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">6</span><div class="q-text">Explain, using ideas about structure, why alloys are harder than the pure metals they contain.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>In pure metals, all atoms are the same size in <span class="mp">regular layers that can slide</span> over each other [1]</li>
+      <li>In an alloy, atoms of <span class="mp">different sizes disrupt the regular arrangement</span> [1]</li>
+      <li>This <span class="mp">prevents layers from sliding</span>, making the alloy harder [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Dynamic Equilibrium</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">7</span><div class="q-text">Explain what is meant by a <em>dynamic equilibrium</em>.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>A <span class="mp">reversible reaction</span> in a <span class="mp">closed system</span> [1]</li>
+      <li>Where forward and reverse reactions occur at <span class="mp">equal rates</span> [1]</li>
+      <li>So the <span class="mp">concentrations of reactants and products remain constant</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">8</span><div class="q-text">State Le Chatelier's principle.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>If a change is imposed on a system at equilibrium, the equilibrium will <span class="mp">shift to oppose that change</span></li>
+      <li><span class="accept">(2 marks for a complete accurate statement; 1 mark for a partial statement)</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">9</span><div class="q-text">For the reaction: N<sub>2</sub>(g) + 3H<sub>2</sub>(g) ⇌ 2NH<sub>3</sub>(g) &nbsp; ΔH = −92 kJ/mol, predict and explain the effect on the equilibrium position of: (a) increasing temperature &nbsp; (b) increasing pressure &nbsp; (c) removing ammonia as it forms.</div><span class="marks-badge">[6]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>(a) Shifts <span class="mp">left</span> [1]; reverse reaction is endothermic, absorbs extra heat; <span class="mp">less NH<sub>3</sub></span> produced [1]</li>
+      <li>(b) Shifts <span class="mp">right</span> [1]; 4 moles gas on left → 2 moles on right; shifting right <span class="mp">reduces gas molecules / pressure</span> [1]</li>
+      <li>(c) Shifts <span class="mp">right</span> [1]; to <span class="mp">replace the removed ammonia</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">The Haber Process</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">10</span><div class="q-text">State the raw materials used in the Haber process and where they come from.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Nitrogen</span> from the air / fractional distillation of liquid air [1]</li>
+      <li><span class="mp">Hydrogen</span> from natural gas (methane) / cracking of hydrocarbons [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">11</span><div class="q-text">State the conditions used in the Haber process (temperature, pressure, catalyst).</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Temperature: <span class="mp">approximately 450 °C</span></li>
+      <li>Pressure: <span class="mp">approximately 200 atm</span></li>
+      <li>Catalyst: <span class="mp">iron</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">12</span><div class="q-text">Explain why a compromise temperature of around 450 °C is used rather than a very high or very low temperature.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>High temperature <span class="mp">increases rate</span> of reaction [1]</li>
+      <li>But shifts equilibrium <span class="mp">left</span>, giving a <span class="mp">lower yield</span> of NH<sub>3</sub> [1]</li>
+      <li>Low temperature gives higher yield but the <span class="mp">rate is too slow</span> to be economical [1]</li>
+      <li>450 °C is a compromise giving <span class="mp">acceptable yield at acceptable rate</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">13</span><div class="q-text">What is the role of the iron catalyst? Explain why using a catalyst does not change the equilibrium position.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Increases the <span class="mp">rate</span> at which equilibrium is reached [1]</li>
+      <li>Speeds up <span class="mp">both forward and reverse reactions equally</span> [1]</li>
+      <li>Does not change the <span class="mp">position of equilibrium</span> or the yield [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">14</span><div class="q-text">In the Haber process, unreacted nitrogen and hydrogen are recycled. Suggest why this is done.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>To <span class="mp">increase the overall yield</span> of ammonia [1]</li>
+      <li>To <span class="mp">reduce waste and cost</span> / increase efficiency [1]</li>
+    </ul></div>
+  </div>
+</div>
+
+<!-- ===== TOPIC 5 ===== -->
+<div class="topic-block t5">
+  <div class="topic-header">
+    <span class="topic-num">T5</span>
+    <div class="topic-name">Separate Chemistry 1 <span class="sep-badge">Separate Science</span></div>
+    <span class="topic-qcount">14 questions</span>
+  </div>
+
+  <div class="section-label">Transition Metals</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">1</span><div class="q-text">Give three properties of transition metals that differ from Group 1 metals.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Any three from: <span class="mp">higher melting points; higher densities; harder / stronger; form coloured compounds; can act as catalysts; can form ions with different charges</span> (1 mark each)</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">2</span><div class="q-text">Why can transition metal ions form coloured compounds?</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Transition metal ions have <span class="mp">incompletely filled d orbitals</span>; electrons can absorb certain wavelengths of visible light</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">3</span><div class="q-text">State one transition metal used as a catalyst in industry and the reaction it catalyses.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Iron</span> — Haber process (N<sub>2</sub> + H<sub>2</sub> → NH<sub>3</sub>) <span class="accept">(accept: nickel — hydrogenation of oils; vanadium(V) oxide — Contact process)</span></li>
+      <li>1 mark for correct metal, 1 mark for correct reaction</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Corrosion &amp; Rusting</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">4</span><div class="q-text">State the two substances needed for iron to rust.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Water</span> (or moisture) [1] and <span class="mp">oxygen</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">5</span><div class="q-text">Explain why galvanising (coating with zinc) protects iron more effectively than painting.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Paint can be <span class="mp">scratched or chipped</span>, exposing iron to water and oxygen [1]</li>
+      <li>Zinc also acts as a <span class="mp">sacrificial metal</span> [1]</li>
+      <li>Zinc is <span class="mp">more reactive than iron</span>, so even if scratched, zinc corrodes in preference to iron [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">6</span><div class="q-text">What is meant by <em>sacrificial protection</em>? Give one example of its use.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>A <span class="mp">more reactive metal</span> is attached to the iron/steel structure [1]</li>
+      <li>The more reactive metal <span class="mp">corrodes / oxidises in preference</span> to the iron [1]</li>
+      <li>Example: <span class="mp">zinc blocks on ship hulls</span> / magnesium rods on underground pipelines [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Ceramics, Polymers &amp; Composites</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">7</span><div class="q-text">Give two properties of ceramic materials and explain why they make good electrical insulators.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Any two from: <span class="mp">hard, brittle, high melting point, chemically unreactive, low thermal / electrical conductivity</span> (1 each) [2]</li>
+      <li>All electrons <span class="mp">involved in ionic / covalent bonds</span>; no free electrons to carry charge [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">8</span><div class="q-text">Define <em>composite material</em> and give one named example. Explain why it has better properties than its component materials alone.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Made from <span class="mp">two or more materials with different properties</span> combined together [1]</li>
+      <li>Example: <span class="mp">fibreglass</span> (glass fibres + polymer resin) <span class="accept">(accept CFRP, reinforced concrete)</span> [1]</li>
+      <li>Properties <span class="mp">better than either component alone</span> [1]</li>
+      <li>e.g. fibreglass is <span class="mp">strong and lightweight</span>; fibre gives strength, resin gives flexibility [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="section-label">Tests for Ions</div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">9</span><div class="q-text">State the flame test colours for: (a) lithium &nbsp; (b) sodium &nbsp; (c) potassium &nbsp; (d) calcium &nbsp; (e) copper.</div><span class="marks-badge">[5]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>(a) Lithium: <span class="mp">crimson / red</span></li>
+      <li>(b) Sodium: <span class="mp">yellow / orange-yellow</span></li>
+      <li>(c) Potassium: <span class="mp">lilac / pale purple</span></li>
+      <li>(d) Calcium: <span class="mp">brick red / orange-red</span></li>
+      <li>(e) Copper: <span class="mp">blue-green / green</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">10</span><div class="q-text">Describe how to test for carbonate ions. State what you would observe if carbonates are present.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Add <span class="mp">dilute hydrochloric acid</span> to the sample [1]</li>
+      <li>If carbonates present, <span class="mp">carbon dioxide gas is produced</span> (effervescence / bubbling) [1]</li>
+      <li>CO<sub>2</sub> turns <span class="mp">limewater milky / cloudy</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">11</span><div class="q-text">Sodium hydroxide solution is added to an unknown solution. A white precipitate forms that dissolves in excess NaOH. Which cation is present?</div><span class="marks-badge">[1]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li><span class="mp">Aluminium ions (Al<sup>3+</sup>)</span></li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">12</span><div class="q-text">Sodium hydroxide solution is added to a different unknown solution. A blue precipitate forms. Which cation is present? Write the ionic equation for its formation.</div><span class="marks-badge">[2]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Cation: <span class="mp">copper(II) ions (Cu<sup>2+</sup>)</span> [1]</li>
+      <li>Ionic equation: <span class="eq">Cu<sup>2+</sup>(aq) + 2OH<sup>−</sup>(aq) → Cu(OH)<sub>2</sub>(s)</span> [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">13</span><div class="q-text">Describe the test for halide ions using silver nitrate solution. Give the colour of the precipitate formed with: (a) chloride ions &nbsp; (b) bromide ions &nbsp; (c) iodide ions.</div><span class="marks-badge">[4]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Add <span class="mp">dilute nitric acid</span> then <span class="mp">silver nitrate solution</span> [1]</li>
+      <li>(a) Chloride: <span class="mp">white</span> precipitate (AgCl) [1]</li>
+      <li>(b) Bromide: <span class="mp">cream</span> precipitate (AgBr) [1]</li>
+      <li>(c) Iodide: <span class="mp">yellow</span> precipitate (AgI) [1]</li>
+    </ul></div>
+  </div>
+
+  <div class="q-item">
+    <div class="q-row"><span class="q-num">14</span><div class="q-text">A student adds dilute nitric acid followed by silver nitrate solution to an unknown solution. A cream precipitate forms. Identify the halide ion present and write an ionic equation for the reaction.</div><span class="marks-badge">[3]</span></div>
+    <button class="ms-btn" onclick="toggleMS(this)"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,4 6,8 10,4"/></svg>Mark scheme</button>
+    <div class="ms-content"><ul>
+      <li>Halide ion: <span class="mp">bromide (Br<sup>−</sup>)</span> [1]</li>
+      <li>Ionic equation: <span class="eq">Ag<sup>+</sup>(aq) + Br<sup>−</sup>(aq) → AgBr(s)</span> [1]</li>
+      <li>State symbols correct [1]</li>
+    </ul></div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <a href="home.html">Chemistry Cracked</a> &nbsp;·&nbsp; Edexcel GCSE Chemistry (1CH0) &nbsp;·&nbsp; Separate Science Paper 1
+</footer>
+
+<script>
+function toggleMS(btn) {
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.toggle('open');
+  btn.classList.toggle('open', isOpen);
+  btn.querySelector('svg').style.transform = isOpen ? 'rotate(180deg)' : '';
+}
+
+function toggleAll(open) {
+  document.querySelectorAll('.ms-content').forEach(el => el.classList.toggle('open', open));
+  document.querySelectorAll('.ms-btn').forEach(btn => {
+    btn.classList.toggle('open', open);
+    btn.querySelector('svg').style.transform = open ? 'rotate(180deg)' : '';
+  });
+}
+</script>
+</body>
+</html>
