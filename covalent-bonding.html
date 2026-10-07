@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Covalent Bonding Guide | Chemistry Cracked GCSE</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#9333ea;--pr-dk:#6d28d9;--bg:#f4f6fb;--card:#fff;--tx:#1c1f3a;--txm:#6b7280;--bdr:#dde1f0;--r:12px;--sh:0 2px 10px rgba(147,51,234,.09);--sh2:0 6px 24px rgba(147,51,234,.16);--acc:#eef1ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;min-height:100vh}
+
+.topbar{background:#4a1d96;color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;gap:.8rem}
+.topbar-back{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.22rem .7rem;border-radius:20px;transition:background .15s;white-space:nowrap}
+.topbar-back:hover{background:rgba(255,255,255,.12)}
+.topbar-title{font-size:.88rem;font-weight:600;opacity:.65}
+
+.hero{position:relative;overflow:hidden;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiPjxwb2x5Z29uIHBvaW50cz0iMzAsMiA1OCwxNyA1OCw0NyAzMCw2MiAyLDQ3IDIsMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMDcpIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxwb2x5Z29uIHBvaW50cz0iMCw1NCAyOCw2OSAyOCw5OSAwLDExNCAtMjgsOTkgLTI4LDY5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA3KSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cG9seWdvbiBwb2ludHM9IjYwLDU0IDg4LDY5IDg4LDk5IDYwLDExNCAzMiw5OSAzMiw2OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LC4wNykiIHN0cm9rZS13aWR0aD0iMS40Ii8+PC9zdmc+") center/60px 104px repeat,linear-gradient(135deg,#4a1d96 0%,#6d28d9 45%,#9333ea 80%,#c084fc 100%);color:#fff;padding:2.8rem 1.5rem 5.2rem;text-align:center}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-40px;left:-40px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(192,132,252,.35) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.hero-icon{font-size:2.9rem;display:block;margin-bottom:.55rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.3))}
+.hero h1{font-size:1.95rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.4rem;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.hero p{font-size:.97rem;opacity:.88;max-width:500px;margin:0 auto;font-weight:600}
+.hero-sub{margin-top:.35rem;font-size:.85rem;opacity:.65;font-weight:400}
+.hero-pills{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:.95rem}
+.hero-pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:.18rem .65rem;font-size:.78rem;font-weight:700}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:56px;pointer-events:none}
+
+main{max-width:860px;margin:0 auto;padding:1.5rem 1rem 5rem}
+
+.spec-card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);margin-bottom:1.2rem;overflow:hidden}
+.spec-header{display:flex;align-items:center;gap:.75rem;padding:.9rem 1.2rem;cursor:pointer;user-select:none;border-bottom:2px solid transparent;transition:border-color .15s}
+.spec-header:hover{border-bottom-color:var(--bdr)}
+.spec-header.open{border-bottom:2px solid var(--bdr)}
+.sec-icon{font-size:1.25rem;flex-shrink:0}
+.spec-num{background:var(--pr);color:#fff;font-size:.7rem;font-weight:800;padding:.2rem .55rem;border-radius:6px;white-space:nowrap}
+.spec-name{font-weight:800;font-size:1rem;flex:1}
+.spec-tier{font-size:.7rem;font-weight:700;color:var(--txm);background:var(--bg);border:1px solid var(--bdr);padding:.15rem .5rem;border-radius:5px;white-space:nowrap}
+.spec-arrow{font-size:.8rem;color:var(--txm);transition:transform .25s;margin-left:.2rem}
+.spec-header.open .spec-arrow{transform:rotate(180deg)}
+.spec-body{display:none;padding:1.3rem 1.5rem 1.6rem}
+.spec-body.open{display:block}
+
+.spec-body p{margin-bottom:.85rem;font-size:.93rem;line-height:1.72}
+.plain-english{font-size:.96rem;color:#374151;background:#f8faff;border-left:3px solid var(--pr);padding:.6rem 1rem;border-radius:0 7px 7px 0;margin-bottom:1.1rem!important;font-style:italic}
+.spec-body h3{font-size:1.01rem;color:var(--pr-dk);margin:1.25rem 0 .55rem;font-weight:800}
+.spec-body h4{font-size:.9rem;color:var(--tx);margin:.9rem 0 .4rem;font-weight:700}
+.spec-body ul,.spec-body ol{margin:.25rem 0 .9rem 1.5rem;font-size:.91rem}
+.spec-body li{margin-bottom:.3rem;line-height:1.65}
+.spec-body table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.5rem 0 1.1rem}
+.spec-body th{background:var(--pr);color:#fff;padding:.45rem .8rem;text-align:left;font-weight:700}
+.spec-body td{padding:.42rem .8rem;border-bottom:1px solid var(--bdr);vertical-align:top}
+.spec-body tr:nth-child(even) td{background:#faf8ff}
+sup,sub{font-size:.74em}
+
+.pitfall-box{background:#fff8e1;border-left:4px solid #f9a825;border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.pitfall-box strong{color:#92400e}
+.takeaway-box{background:var(--acc);border-left:4px solid var(--pr);border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.91rem;line-height:1.65}
+.takeaway-box strong{color:var(--pr-dk)}
+.tip-box{background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.tip-box strong{color:#166534}
+.higher-box{background:#faf5ff;border:1.5px solid #c084fc;border-radius:8px;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.higher-badge{display:inline-block;background:var(--pr);color:#fff;font-size:.68rem;font-weight:800;padding:.12rem .45rem;border-radius:4px;margin-right:.4rem;vertical-align:middle}
+
+.quick-check{background:#fff;border:2px solid var(--pr);border-radius:10px;padding:1rem 1.25rem;margin:1.1rem 0}
+.quick-check-title{font-weight:800;color:var(--pr-dk);font-size:.9rem;margin-bottom:.5rem}
+.quick-check p{font-size:.9rem;margin-bottom:.45rem!important}
+.reveal-btn{background:var(--pr);color:#fff;border:none;border-radius:6px;padding:.35rem .9rem;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s}
+.reveal-btn:hover{background:var(--pr-dk)}
+.answer-reveal{display:none;background:var(--acc);border-radius:7px;padding:.6rem .95rem;margin-top:.6rem;font-size:.88rem;line-height:1.65}
+.answer-reveal.show{display:block}
+
+.diagram-wrap{margin:1.25rem auto;text-align:center}
+.diagram-wrap img{max-width:100%;height:auto;display:block;margin:0 auto;border-radius:8px}
+.diagram-cap{font-size:.78rem;color:var(--txm);margin-top:.45rem;font-style:italic;text-align:center}
+
+.dc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin:1rem 0}
+.dc-card{background:var(--bg);border:1.5px solid var(--bdr);border-radius:8px;padding:.8rem;text-align:center}
+.dc-card h4{font-size:.88rem;color:var(--pr-dk);margin-bottom:.5rem;font-weight:800}
+.dc-card img{max-width:100%;height:auto;max-height:140px;object-fit:contain;display:block;margin:0 auto}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.col-card{background:var(--bg);border:1.5px solid var(--bdr);border-radius:8px;padding:.95rem 1rem}
+.col-card h4{color:var(--pr-dk);margin:0 0 .5rem;font-size:.9rem}
+.col-card ul{margin-left:1.15rem;font-size:.88rem}
+.col-card li{margin-bottom:.28rem;line-height:1.55}
+
+.model-answer{background:#f8faff;border:1.5px solid #c4b5fd;border-radius:9px;padding:1rem 1.2rem;margin:.8rem 0 1.1rem;font-size:.9rem;line-height:1.7}
+.model-answer-title{font-weight:800;color:#4a1d96;font-size:.82rem;margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
+.ma-mark{display:inline-block;background:#4a1d96;color:#fff;font-size:.68rem;font-weight:800;padding:.1rem .4rem;border-radius:4px}
+.model-answer p{margin-bottom:.35rem!important}
+
+.steps{counter-reset:step;list-style:none;margin:0;padding:0}
+.steps li{position:relative;padding-left:2.5rem;margin-bottom:.75rem;font-size:.91rem;line-height:1.65}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:.05rem;background:var(--pr);color:#fff;font-weight:800;font-size:.75rem;width:1.7rem;height:1.7rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+
+footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
+footer a{color:var(--pr);text-decoration:none}
+
+@media(max-width:600px){
+  .hero h1{font-size:1.5rem}
+  .two-col,.dc-grid{grid-template-columns:1fr}
+  .spec-body{padding:1rem 1.1rem 1.2rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="home.html" class="topbar-back">&#8592; GCSE Chemistry</a>
+  <span class="topbar-title">Covalent Bonding Guide</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-icon">&#9883;</span>
+    <h1>Covalent Bonding</h1>
+    <p>Covalent bonding, dot &amp; cross diagrams, structures and types of substances</p>
+    <p class="hero-sub">Topics 1.4–1.5 &nbsp;·&nbsp; Edexcel GCSE Chemistry (1CH0) &nbsp;·&nbsp; Paper 1</p>
+    <div class="hero-pills">
+      <span class="hero-pill">Foundation + Higher</span>
+      <span class="hero-pill">7 sections</span>
+      <span class="hero-pill">Diagrams included</span>
+      <span class="hero-pill">Model answers</span>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 C240,56 480,0 720,28 C960,56 1200,0 1440,28 L1440,56 L0,56 Z" fill="#f4f6fb"/>
+  </svg>
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 1 — WHAT IS COVALENT BONDING?
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header open">
+    <span class="sec-icon">&#128258;</span>
+    <span class="spec-num">1.4.1.1</span>
+    <span class="spec-name">What is covalent bonding?</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body open">
+
+    <p class="plain-english">A covalent bond forms when two non-metal atoms each share one of their electrons. The two shared electrons — one from each atom — are called a <strong>shared pair</strong>, and it is this shared pair that holds the atoms together.</p>
+
+    <h3>The definition — get the exact wording right</h3>
+    <p>Examiners are very specific. You must say <strong>pair</strong>. "Sharing electrons" on its own is not enough.</p>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">2 marks</span> Define a covalent bond.</div>
+      <p><strong>A shared pair of electrons</strong> (1) between two non-metal atoms / the electrostatic attraction between the shared electrons and the nuclei of both bonded atoms (1)</p>
+    </div>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Common error:</strong> Writing "electrons are shared between atoms" without saying <em>pair</em> loses the mark. The mark scheme specifically rejects "sharing electrons" alone. Always write <em>shared pair</em>.
+    </div>
+
+    <h3>How a covalent bond forms</h3>
+    <p>Non-metal atoms need to fill their outer electron shell to become stable. Rather than gaining or losing electrons (like metals do), two non-metals each contribute <strong>one electron</strong> to a shared pair. Both atoms then "count" this shared pair as part of their own outer shell, so both achieve a full outer shell at the same time.</p>
+
+    <div class="diagram-wrap">
+      <img src="img/covalent/dc-h2.png" alt="Dot-and-cross diagram of H₂ showing one shared pair of electrons in the overlap region" style="max-width:320px">
+      <p class="diagram-cap">H₂: one shared pair of electrons in the overlap — both H atoms now have a full outer shell of 2</p>
+    </div>
+
+    <h3>Single, double and triple bonds</h3>
+    <table>
+      <tr><th>Bond type</th><th>Shared pairs</th><th>Example</th><th>Drawn as</th></tr>
+      <tr><td><strong>Single</strong></td><td>1 shared pair (2 electrons)</td><td>H₂, HCl, H₂O, CH₄, NH₃</td><td>H — H</td></tr>
+      <tr><td><strong>Double</strong></td><td>2 shared pairs (4 electrons)</td><td>O₂, CO₂</td><td>O = O</td></tr>
+      <tr><td><strong>Triple</strong></td><td>3 shared pairs (6 electrons)</td><td>N₂</td><td>N ≡ N</td></tr>
+    </table>
+
+    <h3>Key vocabulary</h3>
+    <table>
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td><strong>Covalent bond</strong></td><td>A shared pair of electrons between two atoms</td></tr>
+      <tr><td><strong>Molecule</strong></td><td>Two or more atoms joined by covalent bonds</td></tr>
+      <tr><td><strong>Bonding pair</strong></td><td>The shared pair of electrons in the bond</td></tr>
+      <tr><td><strong>Lone pair</strong></td><td>A pair of electrons on an atom that is <em>not</em> shared — not involved in bonding</td></tr>
+      <tr><td><strong>Diatomic</strong></td><td>A molecule made of exactly 2 atoms (e.g. H₂, O₂, N₂, Cl₂, HCl)</td></tr>
+    </table>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Which molecule contains a double covalent bond: H₂, HCl, O₂, or NH₃?</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal"><strong>O₂</strong> — oxygen forms a double bond (2 shared pairs) because each oxygen atom has 6 outer electrons and needs 2 more. H₂ has a single bond; HCl has a single bond; NH₃ has three single bonds.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 2 — DOT AND CROSS DIAGRAMS
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#128393;</span>
+    <span class="spec-num">1.4.2.1</span>
+    <span class="spec-name">Dot and cross diagrams</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">Draw two overlapping circles — one for each atom. Put one atom's electrons as <strong>dots</strong> (&#9679;) and the other atom's as <strong>crosses</strong> (&#215;). The bonding pair goes in the overlap. Lone pairs sit outside the overlap on the atom that owns them.</p>
+
+    <h3>How to draw any dot and cross diagram — 4 steps</h3>
+    <ol class="steps">
+      <li>Work out how many outer electrons each atom has (group number = outer electrons for groups 1–7).</li>
+      <li>Work out how many bonds each atom needs (electrons needed to fill its outer shell).</li>
+      <li>Draw overlapping circles — one circle per atom. Put the element symbol inside.</li>
+      <li>Place the bonding pair (one dot + one cross) in the overlap. Add lone pairs to the atom that owns them, outside the overlap. Show outer electrons only.</li>
+    </ol>
+
+    <div class="tip-box">
+      <strong>&#128161; Rule:</strong> The shared pair must have <em>one dot and one cross</em> — one electron from each atom. Using two dots or two crosses loses the mark unless you clearly label which symbol belongs to which atom.
+    </div>
+
+    <h3>The key diagrams</h3>
+
+    <div class="dc-grid">
+      <div class="dc-card">
+        <h4>H₂ — single bond</h4>
+        <img src="img/covalent/dc-h2.png" alt="Dot and cross diagram for H₂">
+        <p style="font-size:.8rem;color:var(--txm);margin-top:.4rem">1 shared pair. Each H has 1 outer electron; needs 1 more. Both get full outer shell of 2.</p>
+      </div>
+      <div class="dc-card">
+        <h4>HCl — single bond + lone pairs</h4>
+        <img src="img/covalent/dc-hcl.png" alt="Dot and cross diagram for HCl">
+        <p style="font-size:.8rem;color:var(--txm);margin-top:.4rem">1 shared pair. Cl has 7 outer electrons; 3 lone pairs remain on Cl after bonding.</p>
+      </div>
+      <div class="dc-card">
+        <h4>H₂O — two single bonds</h4>
+        <img src="img/covalent/dc-h2o.png" alt="Dot and cross diagram for H₂O">
+        <p style="font-size:.8rem;color:var(--txm);margin-top:.4rem">O has 6 outer electrons; forms 2 bonds; 2 lone pairs remain on O.</p>
+      </div>
+      <div class="dc-card">
+        <h4>CH₄ — four single bonds</h4>
+        <img src="img/covalent/dc-ch4.png" alt="Dot and cross diagram for CH₄">
+        <p style="font-size:.8rem;color:var(--txm);margin-top:.4rem">C has 4 outer electrons; forms 4 bonds; no lone pairs on C.</p>
+      </div>
+      <div class="dc-card">
+        <h4>NH₃ — three single bonds + lone pair</h4>
+        <img src="img/covalent/dc-nh3.png" alt="Dot and cross diagram for NH₃">
+        <p style="font-size:.8rem;color:var(--txm);margin-top:.4rem">N has 5 outer electrons; forms 3 bonds; 1 lone pair remains on N.</p>
+      </div>
+      <div class="dc-card">
+        <h4>O₂ — double bond</h4>
+        <img src="img/covalent/dc-o2.png" alt="Dot and cross diagram for O₂">
+        <p style="font-size:.8rem;color:var(--txm);margin-top:.4rem">O needs 2 more electrons; forms a double bond (4 electrons in the overlap). 2 lone pairs on each O.</p>
+      </div>
+    </div>
+
+    <div class="dc-grid" style="grid-template-columns:1fr;max-width:340px;margin:0 auto 1rem">
+      <div class="dc-card">
+        <h4>CO₂ — two double bonds</h4>
+        <img src="img/covalent/dc-co2.png" alt="Dot and cross diagram for CO₂">
+        <p style="font-size:.8rem;color:var(--txm);margin-top:.4rem">C forms 2 double bonds (one to each O). Each O has 2 lone pairs. C has no lone pairs.</p>
+      </div>
+    </div>
+
+    <h3>How many bonds does each element form?</h3>
+    <table>
+      <tr><th>Element</th><th>Outer electrons</th><th>Electrons needed</th><th>Bonds formed</th><th>Lone pairs</th></tr>
+      <tr><td>H</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+      <tr><td>O</td><td>6</td><td>2</td><td>2</td><td>2</td></tr>
+      <tr><td>N</td><td>5</td><td>3</td><td>3</td><td>1</td></tr>
+      <tr><td>C</td><td>4</td><td>4</td><td>4</td><td>0</td></tr>
+      <tr><td>Cl / F / Br</td><td>7</td><td>1</td><td>1</td><td>3</td></tr>
+      <tr><td>Si</td><td>4</td><td>4</td><td>4</td><td>0</td></tr>
+    </table>
+
+    <div class="tip-box">
+      <strong>&#128161; Shortcut for bonds formed:</strong> Bonds formed = 8 − outer electrons (for all except H, which uses 2 − 1 = 1). So oxygen (6 outer) forms 8 − 6 = 2 bonds; nitrogen (5 outer) forms 8 − 5 = 3 bonds.
+    </div>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Watch out!</strong> SiCl₄ has exactly the same dot-and-cross shape as CCl₄ — silicon has 4 outer electrons just like carbon. Draw Si in the centre with 4 single bonds to Cl. Each Cl keeps 3 lone pairs.
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Element R has electronic configuration 2.6. Element S has configuration 2.7. How many bonds does R form, and what is the formula of the compound R forms with S?</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal">R has 6 outer electrons → forms <strong>2 bonds</strong> (8 − 6 = 2). S has 7 outer electrons → forms 1 bond. R needs 2 S atoms to satisfy its 2 bonds, so the formula is <strong>RS₂</strong>. (Not R₂S — S is the one forming only 1 bond.)</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 3 — SIMPLE MOLECULAR SUBSTANCES
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#128167;</span>
+    <span class="spec-num">1.5.1.1 / 1.5.2.1</span>
+    <span class="spec-name">Simple molecular substances</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">Simple molecular substances (like H₂O, CO₂, CH₄, O₂) are made of small separate molecules. The atoms inside each molecule are held together by <strong>strong</strong> covalent bonds — but the molecules themselves are only attracted to each other by <strong>weak intermolecular forces</strong>. It is these weak forces that determine their properties.</p>
+
+    <div class="diagram-wrap">
+      <img src="img/covalent/intermolecular-forces.png" alt="Two water molecules with strong covalent bonds shown inside each molecule and a weak intermolecular force (dashed line) between the two molecules" style="max-width:400px">
+      <p class="diagram-cap">Strong covalent bonds hold atoms together inside each molecule. Weak intermolecular forces act between separate molecules.</p>
+    </div>
+
+    <h3>Properties and why — the most important distinction</h3>
+
+    <table>
+      <tr><th>Property</th><th>What it is</th><th>Why (the explanation)</th></tr>
+      <tr><td><strong>Low melting and boiling points</strong></td><td>Many are gases or liquids at room temperature</td><td>Only the <strong>weak intermolecular forces</strong> between molecules need to be overcome when melting or boiling. These need very little energy.</td></tr>
+      <tr><td><strong>Do not conduct electricity</strong></td><td>In any state — solid, liquid or dissolved</td><td>No <strong>free ions</strong> and no <strong>free/delocalised electrons</strong> — there are no charged particles that can move to carry charge.</td></tr>
+      <tr><td><strong>Larger molecule = higher boiling point</strong></td><td>e.g. butane (−1°C) &gt; methane (−162°C)</td><td>Larger molecules have more electrons, so stronger intermolecular forces, requiring more energy to overcome.</td></tr>
+    </table>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; The single biggest mark-scheme trap:</strong> When explaining low boiling points or why a substance is a gas, you MUST write <em>intermolecular forces</em>. Writing "weak bonds" or "weak covalent bonds" is <strong>rejected</strong>. The covalent bonds inside the molecule are strong — they are NOT broken on melting or boiling.
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">2 marks</span> Explain why methane is a gas at room temperature.</div>
+      <p>Methane has <strong>weak intermolecular forces</strong> between molecules. (1)</p>
+      <p>Very little energy is needed to overcome these, so the boiling point is below room temperature. (1)</p>
+      <p style="font-size:.82rem;color:#92400e;margin-top:.3rem"><strong>Do NOT write:</strong> "weak bonds" / "weak covalent bonds" / "the bonds break easily" — these are all rejected.</p>
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">2 marks</span> Explain why simple covalent substances do not conduct electricity.</div>
+      <p>There are no free/mobile <strong>ions</strong>. (1)</p>
+      <p>There are no free/mobile <strong>electrons</strong> (electrons are fixed in covalent bonds / no delocalised electrons). (1)</p>
+      <p style="font-size:.82rem;color:var(--txm);margin-top:.3rem">Combined answer "no ions or free electrons" scores only 1 mark, not 2.</p>
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">3 marks</span> Explain why butane (C₄H₁₀) has a higher boiling point than methane (CH₄).</div>
+      <p>Butane is a larger molecule / has more electrons / has greater relative molecular mass than methane. (1)</p>
+      <p>Therefore butane has <strong>stronger intermolecular forces</strong> between its molecules. (1)</p>
+      <p>More energy is needed to overcome these intermolecular forces. (1)</p>
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Which row correctly shows properties of a simple molecular covalent compound?</p>
+      <table style="font-size:.86rem">
+        <tr><th></th><th>Melting point</th><th>Conducts as solid?</th><th>Conducts in solution?</th></tr>
+        <tr><td><strong>A</strong></td><td>High</td><td>No</td><td>Yes</td></tr>
+        <tr><td><strong>B</strong></td><td>Low</td><td>No</td><td>No</td></tr>
+        <tr><td><strong>C</strong></td><td>High</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td><strong>D</strong></td><td>Low</td><td>Yes</td><td>No</td></tr>
+      </table>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal"><strong>B</strong> — Simple molecular compounds have low melting points (weak intermolecular forces) and do not conduct in any state (no free ions or electrons). They are not ionic, so they don't conduct in solution. Option A describes an ionic compound (conducts in solution); C and D include conduction as a solid which no simple molecular compound can do.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 4 — DIAMOND AND GRAPHITE
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#128142;</span>
+    <span class="spec-num">1.5.3.1</span>
+    <span class="spec-name">Diamond and graphite</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">Diamond and graphite are both made <em>entirely</em> of carbon atoms. The only difference is the <em>arrangement</em> of those atoms — and that single structural difference creates completely opposite properties.</p>
+
+    <div class="two-col">
+      <div>
+        <div class="diagram-wrap">
+          <img src="img/covalent/diamond.png" alt="Diamond structure showing each carbon atom bonded to 4 others in a 3D tetrahedral network" style="max-width:100%;max-height:200px;object-fit:contain">
+          <p class="diagram-cap">Diamond: 3D giant covalent lattice. Each C bonds to 4 others.</p>
+        </div>
+      </div>
+      <div>
+        <div class="diagram-wrap">
+          <img src="img/covalent/graphite.png" alt="Graphite structure showing flat hexagonal layers stacked with weak forces between them and delocalised electrons within layers" style="max-width:100%;max-height:200px;object-fit:contain">
+          <p class="diagram-cap">Graphite: layers of hexagonal rings. Each C bonds to 3 others. Weak forces between layers.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Comparison table</h3>
+    <table>
+      <tr><th>Feature</th><th>Diamond</th><th>Graphite</th></tr>
+      <tr><td>Element</td><td colspan="2" style="text-align:center">Pure carbon — both are allotropes of carbon</td></tr>
+      <tr><td>Bonds per C atom</td><td><strong>4</strong> covalent bonds</td><td><strong>3</strong> covalent bonds</td></tr>
+      <tr><td>Structure</td><td>Giant 3D covalent network (tetrahedral)</td><td>Flat hexagonal layers stacked on top of each other</td></tr>
+      <tr><td>Forces between layers</td><td>n/a — no separate layers</td><td><strong>Weak intermolecular forces</strong> between layers</td></tr>
+      <tr><td>Delocalised electrons?</td><td><strong>No</strong> — all 4 outer electrons used in bonds</td><td><strong>Yes</strong> — 1 delocalised electron per C atom (4th electron not used in bonding)</td></tr>
+      <tr><td>Hardness</td><td>Very hard</td><td>Soft and slippery</td></tr>
+      <tr><td>Melting point</td><td>Very high (&gt;3500°C)</td><td>Very high</td></tr>
+      <tr><td>Electrical conductivity</td><td>Does <strong>not</strong> conduct</td><td><strong>Conducts</strong> (delocalised electrons)</td></tr>
+      <tr><td>Use</td><td>Cutting tools, drill tips, scalpel blades</td><td>Electrodes, lubricant, pencil "lead"</td></tr>
+    </table>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Common errors:</strong> (1) Writing "strong bonds between layers" in graphite — layers are held by <em>weak</em> intermolecular forces. (2) Forgetting that graphite also has a very high melting point — you must break the strong covalent bonds <em>within</em> the layers to melt it. (3) Saying diamond doesn't conduct because it "has no electrons" — it has electrons but none are free/delocalised.
+    </div>
+
+    <h3>Why diamond is hard and used in cutting tools</h3>
+    <p>Each carbon atom is held in a giant 3D network by <strong>four strong covalent bonds</strong> pointing in different directions. To scratch or break diamond, you must break a huge number of these strong bonds simultaneously. This requires an enormous amount of energy — making diamond one of the hardest substances known and ideal for maintaining a sharp cutting edge.</p>
+
+    <h3>Why graphite is soft and used as a lubricant</h3>
+    <p>Within each layer, the carbon atoms are held by strong covalent bonds — but the layers are only attracted to each other by <strong>weak intermolecular forces</strong>. A small sideways force causes the layers to <strong>slide over each other</strong> easily. This makes graphite soft and slippery — perfect as a lubricant and why pencil "lead" leaves marks on paper.</p>
+
+    <h3>Why graphite conducts electricity</h3>
+    <p>Each carbon uses only 3 of its 4 outer electrons in covalent bonds. The <strong>4th electron per carbon atom is delocalised</strong> — free to move through the layer. These mobile electrons carry electrical charge when a voltage is applied. This is why graphite is used as electrodes in electrolysis cells.</p>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">6 marks</span> Compare diamond (scalpel blade) and graphite (pencil lead) — explain each use in terms of bonding and structure.</div>
+      <p><strong>Diamond:</strong></p>
+      <p>&#8226; Diamond has a giant covalent / giant lattice structure. (1)</p>
+      <p>&#8226; Each carbon atom is bonded to 4 other carbon atoms by strong covalent bonds. (1)</p>
+      <p>&#8226; Many strong covalent bonds need a large amount of energy to break, so diamond is very hard. (1)</p>
+      <p>&#8226; Therefore suitable for cutting / maintaining a sharp edge on a scalpel. (1)</p>
+      <p><strong>Graphite:</strong></p>
+      <p>&#8226; Graphite has a layered / hexagonal layer structure. (1)</p>
+      <p>&#8226; Each carbon atom is bonded to 3 other carbon atoms within the layer; layers are held together by weak intermolecular forces. (1)</p>
+      <p>&#8226; Layers can slide over each other easily, so graphite is soft and leaves marks on paper. (1)</p>
+      <p style="font-size:.82rem;color:var(--txm);margin-top:.5rem"><em>Max 3 marks per substance. Must discuss both to score above 3.</em></p>
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Why does graphite conduct electricity but diamond does not?</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal">In graphite, each carbon forms only 3 covalent bonds, leaving <strong>one delocalised electron per atom</strong> that is free to move and carry charge. In diamond, each carbon forms 4 bonds — all outer electrons are fixed in bonds, leaving no free electrons to carry charge.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 5 — SILICON DIOXIDE AND GIANT COVALENT
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#128205;</span>
+    <span class="spec-num">1.5.3.1</span>
+    <span class="spec-name">Silicon dioxide and giant covalent structures</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">Silicon dioxide (SiO₂) is sand. Like diamond, it is a giant covalent structure — every atom is bonded to all its neighbours by strong covalent bonds throughout the whole structure. This is why sand has a melting point of 1713°C, not −78°C like CO₂.</p>
+
+    <div class="diagram-wrap">
+      <img src="img/covalent/silicon-dioxide.png" alt="Silicon dioxide structure showing silicon atoms (large blue) and oxygen atoms (small pink) alternating in a 3D covalent network" style="max-width:380px">
+      <p class="diagram-cap">SiO₂: each silicon bonds to 4 oxygen atoms; each oxygen bridges two silicon atoms — a continuous 3D covalent network.</p>
+    </div>
+
+    <h3>SiO₂ vs CO₂ — the classic comparison question</h3>
+    <p>Both molecules contain only covalent bonds. Yet SiO₂ melts at 1713°C and CO₂ is a gas at room temperature. The reason is their <strong>type of structure</strong>, not just the bonds.</p>
+
+    <div class="two-col">
+      <div class="col-card">
+        <h4>SiO₂ (silicon dioxide)</h4>
+        <ul>
+          <li>Giant covalent structure</li>
+          <li>Every Si and O atom bonded throughout the whole 3D lattice</li>
+          <li>To melt: must break <strong>many strong covalent bonds</strong> throughout the structure</li>
+          <li>Requires a huge amount of energy → very high melting point</li>
+        </ul>
+      </div>
+      <div class="col-card">
+        <h4>CO₂ (carbon dioxide)</h4>
+        <ul>
+          <li>Simple molecular structure</li>
+          <li>Discrete CO₂ molecules — covalent bonds hold atoms within each molecule</li>
+          <li>To boil: only need to overcome <strong>weak intermolecular forces</strong> between molecules</li>
+          <li>Very little energy needed → gas at room temperature</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">3 marks</span> Explain why SiO₂ has a much higher melting point than CO₂.</div>
+      <p>Silicon dioxide has a <strong>giant covalent structure</strong>; carbon dioxide is a <strong>simple molecular structure</strong>. (1)</p>
+      <p>SiO₂ has many strong covalent bonds throughout the lattice, requiring a large amount of energy to break. (1)</p>
+      <p>CO₂ has only weak intermolecular forces between molecules, requiring very little energy to overcome. (1)</p>
+      <p style="font-size:.82rem;color:#92400e;margin-top:.4rem"><strong>Must contrast both structures for full marks.</strong> Writing "stronger bonds in SiO₂" without naming "giant covalent structure" is rejected.</p>
+    </div>
+
+    <h3>Properties of all giant covalent structures</h3>
+    <table>
+      <tr><th>Property</th><th>Giant covalent</th><th>Why</th></tr>
+      <tr><td>Melting point</td><td>Very high</td><td>Many strong covalent bonds throughout — all must be broken to melt</td></tr>
+      <tr><td>Electrical conductivity</td><td>Does not conduct (usually)</td><td>No free ions; no delocalised electrons (except graphite and graphene)</td></tr>
+      <tr><td>Solubility</td><td>Insoluble</td><td>Water cannot pull apart the covalent network</td></tr>
+      <tr><td>Hardness</td><td>Usually very hard</td><td>Rigid network of strong bonds (exception: graphite is soft)</td></tr>
+    </table>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>A substance has a melting point of 1710°C, is insoluble in water, and does not conduct electricity in any state. What type of structure is it? Give a reason.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal"><strong>Giant covalent structure.</strong> Reason: very high melting point indicates many strong covalent bonds throughout the structure that require large amounts of energy to break; does not conduct because there are no free electrons or ions in any state.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 6 — FULLERENES AND GRAPHENE
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#9917;</span>
+    <span class="spec-num">1.5.4.1</span>
+    <span class="spec-name">Fullerenes and graphene</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">Fullerenes (including C₆₀) and graphene are two more forms of carbon — both built from the same hexagonal rings as graphite, but arranged differently. Each carbon still forms 3 covalent bonds, leaving one delocalised electron per atom.</p>
+
+    <div class="diagram-wrap">
+      <img src="img/covalent/fullerene.png" alt="Buckminsterfullerene C60 showing the soccer-ball arrangement of hexagons and pentagons with carbon atoms at each vertex, and a comparison with a football" style="max-width:380px">
+      <p class="diagram-cap">Buckminsterfullerene (C₆₀): 60 carbon atoms arranged as 20 hexagons + 12 pentagons — the same pattern as a football. Each C forms 3 covalent bonds; 1 electron per atom is delocalised.</p>
+    </div>
+
+    <h3>The three forms</h3>
+    <table>
+      <tr><th>Form</th><th>Structure</th><th>Bonds per C</th><th>Delocalised e⁻?</th><th>Key uses</th></tr>
+      <tr><td><strong>Buckminsterfullerene (C₆₀)</strong></td><td>Hollow sphere — 60 C atoms, hexagons + pentagons</td><td>3</td><td>Yes — over the molecule</td><td>Drug delivery, lubricants, semiconductors</td></tr>
+      <tr><td><strong>Carbon nanotubes</strong></td><td>Hexagonal sheet rolled into a long hollow cylinder</td><td>3</td><td>Yes — along the tube</td><td>Reinforcing materials, electronics, nanotechnology</td></tr>
+      <tr><td><strong>Graphene</strong></td><td>Single layer of graphite — one atom thick, flat hexagonal sheet</td><td>3</td><td>Yes — across the sheet</td><td>Electronics, sensors, composite materials</td></tr>
+    </table>
+
+    <h3>Key facts to remember</h3>
+    <ul>
+      <li>All three are <strong>allotropes of carbon</strong> — same element, different structure.</li>
+      <li>C₆₀ is a <strong>discrete molecule</strong> (not a giant structure) — C₆₀ molecules are held to each other by weak intermolecular forces, just like simple molecular substances.</li>
+      <li>Graphene is <strong>one atom thick</strong> — the thinnest possible layer of graphite.</li>
+      <li>All conduct electricity due to delocalised electrons.</li>
+      <li>Carbon nanotubes have extremely high <strong>tensile strength</strong> (stronger than steel by weight) — used to reinforce composites.</li>
+    </ul>
+
+    <div class="higher-box">
+      <span class="higher-badge">H</span> <strong>Why C₆₀ has a lower melting point than diamond:</strong> C₆₀ molecules are discrete units held together only by weak intermolecular forces. In diamond, every atom is held by strong covalent bonds throughout the whole network. Melting C₆₀ only requires overcoming weak intermolecular forces; melting diamond requires breaking every C–C covalent bond.
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Why does graphene conduct electricity?</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal">Each carbon in graphene forms 3 covalent bonds, using only 3 of its 4 outer electrons. The 4th electron per atom is <strong>delocalised</strong> — not fixed to any one atom and free to move across the sheet. These mobile electrons carry electrical charge when a voltage is applied.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 7 — TYPES OF SUBSTANCES AND EXAM TECHNIQUE
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#127775;</span>
+    <span class="spec-num">1.5.1.1</span>
+    <span class="spec-name">Types of substances and exam technique</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">There are four types of substance. Every classification question in the exam comes down to one rule: find the structure, then the properties follow automatically.</p>
+
+    <h3>The four types — master comparison table</h3>
+    <table>
+      <tr><th>Property</th><th>Ionic</th><th>Simple molecular</th><th>Giant covalent</th><th>Metallic</th></tr>
+      <tr><td><strong>Melting point</strong></td><td>High</td><td><strong>Low</strong></td><td><strong>Very high</strong></td><td>Usually high</td></tr>
+      <tr><td><strong>Conducts as solid?</strong></td><td>No (ions fixed)</td><td>No</td><td>No (except graphite)</td><td><strong>Yes</strong></td></tr>
+      <tr><td><strong>Conducts when molten/dissolved?</strong></td><td><strong>Yes</strong> (ions free)</td><td>No</td><td>No</td><td>Yes (molten)</td></tr>
+      <tr><td><strong>Soluble in water?</strong></td><td>Many are</td><td>Most are not</td><td>No</td><td>No</td></tr>
+      <tr><td><strong>Examples</strong></td><td>NaCl, MgO</td><td>H₂O, CO₂, CH₄</td><td>Diamond, graphite, SiO₂</td><td>Fe, Cu, Al</td></tr>
+    </table>
+
+    <h3>Classification flowchart — for data table questions</h3>
+    <ol class="steps">
+      <li><strong>Does it conduct as a solid?</strong> Yes → metallic (or graphite/graphene). No → not metallic. Move on.</li>
+      <li><strong>Does it conduct when molten or dissolved but not as a solid?</strong> Yes → ionic. No → move on.</li>
+      <li><strong>What is the melting point?</strong> Low (below ~300°C) → simple molecular. Very high → giant covalent.</li>
+    </ol>
+
+    <div class="tip-box">
+      <strong>&#128161; The ionic fingerprint:</strong> The single most reliable sign of an ionic compound in a data table is conducting when molten/in solution but <em>not</em> as a solid. No other type of substance does this.
+    </div>
+
+    <h3>Perfect exam answers — quick reference</h3>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">2 marks</span> Define a covalent bond.</div>
+      <p>A <strong>shared pair</strong> of electrons between two non-metal atoms. (Two separate marks — must include "pair" and "between two atoms/non-metals".)</p>
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">2 marks</span> Why is methane a gas at room temperature?</div>
+      <p>Methane has <strong>weak intermolecular forces</strong> between its molecules. (1) Very little energy is needed to overcome these / its boiling point is below room temperature. (1)</p>
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">2 marks</span> Why do simple covalent substances not conduct electricity?</div>
+      <p>There are no free/mobile <strong>ions</strong>. (1) There are no free/mobile <strong>electrons</strong> — electrons are fixed in covalent bonds. (1)</p>
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">3 marks</span> Explain why butane (C₄H₁₀) has a higher boiling point than methane (CH₄). Both are simple molecular substances.</div>
+      <p>Butane has more electrons / is a larger molecule. (1) Therefore butane has <strong>stronger intermolecular forces</strong> between molecules. (1) More energy is needed to overcome these forces. (1)</p>
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">3 marks</span> Explain why silicon dioxide (mp 1713°C) has a much higher melting point than carbon dioxide (gas at room temperature).</div>
+      <p>SiO₂ has a <strong>giant covalent structure</strong>; CO₂ is a <strong>simple molecular</strong> structure. (1) SiO₂ has many strong covalent bonds throughout its lattice, requiring a large amount of energy to break. (1) CO₂ has only weak intermolecular forces between its molecules, requiring little energy to overcome. (1)</p>
+    </div>
+
+    <div class="model-answer">
+      <div class="model-answer-title"><span class="ma-mark">2 marks</span> Balanced equation: hydrogen + oxygen → water (with state symbols)</div>
+      <p>2H₂(g) + O₂(g) → 2H₂O(l)</p>
+      <p style="font-size:.82rem;color:var(--txm)">Mark 1: correctly balanced (2H₂ + O₂ → 2H₂O). Mark 2: all state symbols correct — (g) for H₂ and O₂; (l) for H₂O at room temperature.</p>
+    </div>
+
+    <h3>The three words that lose marks most often</h3>
+    <table>
+      <tr><th>Wrong phrase</th><th>Why it's wrong</th><th>What to write instead</th></tr>
+      <tr><td>"Weak bonds"</td><td>Covalent bonds inside molecules are strong — they don't break on melting</td><td>"Weak <strong>intermolecular forces</strong>"</td></tr>
+      <tr><td>"Sharing electrons"</td><td>Missing the key word — must specify it's a pair</td><td>"A shared <strong>pair</strong> of electrons"</td></tr>
+      <tr><td>"Strong bonds between layers" (graphite)</td><td>Layers are held by weak forces, not covalent bonds</td><td>"Weak <strong>intermolecular forces</strong> between layers"</td></tr>
+    </table>
+
+    <div class="takeaway-box">
+      <strong>&#127919; The five things every covalent bonding answer needs:</strong>
+      <ol style="margin-top:.5rem;margin-left:1.2rem;font-size:.9rem">
+        <li>Covalent bond = <strong>shared pair</strong> of electrons (not just "shared electrons")</li>
+        <li>Simple molecular = <strong>weak intermolecular forces</strong> between molecules (not "weak bonds")</li>
+        <li>No conductivity = no <strong>free ions</strong> AND no <strong>free electrons</strong></li>
+        <li>Diamond: 4 bonds per C, 3D network, hard, <strong>no</strong> delocalised electrons</li>
+        <li>Graphite: 3 bonds per C, layers, weak forces between layers, <strong>has</strong> delocalised electrons → conducts</li>
+      </ol>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  Edexcel GCSE Chemistry | 1CH0 &nbsp;&bull;&nbsp; <a href="home.html">&#8592; Back to GCSE Chemistry</a>
+</footer>
+
+<script>
+function toggleAnswer(btn){
+  var box = btn.nextElementSibling;
+  box.classList.toggle('show');
+  btn.textContent = box.classList.contains('show') ? 'Hide answer' : 'Show answer';
+}
+
+document.querySelectorAll('.spec-header').forEach(function(hdr){
+  hdr.addEventListener('click', function(){
+    var body = this.nextElementSibling;
+    var isOpen = this.classList.contains('open');
+    this.classList.toggle('open', !isOpen);
+    body.classList.toggle('open', !isOpen);
+  });
+});
+</script>
+
+</body>
+</html>

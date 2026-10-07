@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Types of Substances | Chemistry Cracked GCSE</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#9333ea;--pr-dk:#6d28d9;--bg:#f4f6fb;--card:#fff;--tx:#1c1f3a;--txm:#6b7280;--bdr:#dde1f0;--r:12px;--sh:0 2px 10px rgba(147,51,234,.09);--sh2:0 6px 24px rgba(147,51,234,.16);--acc:#eef1ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;min-height:100vh}
+.topbar{background:#4a1d96;color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;gap:.8rem}
+.topbar-back{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.22rem .7rem;border-radius:20px;transition:background .15s;white-space:nowrap}
+.topbar-back:hover{background:rgba(255,255,255,.12)}
+.topbar-title{font-size:.88rem;font-weight:600;opacity:.65}
+.hero{position:relative;overflow:hidden;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiPjxwb2x5Z29uIHBvaW50cz0iMzAsMiA1OCwxNyA1OCw0NyAzMCw2MiAyLDQ3IDIsMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMDcpIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxwb2x5Z29uIHBvaW50cz0iMCw1NCAyOCw2OSAyOCw5OSAwLDExNCAtMjgsOTkgLTI4LDY5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA3KSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cG9seWdvbiBwb2ludHM9IjYwLDU0IDg4LDY5IDg4LDk5IDYwLDExNCAzMiw5OSAzMiw2OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LC4wNykiIHN0cm9rZS13aWR0aD0iMS40Ii8+PC9zdmc+") center/60px 104px repeat,linear-gradient(135deg,#4a1d96 0%,#6d28d9 45%,#9333ea 80%,#c084fc 100%);color:#fff;padding:2.8rem 1.5rem 5.2rem;text-align:center}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-40px;left:-40px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(192,132,252,.35) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.hero-icon{font-size:2.9rem;display:block;margin-bottom:.55rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.3))}
+.hero h1{font-size:1.95rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.4rem;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.hero p{font-size:.97rem;opacity:.88;max-width:480px;margin:0 auto;font-weight:600}
+.hero-sub{margin-top:.35rem;font-size:.85rem;opacity:.65;font-weight:400}
+.hero-pills{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:.95rem}
+.hero-pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:.18rem .65rem;font-size:.78rem;font-weight:700}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:56px;pointer-events:none}
+main{max-width:860px;margin:0 auto;padding:1.5rem 1rem 5rem}
+.spec-card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);margin-bottom:1.2rem;overflow:hidden}
+.spec-header{display:flex;align-items:center;gap:.75rem;padding:.9rem 1.2rem;cursor:pointer;user-select:none;border-bottom:2px solid transparent;transition:border-color .15s}
+.spec-header:hover{border-bottom-color:var(--bdr)}
+.spec-header.open{border-bottom:2px solid var(--bdr)}
+.sec-icon{font-size:1.25rem;flex-shrink:0}
+.spec-num{background:var(--pr);color:#fff;font-size:.7rem;font-weight:800;padding:.2rem .55rem;border-radius:6px;white-space:nowrap}
+.spec-name{font-weight:800;font-size:1rem;flex:1}
+.spec-tier{font-size:.7rem;font-weight:700;color:var(--txm);background:var(--bg);border:1px solid var(--bdr);padding:.15rem .5rem;border-radius:5px;white-space:nowrap}
+.spec-arrow{font-size:.8rem;color:var(--txm);transition:transform .25s;margin-left:.2rem}
+.spec-header.open .spec-arrow{transform:rotate(180deg)}
+.spec-body{display:none;padding:1.3rem 1.5rem 1.6rem}
+.spec-body.open{display:block}
+.spec-body p{margin-bottom:.85rem;font-size:.93rem;line-height:1.72}
+.plain-english{font-size:.96rem;color:#374151;background:#f8faff;border-left:3px solid var(--pr);padding:.6rem 1rem;border-radius:0 7px 7px 0;margin-bottom:1.1rem!important;font-style:italic}
+.spec-body h3{font-size:1.01rem;color:var(--pr-dk);margin:1.25rem 0 .55rem;font-weight:800}
+.spec-body h4{font-size:.9rem;color:var(--tx);margin:.9rem 0 .4rem;font-weight:700}
+.spec-body ul,.spec-body ol{margin:.25rem 0 .9rem 1.5rem;font-size:.91rem}
+.spec-body li{margin-bottom:.3rem;line-height:1.65}
+.spec-body table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.5rem 0 1.1rem}
+.spec-body th{background:var(--pr);color:#fff;padding:.45rem .8rem;text-align:left;font-weight:700}
+.spec-body td{padding:.42rem .8rem;border-bottom:1px solid var(--bdr);vertical-align:top}
+.spec-body tr:nth-child(even) td{background:#faf8ff}
+sup,sub{font-size:.74em}
+.pitfall-box{background:#fff8e1;border-left:4px solid #f9a825;border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.pitfall-box strong{color:#92400e}
+.takeaway-box{background:var(--acc);border-left:4px solid var(--pr);border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.91rem;line-height:1.65}
+.takeaway-box strong{color:var(--pr-dk)}
+.tip-box{background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.tip-box strong{color:#166534}
+.higher-box{background:#faf5ff;border:1.5px solid #c084fc;border-radius:8px;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.higher-badge{display:inline-block;background:var(--pr);color:#fff;font-size:.68rem;font-weight:800;padding:.12rem .45rem;border-radius:4px;margin-right:.4rem;vertical-align:middle}
+.quick-check{background:#fff;border:2px solid var(--pr);border-radius:10px;padding:1rem 1.25rem;margin:1.1rem 0}
+.quick-check-title{font-weight:800;color:var(--pr-dk);font-size:.9rem;margin-bottom:.5rem}
+.quick-check p{font-size:.9rem;margin-bottom:.45rem!important}
+.reveal-btn{background:var(--pr);color:#fff;border:none;border-radius:6px;padding:.35rem .9rem;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s}
+.reveal-btn:hover{background:var(--pr-dk)}
+.answer-reveal{display:none;background:var(--acc);border-radius:7px;padding:.6rem .95rem;margin-top:.6rem;font-size:.88rem;line-height:1.65}
+.answer-reveal.show{display:block}
+.diagram-wrap{margin:1.25rem auto;text-align:center}
+.diagram-wrap svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.diagram-cap{font-size:.78rem;color:var(--txm);margin-top:.45rem;font-style:italic;text-align:center}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.col-card{background:var(--bg);border:1.5px solid var(--bdr);border-radius:8px;padding:.95rem 1rem}
+.col-card h4{color:var(--pr-dk);margin:0 0 .5rem;font-size:.9rem}
+.col-card ul{margin-left:1.15rem;font-size:.88rem}
+.col-card li{margin-bottom:.28rem;line-height:1.55}
+.steps{counter-reset:step;list-style:none;margin:0;padding:0}
+.steps li{position:relative;padding-left:2.5rem;margin-bottom:.75rem;font-size:.91rem;line-height:1.65}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:.05rem;background:var(--pr);color:#fff;font-weight:800;font-size:.75rem;width:1.7rem;height:1.7rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
+footer a{color:var(--pr);text-decoration:none}
+@media(max-width:600px){
+  .hero h1{font-size:1.5rem}
+  .two-col{grid-template-columns:1fr}
+  .spec-body{padding:1rem 1.1rem 1.2rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="home.html" class="topbar-back">&#8592; GCSE Chemistry</a>
+  <span class="topbar-title">Types of Substances</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-icon">&#9883;</span>
+    <h1>Types of Substances</h1>
+    <p>Metals, polymers and representing structures</p>
+    <p class="hero-sub">Topic 1.5 &nbsp;·&nbsp; Edexcel GCSE Chemistry (1CH0) &nbsp;·&nbsp; Bonding and Structure</p>
+    <div class="hero-pills">
+      <span class="hero-pill">Foundation + Higher</span>
+      <span class="hero-pill">3 sections</span>
+      <span class="hero-pill">Diagrams included</span>
+      <span class="hero-pill">Quick checks</span>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 C240,56 480,0 720,28 C960,56 1200,0 1440,28 L1440,56 L0,56 Z" fill="#f4f6fb"/>
+  </svg>
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 1 — METALS
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header open">
+    <span class="sec-icon">&#9881;&#65039;</span>
+    <span class="spec-num">1.5.6.1 &middot; 5.1.3.1</span>
+    <span class="spec-name">Metals</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body open">
+
+    <p class="plain-english">Metal atoms lose their outer electrons to form positive ions surrounded by a 'sea' of delocalised electrons. This giant metallic lattice explains every property you'll be asked about.</p>
+
+    <h3>Metallic bonding and structure</h3>
+    <p>In a metal:</p>
+    <ul>
+      <li>Metal atoms each lose their <strong>outer shell electrons</strong> to form <strong>positive metal ions (cations)</strong></li>
+      <li>The released electrons become <strong>delocalised</strong> — they are free to move throughout the whole structure, not attached to any one atom</li>
+      <li>This creates a <strong>'sea of electrons'</strong> surrounding the positive ions</li>
+      <li>The <strong>electrostatic attraction</strong> between the positive ions and the delocalised electrons holds the structure together — this is <strong>metallic bonding</strong></li>
+      <li>The ions sit in a regular pattern called a <strong>giant metallic lattice</strong></li>
+    </ul>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 460 318" xmlns="http://www.w3.org/2000/svg" style="max-width:450px">
+        <defs>
+          <radialGradient id="seaBg" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="#ddd6fe"/>
+            <stop offset="100%" stop-color="#ede9fe"/>
+          </radialGradient>
+        </defs>
+        <!-- Electron sea background -->
+        <rect x="8" y="8" width="444" height="270" rx="14" fill="url(#seaBg)"/>
+        <rect x="8" y="8" width="444" height="270" rx="14" fill="none" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.35"/>
+        <text x="230" y="26" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="10" font-weight="700" font-style="italic">sea of delocalised electrons</text>
+        <!-- Electron dots scattered in gaps between ions -->
+        <circle cx="28" cy="92" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="28" cy="170" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="28" cy="250" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="432" cy="92" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="432" cy="170" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="432" cy="250" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="120" cy="42" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="230" cy="26" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="340" cy="44" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="120" cy="254" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="230" cy="266" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="340" cy="252" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="120" cy="131" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="230" cy="131" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="340" cy="131" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="120" cy="210" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="230" cy="210" r="5" fill="#7c3aed" opacity="0.75"/>
+        <circle cx="340" cy="210" r="5" fill="#7c3aed" opacity="0.75"/>
+        <!-- Metal cations: 4×3 grid (x: 75,175,275,375; y: 92,170,250) -->
+        <!-- Row 1 -->
+        <circle cx="75"  cy="92"  r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="75"  y="92"  text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="175" cy="92"  r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="175" y="92"  text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="275" cy="92"  r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="275" y="92"  text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="375" cy="92"  r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="375" y="92"  text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <!-- Row 2 -->
+        <circle cx="75"  cy="170" r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="75"  y="170" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="175" cy="170" r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="175" y="170" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="275" cy="170" r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="275" y="170" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="375" cy="170" r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="375" y="170" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <!-- Row 3 -->
+        <circle cx="75"  cy="250" r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="75"  y="250" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="175" cy="250" r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="175" y="250" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="275" cy="250" r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="275" y="250" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <circle cx="375" cy="250" r="27" fill="#4a1d96" stroke="#a78bfa" stroke-width="2"/>
+        <text x="375" y="250" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="13" font-weight="800">M&#x207A;</text>
+        <!-- Legend -->
+        <circle cx="25"  cy="297" r="11" fill="#4a1d96" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="25" y="297" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="8" font-weight="800">M&#x207A;</text>
+        <text x="41" y="300" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="600">positive metal cation</text>
+        <circle cx="215" cy="297" r="5" fill="#7c3aed" opacity="0.75"/>
+        <text x="227" y="300" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="600">delocalised electron</text>
+      </svg>
+      <p class="diagram-cap">Giant metallic lattice: M&#x207A; ions in a regular arrangement, surrounded by a sea of delocalised electrons</p>
+    </div>
+
+    <h3>Properties of metals — and why</h3>
+    <table>
+      <tr><th>Property</th><th>Explanation (link to structure)</th></tr>
+      <tr><td><strong>High melting and boiling points</strong></td><td>Strong electrostatic forces between positive ions and delocalised electrons require a lot of energy to break</td></tr>
+      <tr><td><strong>Good electrical conductors</strong></td><td>Delocalised electrons are free to move and carry charge — works in both solid <em>and</em> liquid metal</td></tr>
+      <tr><td><strong>Good thermal conductors</strong></td><td>Delocalised electrons transfer kinetic energy rapidly through the structure</td></tr>
+      <tr><td><strong>Malleable and ductile</strong></td><td>Layers of positive ions can slide over each other; the delocalised electrons 'flow' to maintain the bonding</td></tr>
+      <tr><td><strong>Shiny</strong></td><td>Delocalised electrons at the surface reflect light</td></tr>
+      <tr><td><strong>High density</strong></td><td>Ions are closely packed in a regular lattice with little empty space</td></tr>
+    </table>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Common mistake:</strong> Saying metals conduct because they have "free electrons" gets partial credit at best. Always say <em>delocalised</em> electrons. Also: metals conduct electricity as solids — unlike ionic compounds, which only conduct when molten or dissolved.
+    </div>
+
+    <h3>Alloys</h3>
+    <p>In a pure metal, all ions are the <strong>same size</strong> in neat, regular layers. These layers can slide over each other fairly easily, making pure metals relatively <strong>soft</strong>.</p>
+    <p>An <strong>alloy</strong> is a mixture of a metal with at least one other element (another metal, or a non-metal such as carbon). The different-sized atoms <strong>distort the regular lattice</strong>, so the layers <strong>cannot slide as easily</strong> — making alloys <strong>harder and stronger</strong> than the pure metal.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg" style="max-width:500px">
+        <!-- Panel backgrounds -->
+        <rect x="4"   y="34" width="238" height="168" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+        <rect x="258" y="34" width="238" height="168" rx="10" fill="#faf5ff" stroke="#c084fc" stroke-width="1.5"/>
+        <!-- Panel titles -->
+        <text x="123" y="22" text-anchor="middle" fill="#166534" font-family="Nunito,sans-serif" font-size="12" font-weight="800">Pure Metal</text>
+        <text x="377" y="22" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="12" font-weight="800">Alloy</text>
+        <!-- Pure metal: 4×3 grid, r=18, all same size -->
+        <!-- cols: 38,90,142,194  rows: 62,112,162 -->
+        <circle cx="38"  cy="62"  r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="90"  cy="62"  r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="142" cy="62"  r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="194" cy="62"  r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="38"  cy="112" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="90"  cy="112" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="142" cy="112" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="194" cy="112" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="38"  cy="162" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="90"  cy="162" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="142" cy="162" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="194" cy="162" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <!-- Slide arrow -->
+        <path d="M20,200 L224,200" stroke="#166534" stroke-width="2" marker-end="url(#arrG)"/>
+        <defs>
+          <marker id="arrG" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0 L7,2.5 L0,5Z" fill="#166534"/></marker>
+          <marker id="arrX" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0 L7,2.5 L0,5Z" fill="#9333ea"/></marker>
+        </defs>
+        <text x="122" y="220" text-anchor="middle" fill="#166534" font-family="Nunito,sans-serif" font-size="10" font-weight="700">layers slide easily</text>
+        <!-- Alloy: same grid but 2 intruder atoms (larger, different colour) -->
+        <!-- cols: 292,344,396,448  rows: 62,112,162 -->
+        <circle cx="292" cy="62"  r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="344" cy="62"  r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="396" cy="62"  r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="448" cy="62"  r="26" fill="#d97706" stroke="#92400e" stroke-width="1.5"/>
+        <circle cx="292" cy="112" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="344" cy="112" r="26" fill="#d97706" stroke="#92400e" stroke-width="1.5"/>
+        <circle cx="396" cy="112" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="448" cy="112" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="292" cy="162" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="344" cy="162" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="396" cy="162" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <circle cx="448" cy="162" r="18" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+        <!-- Blocked arrow -->
+        <path d="M274,200 L478,200" stroke="#9333ea" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrX)"/>
+        <text x="377" y="220" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="10" font-weight="700">layers cannot slide easily &#10007;</text>
+        <!-- Intruder legend -->
+        <circle cx="262" cy="232" r="6" fill="#d97706" stroke="#92400e" stroke-width="1"/>
+        <text x="274" y="235" fill="#374151" font-family="Nunito,sans-serif" font-size="9.5" font-weight="600">different-sized atom distorts the lattice</text>
+      </svg>
+      <p class="diagram-cap">Alloys are harder because the different-sized atoms prevent layers from sliding over each other</p>
+    </div>
+
+    <h3>Common alloys</h3>
+    <table>
+      <tr><th>Alloy</th><th>Main components</th><th>Uses</th></tr>
+      <tr><td><strong>Steel</strong></td><td>Iron + carbon</td><td>Construction, car bodies, tools</td></tr>
+      <tr><td><strong>Stainless steel</strong></td><td>Iron + chromium (+ nickel)</td><td>Cutlery, surgical instruments, kitchen sinks</td></tr>
+      <tr><td><strong>Brass</strong></td><td>Copper + zinc</td><td>Musical instruments, taps, coins</td></tr>
+      <tr><td><strong>Bronze</strong></td><td>Copper + tin</td><td>Statues, medals, springs</td></tr>
+      <tr><td><strong>Duralumin</strong></td><td>Aluminium + copper</td><td>Aircraft parts (light and strong)</td></tr>
+    </table>
+
+    <div class="tip-box">
+      <strong>&#128161; Exam tip:</strong> Never just say "alloys are harder." You must explain <em>why</em>: "different-sized atoms distort the regular lattice, preventing layers from sliding over each other as easily."
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Explain why copper conducts electricity but sulfur does not. Refer to structure and bonding.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal"><strong>Copper</strong> has a giant metallic lattice with <strong>delocalised electrons</strong> that are free to move and carry charge through the structure. <strong>Sulfur</strong> is a simple molecular substance — it has no delocalised electrons and no free ions, so it cannot conduct electricity.</div>
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Titanium is a metal. Explain, in terms of structure and bonding, why titanium has a high melting point.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal">Titanium has a <strong>giant metallic lattice structure</strong>. There are strong <strong>electrostatic forces of attraction</strong> between the positive metal ions and the delocalised electrons. A large amount of energy is required to break these forces, so titanium has a high melting point.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 2 — POLYMERS
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#128279;</span>
+    <span class="spec-num">1.5.5.1 &middot; 9.3</span>
+    <span class="spec-name">Polymers</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">A polymer is a very long chain molecule made by joining thousands of small monomer units together. For GCSE you mainly need addition polymers, which are made from monomers with a C=C double bond.</p>
+
+    <h3>Key vocabulary</h3>
+    <table>
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td><strong>Monomer</strong></td><td>Small molecule that can join together in large numbers to form a polymer. Must have a C=C double bond for addition polymerisation.</td></tr>
+      <tr><td><strong>Polymer</strong></td><td>Very large molecule made from many monomers joined together. The chain can contain thousands of carbon atoms.</td></tr>
+      <tr><td><strong>Addition polymerisation</strong></td><td>Monomers with a C=C double bond join together — the double bond opens up and a single bond forms between each monomer unit. No other product is made.</td></tr>
+      <tr><td><strong>Repeat unit</strong></td><td>The smallest unit that repeats throughout the polymer chain, shown in square brackets with a subscript <em>n</em>.</td></tr>
+    </table>
+
+    <h3>Addition polymerisation of ethene</h3>
+    <p>Ethene (CH<sub>2</sub>=CH<sub>2</sub>) is the simplest addition monomer. Under high pressure with a catalyst, the C=C double bond opens and the molecules link together to form poly(ethene).</p>
+
+    <div class="diagram-wrap">
+      <!-- SVG: ethene monomer → poly(ethene) repeat unit -->
+      <svg viewBox="0 0 500 215" xmlns="http://www.w3.org/2000/svg" style="max-width:480px">
+        <defs>
+          <marker id="arrPoly" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <path d="M0,0 L8,3 L0,6Z" fill="#6d28d9"/>
+          </marker>
+        </defs>
+
+        <!-- ── MONOMER (ethene) ── -->
+        <text x="110" y="16" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="11" font-weight="800">Monomer (ethene)</text>
+
+        <!-- C1 circle at (90,108), C2 at (162,108) -->
+        <circle cx="90"  cy="108" r="14" fill="#1c1f3a" stroke="#6d28d9" stroke-width="2"/>
+        <text x="90"  y="108" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="11" font-weight="800">C</text>
+        <circle cx="162" cy="108" r="14" fill="#1c1f3a" stroke="#6d28d9" stroke-width="2"/>
+        <text x="162" y="108" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="11" font-weight="800">C</text>
+
+        <!-- Double bond between C1 and C2 (two lines) -->
+        <line x1="105" y1="104" x2="147" y2="104" stroke="#374151" stroke-width="2.2"/>
+        <line x1="105" y1="112" x2="147" y2="112" stroke="#374151" stroke-width="2.2"/>
+
+        <!-- H atoms (as text, with bond lines from carbons) -->
+        <!-- H top-left, H bot-left (from C1) -->
+        <line x1="83"  y1="96"  x2="58"  y2="70"  stroke="#374151" stroke-width="1.8"/>
+        <line x1="83"  y1="120" x2="58"  y2="146" stroke="#374151" stroke-width="1.8"/>
+        <text x="52"  y="70"  text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="800">H</text>
+        <text x="52"  y="148" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="800">H</text>
+
+        <!-- H top-right, H bot-right (from C2) -->
+        <line x1="169" y1="96"  x2="194" y2="70"  stroke="#374151" stroke-width="1.8"/>
+        <line x1="169" y1="120" x2="194" y2="146" stroke="#374151" stroke-width="1.8"/>
+        <text x="200" y="70"  text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="800">H</text>
+        <text x="200" y="148" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="800">H</text>
+
+        <!-- "×n" label below monomer -->
+        <text x="110" y="175" text-anchor="middle" fill="#9333ea" font-family="Nunito,sans-serif" font-size="13" font-weight="800">&#215; n molecules</text>
+
+        <!-- ── ARROW ── -->
+        <path d="M228,108 L278,108" stroke="#6d28d9" stroke-width="2.5" fill="none" marker-end="url(#arrPoly)"/>
+        <text x="253" y="100" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="9.5" font-weight="700">addition</text>
+        <text x="253" y="120" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="9.5" font-weight="700">polymerisation</text>
+
+        <!-- ── POLYMER repeat unit ── -->
+        <text x="390" y="16" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="11" font-weight="800">Repeat unit of poly(ethene)</text>
+
+        <!-- Extension bond on left -->
+        <line x1="290" y1="108" x2="312" y2="108" stroke="#374151" stroke-width="2"/>
+        <!-- Left bracket [ -->
+        <path d="M312,86 L304,86 L304,130 L312,130" fill="none" stroke="#374151" stroke-width="2.5"/>
+
+        <!-- C1 at (340, 108), C2 at (412, 108) -->
+        <circle cx="340" cy="108" r="14" fill="#1c1f3a" stroke="#6d28d9" stroke-width="2"/>
+        <text x="340" y="108" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="11" font-weight="800">C</text>
+        <circle cx="412" cy="108" r="14" fill="#1c1f3a" stroke="#6d28d9" stroke-width="2"/>
+        <text x="412" y="108" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Nunito,sans-serif" font-size="11" font-weight="800">C</text>
+
+        <!-- Single bond between polymer C1–C2 -->
+        <line x1="355" y1="108" x2="397" y2="108" stroke="#374151" stroke-width="2.2"/>
+
+        <!-- H atoms on polymer C1 -->
+        <line x1="340" y1="94"  x2="340" y2="70"  stroke="#374151" stroke-width="1.8"/>
+        <line x1="340" y1="122" x2="340" y2="146" stroke="#374151" stroke-width="1.8"/>
+        <text x="340" y="65"  text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="800">H</text>
+        <text x="340" y="151" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="800">H</text>
+
+        <!-- H atoms on polymer C2 -->
+        <line x1="412" y1="94"  x2="412" y2="70"  stroke="#374151" stroke-width="1.8"/>
+        <line x1="412" y1="122" x2="412" y2="146" stroke="#374151" stroke-width="1.8"/>
+        <text x="412" y="65"  text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="800">H</text>
+        <text x="412" y="151" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="800">H</text>
+
+        <!-- Right bracket ] -->
+        <path d="M430,86 L438,86 L438,130 L430,130" fill="none" stroke="#374151" stroke-width="2.5"/>
+        <!-- Extension bond on right -->
+        <line x1="438" y1="108" x2="460" y2="108" stroke="#374151" stroke-width="2"/>
+        <!-- n subscript -->
+        <text x="444" y="143" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="14" font-weight="900" font-style="italic">n</text>
+      </svg>
+      <p class="diagram-cap">The C=C double bond in each ethene monomer opens up to form a new single bond with the next monomer in the chain</p>
+    </div>
+
+    <h3>Deducing monomer from polymer (and back)</h3>
+    <p>You need to be able to draw the monomer from a given repeat unit, and draw the repeat unit from a given monomer.</p>
+
+    <div class="two-col">
+      <div class="col-card">
+        <h4>Monomer &#8594; Polymer</h4>
+        <ul>
+          <li>Replace the C=C double bond with a C–C single bond</li>
+          <li>Connect the monomers end to end</li>
+          <li>Draw the repeat unit inside square brackets with <em>n</em> subscript</li>
+          <li>Add a bond line extending from each bracket end</li>
+        </ul>
+      </div>
+      <div class="col-card">
+        <h4>Polymer &#8594; Monomer</h4>
+        <ul>
+          <li>Find the repeat unit inside the brackets</li>
+          <li>Identify the two carbons that are bonded to adjacent repeat units (at the bracket ends)</li>
+          <li>Replace that C–C single bond with a C=C double bond</li>
+          <li>Remove the bracket and the bond extensions</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Common addition polymers</h3>
+    <table>
+      <tr><th>Monomer</th><th>Polymer name</th><th>Common uses</th></tr>
+      <tr><td>Ethene (CH<sub>2</sub>=CH<sub>2</sub>)</td><td>Poly(ethene) / polythene</td><td>Plastic bags, bottles, packaging</td></tr>
+      <tr><td>Propene (CH<sub>2</sub>=CHCH<sub>3</sub>)</td><td>Poly(propene)</td><td>Rope, food containers, textiles</td></tr>
+      <tr><td>Chloroethene (CH<sub>2</sub>=CHCl)</td><td>PVC</td><td>Electrical cable insulation, pipes</td></tr>
+      <tr><td>Tetrafluoroethene (CF<sub>2</sub>=CF<sub>2</sub>)</td><td>PTFE (Teflon&#174;)</td><td>Non-stick cookware coatings</td></tr>
+      <tr><td>Styrene (CH<sub>2</sub>=CHC<sub>6</sub>H<sub>5</sub>)</td><td>Poly(styrene)</td><td>Packaging, disposable cups</td></tr>
+    </table>
+
+    <h3>Properties of polymers</h3>
+    <p>Addition polymers are <strong>simple molecular substances</strong> with long carbon chains. The intermolecular forces between chains are relatively weak, so polymers tend to have <strong>low to moderate melting points</strong> compared to giant structures. They are also <strong>poor conductors of electricity</strong> (no delocalised electrons or free ions).</p>
+
+    <div class="higher-box">
+      <span class="higher-badge">H</span> <strong>Higher tier:</strong> Polymer properties depend on chain length and branching. <strong>Thermosoftening polymers</strong> (e.g. poly(ethene)) have straight or branched chains with only weak intermolecular forces between chains — they melt and can be reshaped on heating. <strong>Thermosetting polymers</strong> (e.g. Bakelite) have strong covalent <strong>crosslinks</strong> between chains — they do not melt on heating; they char or decompose instead.
+    </div>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Common mistake:</strong> The repeat unit in a polymer is <em>not</em> the same as the monomer — the monomer has a C=C double bond, the repeat unit has only a C–C single bond at that position. Also, the <em>n</em> in the brackets is not the number of atoms; it's the number of repeat units in the chain (which can be thousands).
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>The monomer propene has the structure CH<sub>2</sub>=CHCH<sub>3</sub>. Draw the repeat unit of poly(propene) and name the type of polymerisation.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal">
+        <strong>Addition polymerisation.</strong><br>
+        The repeat unit is &nbsp;&#8212;[CH<sub>2</sub>&#8212;CH(CH<sub>3</sub>)]<sub>n</sub>&#8212;&nbsp; (the C=C double bond becomes a single bond; the CH<sub>3</sub> side group is kept). The structure shows two carbon atoms in the chain, each bearing the same H atoms and side groups as the monomer, but with a single bond between them and bonds extending out of the brackets.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 3 — REPRESENTING STRUCTURES
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#9999;&#65039;</span>
+    <span class="spec-num">1.5.7.1</span>
+    <span class="spec-name">Representing Structures</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">There are several ways to represent the same molecule. Each one shows some things clearly and hides others. You need to know what each model is good for — and what its limitations are.</p>
+
+    <h3>The five main representations</h3>
+    <p>A common exam question (worth 6 marks) shows you five different representations of the same molecule — typically methane (CH<sub>4</sub>) — and asks you to describe what information each one gives and what its limitations are. Learn all five.</p>
+
+    <h4>1. Molecular formula</h4>
+    <p>The molecular formula (e.g. CH<sub>4</sub>) shows the <strong>number and type</strong> of each atom in the molecule — nothing more.</p>
+    <p><strong>Limitation:</strong> Does not show how atoms are bonded, does not show the shape of the molecule, and gives no information about electron arrangement.</p>
+
+    <h4>2. Dot-and-cross diagrams (e.g. Figure B)</h4>
+    <p>Dot-and-cross diagrams show how electrons are shared (covalent bonding) or transferred (ionic bonding). One atom's electrons are drawn as dots (&#9679;) and the other atom's as crosses (&#10005;), so you can trace where each electron came from.</p>
+
+    <div class="diagram-wrap">
+      <!-- SVG: dot-and-cross of water (H2O) -->
+      <svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" style="max-width:220px">
+        <!-- O atom circle -->
+        <circle cx="110" cy="90" r="48" fill="white" stroke="#374151" stroke-width="2"/>
+        <text x="110" y="93" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="14" font-weight="700">O</text>
+
+        <!-- H-left circle -->
+        <circle cx="35" cy="138" r="24" fill="white" stroke="#374151" stroke-width="1.8"/>
+        <text x="35" y="141" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="12" font-weight="700">H</text>
+
+        <!-- H-right circle -->
+        <circle cx="185" cy="138" r="24" fill="white" stroke="#374151" stroke-width="1.8"/>
+        <text x="185" y="141" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="12" font-weight="700">H</text>
+
+        <!-- Lone pair 1 on O (top-left) — two dots -->
+        <circle cx="80" cy="55" r="2.8" fill="#374151"/>
+        <circle cx="90" cy="47" r="2.8" fill="#374151"/>
+
+        <!-- Lone pair 2 on O (top-right) — two dots -->
+        <circle cx="128" cy="47" r="2.8" fill="#374151"/>
+        <circle cx="138" cy="55" r="2.8" fill="#374151"/>
+
+        <!-- Bonding pair O–H-left (between circles): one dot from O, one × from H -->
+        <circle cx="65" cy="120" r="2.8" fill="#374151"/>
+        <text x="74" y="115" fill="#374151" font-family="Nunito,sans-serif" font-size="10" font-weight="700">&#10005;</text>
+
+        <!-- Bonding pair O–H-right: one dot from O, one × from H -->
+        <circle cx="144" cy="115" r="2.8" fill="#374151"/>
+        <text x="150" y="124" fill="#374151" font-family="Nunito,sans-serif" font-size="10" font-weight="700">&#10005;</text>
+
+        <!-- Labels -->
+        <text x="110" y="188" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="10" font-weight="700">Dot-and-cross: H&#x2082;O</text>
+        <!-- Annotation: lone pairs label -->
+        <text x="6"  y="36" fill="#6b7280" font-family="Nunito,sans-serif" font-size="8.5">lone pair</text>
+        <line x1="38" y1="42" x2="84" y2="52" stroke="#6b7280" stroke-width="1" stroke-dasharray="3,2"/>
+      </svg>
+      <p class="diagram-cap">Dot-and-cross diagram for water: O electrons shown as dots, H electrons as crosses; lone pairs and bonding pairs both visible</p>
+    </div>
+
+    <p><strong>Limitation:</strong> Dot-and-cross diagrams do <em>not</em> show the 3D shape of a molecule or the angles between bonds. They are drawn flat on paper even though real molecules are three-dimensional.</p>
+
+    <h4>3. Displayed (structural) formulae</h4>
+    <p>A displayed formula shows every atom and every bond as a line (each line = one pair of shared electrons). It is a 2D representation — all bonds are shown but the diagram is flat. For example, ethanol:</p>
+    <div class="diagram-wrap">
+      <!-- SVG: displayed formula of ethanol -->
+      <svg viewBox="0 0 340 130" xmlns="http://www.w3.org/2000/svg" style="max-width:320px">
+        <line x1="80" y1="53" x2="80" y2="28" stroke="#374151" stroke-width="2"/>
+        <text x="80" y="22" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="700">H</text>
+        <line x1="80" y1="77" x2="80" y2="102" stroke="#374151" stroke-width="2"/>
+        <text x="80" y="108" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="700">H</text>
+        <line x1="68" y1="65" x2="40" y2="65" stroke="#374151" stroke-width="2"/>
+        <text x="30" y="68" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="700">H</text>
+        <text x="80" y="68" text-anchor="middle" dominant-baseline="central" fill="#1c1f3a" font-family="Nunito,sans-serif" font-size="13" font-weight="800">C</text>
+        <line x1="92" y1="65" x2="158" y2="65" stroke="#374151" stroke-width="2"/>
+        <text x="170" y="68" text-anchor="middle" dominant-baseline="central" fill="#1c1f3a" font-family="Nunito,sans-serif" font-size="13" font-weight="800">C</text>
+        <line x1="170" y1="53" x2="170" y2="28" stroke="#374151" stroke-width="2"/>
+        <text x="170" y="22" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="700">H</text>
+        <line x1="170" y1="77" x2="170" y2="102" stroke="#374151" stroke-width="2"/>
+        <text x="170" y="108" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="700">H</text>
+        <line x1="182" y1="65" x2="238" y2="65" stroke="#374151" stroke-width="2"/>
+        <text x="250" y="68" text-anchor="middle" dominant-baseline="central" fill="#1c1f3a" font-family="Nunito,sans-serif" font-size="13" font-weight="800">O</text>
+        <line x1="262" y1="65" x2="302" y2="65" stroke="#374151" stroke-width="2"/>
+        <text x="313" y="68" text-anchor="middle" dominant-baseline="central" fill="#374151" font-family="Nunito,sans-serif" font-size="13" font-weight="700">H</text>
+        <text x="170" y="124" text-anchor="middle" fill="#6d28d9" font-family="Nunito,sans-serif" font-size="10" font-weight="700">Displayed formula: ethanol (C&#x2082;H&#x2085;OH)</text>
+      </svg>
+    </div>
+    <p><strong>Limitation:</strong> Does not show 3D shape or bond angles. Does not show electron arrangement. All bonds look flat on the page.</p>
+
+    <h4>4. Ball-and-stick models</h4>
+    <p>Balls represent atoms and sticks (or rods) represent covalent bonds. This model <strong>does</strong> show the 3D shape and approximate bond angles of a molecule — very useful for visualising how atoms are arranged in space.</p>
+    <p><strong>Limitations:</strong> Ball-and-stick models do <em>not</em> show the relative sizes of atoms accurately — all balls tend to look similar in size. The sticks also exaggerate the distance between atom centres compared to the actual electron clouds.</p>
+
+    <h4>5. Space-filling models</h4>
+    <p>Space-filling models use overlapping spheres (sized proportional to the van der Waals radius of each atom) to show how much space the molecule actually occupies. They give the best picture of the molecule's overall shape and size.</p>
+    <p><strong>Limitations:</strong> The bonds between atoms are hidden by the overlapping spheres, so it is hard to count bonds or see the bonding structure clearly.</p>
+
+    <h3>Summary: what each model shows</h3>
+    <table>
+      <tr><th>Model</th><th>Atoms and types?</th><th>Shows bonds?</th><th>Shows 3D shape?</th><th>Shows relative atom sizes?</th></tr>
+      <tr><td><strong>Molecular formula</strong> (e.g. CH<sub>4</sub>)</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr>
+      <tr><td><strong>Dot-and-cross</strong></td><td>Yes</td><td>Yes — electron pairs</td><td>No</td><td>No</td></tr>
+      <tr><td><strong>Displayed formula</strong></td><td>Yes</td><td>Yes — lines</td><td>No</td><td>No</td></tr>
+      <tr><td><strong>Ball-and-stick</strong></td><td>Yes</td><td>Yes — sticks</td><td>Yes</td><td>No</td></tr>
+      <tr><td><strong>Space-filling</strong></td><td>Yes</td><td>No (hidden)</td><td>Yes</td><td>Yes</td></tr>
+    </table>
+
+    <div class="tip-box">
+      <strong>&#128161; Exam tip:</strong> For the 6-mark extended question, work through all five representations (A–E) in order. For each one, give one thing it shows AND one limitation. The most common mark-worthy answers are:<br>
+      &#9679; Molecular formula: "does not show bonding or shape"<br>
+      &#9679; Dot-and-cross: "does not show the 3D shape / bond angles"<br>
+      &#9679; Displayed formula: "does not show 3D shape or electron arrangement"<br>
+      &#9679; Ball-and-stick: "does not show relative sizes of atoms"<br>
+      &#9679; Space-filling: "does not show the individual bonds"
+    </div>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Common mistake:</strong> Students say that displayed formulae "show the shape" of a molecule because they draw it at angles. They do not — the angles in a displayed formula are just for clarity on the page. The actual shape comes from the 3D arrangement of electron pairs, which is not shown.
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check — Extended answer (6 marks)</div>
+      <p>A molecule of methane can be represented in five ways: <strong>A</strong> molecular formula (CH<sub>4</sub>), <strong>B</strong> dot-and-cross diagram, <strong>C</strong> displayed formula, <strong>D</strong> 3D ball-and-stick model, <strong>E</strong> space-filling model.</p>
+      <p>Describe what information can be obtained from each representation, including the limitations.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal">
+        <strong>A — Molecular formula (CH<sub>4</sub>):</strong> Shows the number and type of each atom. <em>Limitation:</em> does not show bonding, shape, or electron arrangement.<br><br>
+        <strong>B — Dot-and-cross diagram:</strong> Shows how electrons are shared in covalent bonds / shows bonding pairs and lone pairs. <em>Limitation:</em> does not show 3D shape or bond angles; not a realistic picture of the molecule.<br><br>
+        <strong>C — Displayed formula:</strong> Shows all bonds and how atoms are connected. <em>Limitation:</em> does not show 3D shape or bond angles; does not show electron arrangement.<br><br>
+        <strong>D — Ball-and-stick model:</strong> Shows the tetrahedral 3D shape and bond angles. <em>Limitation:</em> does not show relative atomic sizes; sticks do not represent real bonds.<br><br>
+        <strong>E — Space-filling model:</strong> Shows the relative sizes of atoms and gives a realistic impression of the molecule's overall shape. <em>Limitation:</em> does not show individual bonds; bonds are hidden by the overlapping spheres.
+      </div>
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>State <strong>one</strong> limitation of a dot-and-cross diagram that is <strong>not</strong> a limitation of a ball-and-stick model.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal">A dot-and-cross diagram does <strong>not</strong> show the <strong>3D shape or bond angles</strong> of the molecule — it is a flat 2D representation. A ball-and-stick model does show 3D shape and approximate bond angles.</div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <a href="home.html">Chemistry Cracked GCSE</a> &nbsp;&middot;&nbsp; Edexcel 1CH0 &nbsp;&middot;&nbsp; Topic 1.5 Types of Substances &nbsp;&middot;&nbsp; <a href="home.html">Back to all resources</a>
+</footer>
+
+<script>
+document.querySelectorAll('.spec-header').forEach(function(h) {
+  h.addEventListener('click', function() {
+    var open = this.classList.contains('open');
+    this.classList.toggle('open', !open);
+    this.nextElementSibling.classList.toggle('open', !open);
+  });
+});
+
+function toggleAnswer(btn) {
+  var box = btn.nextElementSibling;
+  var shown = box.classList.contains('show');
+  box.classList.toggle('show', !shown);
+  btn.textContent = shown ? 'Show answer' : 'Hide answer';
+}
+</script>
+
+</body>
+</html>

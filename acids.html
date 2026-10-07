@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Acids Guide | Chemistry Cracked GCSE</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#9333ea;--pr-dk:#6d28d9;--bg:#f4f6fb;--card:#fff;--tx:#1c1f3a;--txm:#6b7280;--bdr:#dde1f0;--r:12px;--sh:0 2px 10px rgba(147,51,234,.09);--sh2:0 6px 24px rgba(147,51,234,.16);--acc:#eef1ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;min-height:100vh}
+
+/* Topbar */
+.topbar{background:#4a1d96;color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;gap:.8rem}
+.topbar-back{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.22rem .7rem;border-radius:20px;transition:background .15s;white-space:nowrap}
+.topbar-back:hover{background:rgba(255,255,255,.12)}
+.topbar-title{font-size:.88rem;font-weight:600;opacity:.65}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiPjxwb2x5Z29uIHBvaW50cz0iMzAsMiA1OCwxNyA1OCw0NyAzMCw2MiAyLDQ3IDIsMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMDcpIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxwb2x5Z29uIHBvaW50cz0iMCw1NCAyOCw2OSAyOCw5OSAwLDExNCAtMjgsOTkgLTI4LDY5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA3KSIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cG9seWdvbiBwb2ludHM9IjYwLDU0IDg4LDY5IDg4LDk5IDYwLDExNCAzMiw5OSAzMiw2OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LC4wNykiIHN0cm9rZS13aWR0aD0iMS40Ii8+PC9zdmc+") center/60px 104px repeat,linear-gradient(135deg,#4a1d96 0%,#6d28d9 45%,#9333ea 80%,#c084fc 100%);color:#fff;padding:2.8rem 1.5rem 5.2rem;text-align:center}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-40px;left:-40px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(192,132,252,.35) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.hero-icon{font-size:2.9rem;display:block;margin-bottom:.55rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.3))}
+.hero h1{font-size:1.95rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.4rem;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.hero p{font-size:.97rem;opacity:.88;max-width:480px;margin:0 auto;font-weight:600}
+.hero-sub{margin-top:.35rem;font-size:.85rem;opacity:.65;font-weight:400}
+.hero-pills{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:.95rem}
+.hero-pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:.18rem .65rem;font-size:.78rem;font-weight:700}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:56px;pointer-events:none}
+
+/* Main */
+main{max-width:860px;margin:0 auto;padding:1.5rem 1rem 5rem}
+
+/* Spec cards */
+.spec-card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);margin-bottom:1.2rem;overflow:hidden}
+.spec-header{display:flex;align-items:center;gap:.75rem;padding:.9rem 1.2rem;cursor:pointer;user-select:none;border-bottom:2px solid transparent;transition:border-color .15s}
+.spec-header:hover{border-bottom-color:var(--bdr)}
+.spec-header.open{border-bottom:2px solid var(--bdr)}
+.sec-icon{font-size:1.25rem;flex-shrink:0}
+.spec-num{background:var(--pr);color:#fff;font-size:.7rem;font-weight:800;padding:.2rem .55rem;border-radius:6px;white-space:nowrap}
+.spec-name{font-weight:800;font-size:1rem;flex:1}
+.spec-tier{font-size:.7rem;font-weight:700;color:var(--txm);background:var(--bg);border:1px solid var(--bdr);padding:.15rem .5rem;border-radius:5px;white-space:nowrap}
+.spec-arrow{font-size:.8rem;color:var(--txm);transition:transform .25s;margin-left:.2rem}
+.spec-header.open .spec-arrow{transform:rotate(180deg)}
+.spec-body{display:none;padding:1.3rem 1.5rem 1.6rem}
+.spec-body.open{display:block}
+
+/* Body typography */
+.spec-body p{margin-bottom:.85rem;font-size:.93rem;line-height:1.72}
+.plain-english{font-size:.96rem;color:#374151;background:#f8faff;border-left:3px solid var(--pr);padding:.6rem 1rem;border-radius:0 7px 7px 0;margin-bottom:1.1rem!important;font-style:italic}
+.spec-body h3{font-size:1.01rem;color:var(--pr-dk);margin:1.25rem 0 .55rem;font-weight:800}
+.spec-body h4{font-size:.9rem;color:var(--tx);margin:.9rem 0 .4rem;font-weight:700}
+.spec-body ul,.spec-body ol{margin:.25rem 0 .9rem 1.5rem;font-size:.91rem}
+.spec-body li{margin-bottom:.3rem;line-height:1.65}
+.spec-body table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.5rem 0 1.1rem}
+.spec-body th{background:var(--pr);color:#fff;padding:.45rem .8rem;text-align:left;font-weight:700}
+.spec-body td{padding:.42rem .8rem;border-bottom:1px solid var(--bdr);vertical-align:top}
+.spec-body tr:nth-child(even) td{background:#faf8ff}
+sup,sub{font-size:.74em}
+
+/* Info boxes */
+.pitfall-box{background:#fff8e1;border-left:4px solid #f9a825;border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.pitfall-box strong{color:#92400e}
+.takeaway-box{background:var(--acc);border-left:4px solid var(--pr);border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.91rem;line-height:1.65}
+.takeaway-box strong{color:var(--pr-dk)}
+.tip-box{background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.tip-box strong{color:#166534}
+.higher-box{background:#faf5ff;border:1.5px solid #c084fc;border-radius:8px;padding:.8rem 1.05rem;margin:.5rem 0 .9rem;font-size:.9rem;line-height:1.6}
+.higher-badge{display:inline-block;background:var(--pr);color:#fff;font-size:.68rem;font-weight:800;padding:.12rem .45rem;border-radius:4px;margin-right:.4rem;vertical-align:middle}
+
+/* Video resource card */
+.video-card{display:flex;align-items:center;gap:.9rem;background:#1c1f3a;border-radius:10px;padding:.85rem 1.1rem;margin:1.1rem 0;text-decoration:none;transition:background .15s}
+.video-card:hover{background:#2d3060}
+.video-play{width:2.6rem;height:2.6rem;border-radius:50%;background:#ff0000;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.video-play svg{width:1rem;height:1rem;fill:white;margin-left:.15rem}
+.video-info{flex:1}
+.video-label{font-size:.68rem;font-weight:800;color:#c084fc;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:.18rem}
+.video-title{font-size:.92rem;font-weight:800;color:#fff;display:block;line-height:1.35}
+.video-sub{font-size:.78rem;color:rgba(255,255,255,.55);font-weight:600;display:block;margin-top:.18rem}
+.video-arrow{color:rgba(255,255,255,.4);font-size:1.1rem;flex-shrink:0}
+
+/* Quick check */
+.quick-check{background:#fff;border:2px solid var(--pr);border-radius:10px;padding:1rem 1.25rem;margin:1.1rem 0}
+.quick-check-title{font-weight:800;color:var(--pr-dk);font-size:.9rem;margin-bottom:.5rem}
+.quick-check p{font-size:.9rem;margin-bottom:.45rem!important}
+.reveal-btn{background:var(--pr);color:#fff;border:none;border-radius:6px;padding:.35rem .9rem;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s}
+.reveal-btn:hover{background:var(--pr-dk)}
+.answer-reveal{display:none;background:var(--acc);border-radius:7px;padding:.6rem .95rem;margin-top:.6rem;font-size:.88rem;line-height:1.65}
+.answer-reveal.show{display:block}
+
+/* SVG diagrams */
+.diagram-wrap{margin:1.25rem auto;text-align:center}
+.diagram-wrap svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.diagram-cap{font-size:.78rem;color:var(--txm);margin-top:.45rem;font-style:italic;text-align:center}
+
+/* PANIC-style cards */
+.panic-grid{display:flex;gap:.55rem;flex-wrap:wrap;justify-content:center;margin:1rem 0}
+.panic-card{background:linear-gradient(135deg,#4a1d96,#9333ea);color:#fff;border-radius:10px;padding:.85rem .9rem;text-align:center;flex:1;min-width:90px;max-width:130px}
+.panic-letter{font-size:2.1rem;font-weight:900;display:block;line-height:1;text-shadow:0 2px 6px rgba(0,0,0,.25)}
+.panic-word{font-size:.76rem;font-weight:700;opacity:.88;margin-top:.3rem;display:block}
+
+/* Numbered steps */
+.steps{counter-reset:step;list-style:none;margin:0;padding:0}
+.steps li{position:relative;padding-left:2.5rem;margin-bottom:.75rem;font-size:.91rem;line-height:1.65}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:.05rem;background:var(--pr);color:#fff;font-weight:800;font-size:.75rem;width:1.7rem;height:1.7rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+
+/* Two-column comparison */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.col-card{background:var(--bg);border:1.5px solid var(--bdr);border-radius:8px;padding:.95rem 1rem}
+.col-card h4{color:var(--pr-dk);margin:0 0 .5rem;font-size:.9rem}
+.col-card ul{margin-left:1.15rem;font-size:.88rem}
+.col-card li{margin-bottom:.28rem;line-height:1.55}
+
+/* Footer */
+footer{text-align:center;padding:1.4rem;font-size:.78rem;color:var(--txm);border-top:1px solid var(--bdr);background:var(--card);font-weight:600}
+footer a{color:var(--pr);text-decoration:none}
+
+@media(max-width:600px){
+  .hero h1{font-size:1.5rem}
+  .two-col{grid-template-columns:1fr}
+  .panic-card{max-width:80px;min-width:58px;padding:.65rem .4rem}
+  .panic-letter{font-size:1.6rem}
+  .spec-body{padding:1rem 1.1rem 1.2rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="home.html" class="topbar-back">&#8592; GCSE Chemistry</a>
+  <span class="topbar-title">Acids Guide</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-icon">&#9878;</span>
+    <h1>Acids, Bases &amp; Salts</h1>
+    <p>Your complete guide — from the pH scale to titrations and salt preparation</p>
+    <p class="hero-sub">Topic 3 &nbsp;·&nbsp; Edexcel GCSE Chemistry (1CH0) &nbsp;·&nbsp; Paper 1</p>
+    <div class="hero-pills">
+      <span class="hero-pill">Foundation + Higher</span>
+      <span class="hero-pill">6 sections</span>
+      <span class="hero-pill">Diagrams included</span>
+      <span class="hero-pill">Quick checks</span>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 C240,56 480,0 720,28 C960,56 1200,0 1440,28 L1440,56 L0,56 Z" fill="#f4f6fb"/>
+  </svg>
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 1 — THE pH SCALE
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header open">
+    <span class="sec-icon">&#127777;</span>
+    <span class="spec-num">4.1–4.3</span>
+    <span class="spec-name">The pH scale and indicators</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body open">
+
+    <p class="plain-english">The pH scale runs from 0 to 14 and tells you how acidic or alkaline a solution is. Acids have pH below 7, water is exactly 7, and alkalis are above 7. The further from 7, the stronger the acid or alkali.</p>
+
+    <h3>The pH scale</h3>
+
+    <div class="diagram-wrap">
+      <!-- SVG: pH scale bar -->
+      <svg viewBox="0 0 520 160" xmlns="http://www.w3.org/2000/svg" style="max-width:500px">
+        <!-- Gradient bar -->
+        <defs>
+          <linearGradient id="phGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#dc2626"/>
+            <stop offset="14%"  stop-color="#ea580c"/>
+            <stop offset="28%"  stop-color="#d97706"/>
+            <stop offset="42%"  stop-color="#ca8a04"/>
+            <stop offset="50%"  stop-color="#16a34a"/>
+            <stop offset="58%"  stop-color="#0d9488"/>
+            <stop offset="72%"  stop-color="#2563eb"/>
+            <stop offset="86%"  stop-color="#4f46e5"/>
+            <stop offset="100%" stop-color="#7c3aed"/>
+          </linearGradient>
+        </defs>
+        <!-- Main bar -->
+        <rect x="20" y="52" width="480" height="40" rx="6" fill="url(#phGrad)"/>
+
+        <!-- Tick marks and numbers 0–14 -->
+        <g font-family="Nunito,sans-serif" font-size="11" font-weight="800" text-anchor="middle" fill="#1c1f3a">
+          <text x="20"  y="108">0</text>
+          <text x="54"  y="108">1</text>
+          <text x="89"  y="108">2</text>
+          <text x="123" y="108">3</text>
+          <text x="157" y="108">4</text>
+          <text x="191" y="108">5</text>
+          <text x="226" y="108">6</text>
+          <text x="260" y="108">7</text>
+          <text x="294" y="108">8</text>
+          <text x="329" y="108">9</text>
+          <text x="363" y="108">10</text>
+          <text x="397" y="108">11</text>
+          <text x="432" y="108">12</text>
+          <text x="466" y="108">13</text>
+          <text x="500" y="108">14</text>
+        </g>
+        <!-- Tick lines -->
+        <g stroke="#1c1f3a" stroke-width="1.2">
+          <line x1="20"  y1="92" x2="20"  y2="100"/>
+          <line x1="54"  y1="92" x2="54"  y2="100"/>
+          <line x1="89"  y1="92" x2="89"  y2="100"/>
+          <line x1="123" y1="92" x2="123" y2="100"/>
+          <line x1="157" y1="92" x2="157" y2="100"/>
+          <line x1="191" y1="92" x2="191" y2="100"/>
+          <line x1="226" y1="92" x2="226" y2="100"/>
+          <line x1="260" y1="92" x2="260" y2="100"/>
+          <line x1="294" y1="92" x2="294" y2="100"/>
+          <line x1="329" y1="92" x2="329" y2="100"/>
+          <line x1="363" y1="92" x2="363" y2="100"/>
+          <line x1="397" y1="92" x2="397" y2="100"/>
+          <line x1="432" y1="92" x2="432" y2="100"/>
+          <line x1="466" y1="92" x2="466" y2="100"/>
+          <line x1="500" y1="92" x2="500" y2="100"/>
+        </g>
+        <!-- Region labels above bar -->
+        <rect x="20"  y="30" width="142" height="18" rx="4" fill="#dc2626" opacity="0.85"/>
+        <text x="91"  y="43" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="10.5" font-weight="800">ACIDIC</text>
+        <rect x="228" y="30" width="64"  height="18" rx="4" fill="#16a34a" opacity="0.85"/>
+        <text x="260" y="43" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="10.5" font-weight="800">NEUTRAL</text>
+        <rect x="358" y="30" width="142" height="18" rx="4" fill="#4f46e5" opacity="0.85"/>
+        <text x="429" y="43" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="10.5" font-weight="800">ALKALINE</text>
+
+        <!-- Example labels below -->
+        <g font-family="Nunito,sans-serif" font-size="9" fill="#374151">
+          <text x="20"  y="128" text-anchor="middle">HCl</text>
+          <text x="89"  y="128" text-anchor="middle">stomach</text>
+          <text x="89"  y="138" text-anchor="middle">acid</text>
+          <text x="157" y="128" text-anchor="middle">vinegar</text>
+          <text x="226" y="128" text-anchor="middle">rain</text>
+          <text x="260" y="128" text-anchor="middle">pure</text>
+          <text x="260" y="138" text-anchor="middle">water</text>
+          <text x="329" y="128" text-anchor="middle">blood</text>
+          <text x="397" y="128" text-anchor="middle">bleach</text>
+          <text x="466" y="128" text-anchor="middle">oven</text>
+          <text x="466" y="138" text-anchor="middle">cleaner</text>
+          <text x="500" y="128" text-anchor="middle">NaOH</text>
+        </g>
+      </svg>
+      <p class="diagram-cap">Figure 1 — The pH scale: 0 = most acidic, 14 = most alkaline, 7 = neutral.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <img src="images/acids/ph-scale.png" alt="pH scale showing increasing acidic and basic character" style="max-height:180px;border-radius:8px">
+      <p class="diagram-cap">Figure 2 — The pH scale: numbers below 7 are acidic, above 7 are alkaline, with 7 being neutral.</p>
+    </div>
+
+    <h3>Key vocabulary</h3>
+    <table>
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td><strong>Acid</strong></td><td>A substance with pH below 7; produces H<sup>+</sup> ions in aqueous solution</td></tr>
+      <tr><td><strong>Alkali</strong></td><td>A soluble base with pH above 7; produces OH<sup>&#8722;</sup> ions in aqueous solution</td></tr>
+      <tr><td><strong>Base</strong></td><td>A substance that neutralises an acid (includes alkalis, metal oxides, carbonates)</td></tr>
+      <tr><td><strong>Neutral</strong></td><td>pH = 7; equal concentrations of H<sup>+</sup> and OH<sup>&#8722;</sup> ions</td></tr>
+      <tr><td><strong>Neutralisation</strong></td><td>Acid + base reaction producing a salt and water: H<sup>+</sup> + OH<sup>&#8722;</sup> &#8594; H<sub>2</sub>O</td></tr>
+    </table>
+
+    <h3>Indicators</h3>
+    <table style="border-radius:8px;overflow:hidden">
+      <tr>
+        <th style="background:#0e9aa7">Indicator</th>
+        <th style="background:#0e9aa7">Colour in acid</th>
+        <th style="background:#0e9aa7">Colour in alkali</th>
+      </tr>
+      <tr><td><strong>Litmus</strong></td><td>red</td><td>blue</td></tr>
+      <tr><td><strong>Phenolphthalein</strong></td><td>colourless</td><td>pink</td></tr>
+      <tr><td><strong>Methyl orange</strong></td><td>red</td><td>yellow</td></tr>
+    </table>
+    <p style="font-size:.82rem;color:var(--txm);margin-top:-.4rem">Universal indicator is used for approximate pH readings only — it gives a range of colours from red (very acidic) to violet (very alkaline).</p>
+
+    <div class="tip-box">
+      <strong>&#128161; Exam tip:</strong> Universal indicator gives an approximate pH number. Litmus only tells you "acid or alkali" — it cannot give a number. In titrations, use phenolphthalein or methyl orange (sharp colour change), not universal indicator.
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>A student tests a solution with universal indicator and it turns blue-green. Is the solution acidic, neutral or alkaline?</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal"><strong>Alkaline</strong> (but only weakly alkaline, around pH 8). Green would be neutral; blue-green indicates a pH just above 7.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 2 — REACTIONS OF ACIDS
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#128293;</span>
+    <span class="spec-num">4.4–4.7</span>
+    <span class="spec-name">Reactions of acids</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">Acids react with metals, metal oxides, metal hydroxides and metal carbonates. Each reaction makes a salt. You need to know what the second product is in each case — and how to name the salt.</p>
+
+    <div class="diagram-wrap">
+      <img src="images/acids/hazard-symbols.png" alt="Hazard symbols: corrosive, harmful to health, environmental hazard" style="max-height:160px;border-radius:8px">
+      <p class="diagram-cap">Figure 3 — Always check hazard symbols before using acids. Concentrated acids are corrosive.</p>
+    </div>
+
+    <h3>The four reaction types — learn them all!</h3>
+    <table>
+      <tr><th>Reaction type</th><th>General equation</th><th>Products</th></tr>
+      <tr>
+        <td><strong>Acid + metal</strong></td>
+        <td>acid + metal &#8594; salt + hydrogen</td>
+        <td>Salt + H<sub>2</sub> gas</td>
+      </tr>
+      <tr>
+        <td><strong>Acid + metal oxide</strong></td>
+        <td>acid + metal oxide &#8594; salt + water</td>
+        <td>Salt + H<sub>2</sub>O</td>
+      </tr>
+      <tr>
+        <td><strong>Acid + metal hydroxide</strong></td>
+        <td>acid + metal hydroxide &#8594; salt + water</td>
+        <td>Salt + H<sub>2</sub>O</td>
+      </tr>
+      <tr>
+        <td><strong>Acid + metal carbonate</strong></td>
+        <td>acid + metal carbonate &#8594; salt + water + carbon dioxide</td>
+        <td>Salt + H<sub>2</sub>O + CO<sub>2</sub></td>
+      </tr>
+    </table>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Watch out!</strong> The <em>carbonate</em> reaction is the only one that produces <strong>three</strong> products (salt + water + CO<sub>2</sub>). Students often forget the CO<sub>2</sub> and lose a mark. A useful check: if you see a carbonate (CO<sub>3</sub>) in the question, CO<sub>2</sub> must appear as a product.
+    </div>
+
+    <h3>Naming the salt: the SNAC rule</h3>
+    <p>The salt name has two parts: the <strong>metal</strong> from the base, and the <strong>anion</strong> from the acid. Use this simple lookup:</p>
+
+    <div class="diagram-wrap">
+      <!-- SVG: acid → salt anion name grid -->
+      <svg viewBox="0 0 460 180" xmlns="http://www.w3.org/2000/svg" style="max-width:440px">
+        <!-- Header row -->
+        <rect x="10"  y="10" width="140" height="36" rx="5" fill="#4a1d96"/>
+        <rect x="160" y="10" width="140" height="36" rx="5" fill="#6d28d9"/>
+        <rect x="310" y="10" width="140" height="36" rx="5" fill="#9333ea"/>
+
+        <text x="80"  y="33" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="12" font-weight="800">Acid used</text>
+        <text x="230" y="33" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="12" font-weight="800">Salt anion</text>
+        <text x="380" y="33" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="12" font-weight="800">Example salt</text>
+
+        <!-- Row 1: Hydrochloric -->
+        <rect x="10"  y="54" width="140" height="36" rx="4" fill="#fce7f3" stroke="#dde1f0" stroke-width="1"/>
+        <rect x="160" y="54" width="140" height="36" rx="4" fill="#fce7f3" stroke="#dde1f0" stroke-width="1"/>
+        <rect x="310" y="54" width="140" height="36" rx="4" fill="#fce7f3" stroke="#dde1f0" stroke-width="1"/>
+        <text x="80"  y="76" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="700">Hydrochloric acid (HCl)</text>
+        <text x="230" y="76" text-anchor="middle" fill="#be185d" font-family="Nunito,sans-serif" font-size="12" font-weight="800">chloride</text>
+        <text x="380" y="76" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="700">sodium chloride</text>
+
+        <!-- Row 2: Sulfuric -->
+        <rect x="10"  y="98" width="140" height="36" rx="4" fill="#fffbeb" stroke="#dde1f0" stroke-width="1"/>
+        <rect x="160" y="98" width="140" height="36" rx="4" fill="#fffbeb" stroke="#dde1f0" stroke-width="1"/>
+        <rect x="310" y="98" width="140" height="36" rx="4" fill="#fffbeb" stroke="#dde1f0" stroke-width="1"/>
+        <text x="80"  y="120" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="700">Sulfuric acid (H&#8322;SO&#8324;)</text>
+        <text x="230" y="120" text-anchor="middle" fill="#92400e" font-family="Nunito,sans-serif" font-size="12" font-weight="800">sulfate</text>
+        <text x="380" y="120" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="700">copper sulfate</text>
+
+        <!-- Row 3: Nitric -->
+        <rect x="10"  y="142" width="140" height="36" rx="4" fill="#f0fdf4" stroke="#dde1f0" stroke-width="1"/>
+        <rect x="160" y="142" width="140" height="36" rx="4" fill="#f0fdf4" stroke="#dde1f0" stroke-width="1"/>
+        <rect x="310" y="142" width="140" height="36" rx="4" fill="#f0fdf4" stroke="#dde1f0" stroke-width="1"/>
+        <text x="80"  y="164" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="700">Nitric acid (HNO&#8323;)</text>
+        <text x="230" y="164" text-anchor="middle" fill="#166534" font-family="Nunito,sans-serif" font-size="12" font-weight="800">nitrate</text>
+        <text x="380" y="164" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="700">potassium nitrate</text>
+      </svg>
+      <p class="diagram-cap">Figure 2 — Salt naming: the anion comes from the acid; the cation comes from the metal/base used.</p>
+    </div>
+
+    <h3>Worked examples with equations</h3>
+    <table>
+      <tr><th>Reaction</th><th>Word equation</th><th>Symbol equation</th></tr>
+      <tr>
+        <td>Acid + metal</td>
+        <td>hydrochloric acid + zinc &#8594; zinc chloride + hydrogen</td>
+        <td>2HCl + Zn &#8594; ZnCl<sub>2</sub> + H<sub>2</sub></td>
+      </tr>
+      <tr>
+        <td>Acid + metal oxide</td>
+        <td>sulfuric acid + copper oxide &#8594; copper sulfate + water</td>
+        <td>H<sub>2</sub>SO<sub>4</sub> + CuO &#8594; CuSO<sub>4</sub> + H<sub>2</sub>O</td>
+      </tr>
+      <tr>
+        <td>Acid + metal hydroxide</td>
+        <td>hydrochloric acid + sodium hydroxide &#8594; sodium chloride + water</td>
+        <td>HCl + NaOH &#8594; NaCl + H<sub>2</sub>O</td>
+      </tr>
+      <tr>
+        <td>Acid + carbonate</td>
+        <td>nitric acid + calcium carbonate &#8594; calcium nitrate + water + carbon dioxide</td>
+        <td>2HNO<sub>3</sub> + CaCO<sub>3</sub> &#8594; Ca(NO<sub>3</sub>)<sub>2</sub> + H<sub>2</sub>O + CO<sub>2</sub></td>
+      </tr>
+    </table>
+
+    <h3>Testing for hydrogen gas</h3>
+    <p>When an acid reacts with a metal, hydrogen gas is produced. Test for it with a lit splint held at the mouth of the tube. You should hear a <strong>squeaky pop</strong>.</p>
+
+    <div class="diagram-wrap">
+      <img src="images/acids/squeaky-pop.png" alt="Squeaky pop test for hydrogen gas using a lit splint" style="max-height:240px;border-radius:8px">
+      <p class="diagram-cap">Figure 4 — The squeaky pop test: a lit splint at the mouth of the tube ignites H&#8322; gas with a characteristic pop.</p>
+    </div>
+
+    <h3>Testing for carbon dioxide</h3>
+    <p>When an acid reacts with a carbonate, carbon dioxide is produced. Bubble the gas through limewater (calcium hydroxide solution). A white precipitate forms and the limewater turns <strong>milky</strong>.</p>
+
+    <div class="diagram-wrap">
+      <img src="images/acids/co2-limewater.png" alt="CO2 limewater test: gas bubbled through Ca(OH)2 turns it milky" style="max-height:260px;border-radius:8px">
+      <p class="diagram-cap">Figure 5 — CO&#8322; test: limewater turns milky as insoluble calcium carbonate (CaCO&#8323;) forms.</p>
+    </div>
+
+    <div class="tip-box">
+      <strong>&#128161; Exam tip:</strong> The ionic equation for any neutralisation reaction is always the same: <strong>H<sup>+</sup>(aq) + OH<sup>&#8722;</sup>(aq) &#8594; H<sub>2</sub>O(l)</strong>. Learn this — it comes up in Higher exam questions.
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Write a word equation for the reaction between sulfuric acid and zinc carbonate. Name all the products.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal"><strong>sulfuric acid + zinc carbonate &#8594; zinc sulfate + water + carbon dioxide</strong><br>The acid is sulfuric, so the salt is a <em>sulfate</em>. The carbonate reaction always produces three products, including CO<sub>2</sub>.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 3 — MAKING SALTS
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#129520;</span>
+    <span class="spec-num">4.8–4.11</span>
+    <span class="spec-name">Preparing salts</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">You can make a pure dry salt in the lab. The method depends on whether the salt dissolves in water (soluble) or doesn't (insoluble). Learn both methods separately.</p>
+
+    <div class="two-col">
+      <div class="col-card">
+        <h4>&#9679; Making soluble salts (excess solid method)</h4>
+        <ul>
+          <li>Add excess insoluble solid (e.g. copper oxide) to warm acid in a beaker</li>
+          <li>Stir until no more solid dissolves (excess solid shows no acid remains)</li>
+          <li>Filter off the excess solid</li>
+          <li>Evaporate the filtrate gently to concentrate</li>
+          <li>Leave to crystallise or heat carefully to dryness</li>
+        </ul>
+      </div>
+      <div class="col-card">
+        <h4>&#9679; Making insoluble salts (precipitation)</h4>
+        <ul>
+          <li>Mix two solutions containing the required ions</li>
+          <li>The insoluble salt forms as a solid precipitate immediately</li>
+          <li>Filter to collect the precipitate</li>
+          <li>Wash with distilled water to remove any impurities</li>
+          <li>Dry in a warm oven</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Why add excess solid?</h3>
+    <p>Adding excess solid (metal, metal oxide, or carbonate) ensures that all the acid is used up. Any leftover solid is simply filtered off. This guarantees no acid remains in the final salt solution. If you used excess acid, it would contaminate your crystals.</p>
+
+    <div class="diagram-wrap">
+      <!-- SVG: Soluble salt method summary flowchart -->
+      <svg viewBox="0 0 500 130" xmlns="http://www.w3.org/2000/svg" style="max-width:480px">
+        <defs>
+          <marker id="arrFlow" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0 L7,2.5 L0,5Z" fill="#6d28d9"/></marker>
+        </defs>
+        <!-- Step boxes -->
+        <rect x="10"  y="40" width="88" height="50" rx="7" fill="#4a1d96"/>
+        <text x="54"  y="62" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">Add excess</text>
+        <text x="54"  y="76" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">solid to acid</text>
+
+        <rect x="116" y="40" width="88" height="50" rx="7" fill="#6d28d9"/>
+        <text x="160" y="62" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">Stir and</text>
+        <text x="160" y="76" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">warm gently</text>
+
+        <rect x="222" y="40" width="88" height="50" rx="7" fill="#7c3aed"/>
+        <text x="266" y="62" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">Filter off</text>
+        <text x="266" y="76" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">excess solid</text>
+
+        <rect x="328" y="40" width="88" height="50" rx="7" fill="#9333ea"/>
+        <text x="372" y="62" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">Evaporate</text>
+        <text x="372" y="76" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">and crystallise</text>
+
+        <rect x="434" y="40" width="60" height="50" rx="7" fill="#c084fc"/>
+        <text x="464" y="62" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">Dry the</text>
+        <text x="464" y="76" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="9.5" font-weight="800">crystals</text>
+
+        <!-- Arrows -->
+        <line x1="98"  y1="65" x2="114" y2="65" stroke="#6d28d9" stroke-width="2" marker-end="url(#arrFlow)"/>
+        <line x1="204" y1="65" x2="220" y2="65" stroke="#6d28d9" stroke-width="2" marker-end="url(#arrFlow)"/>
+        <line x1="310" y1="65" x2="326" y2="65" stroke="#6d28d9" stroke-width="2" marker-end="url(#arrFlow)"/>
+        <line x1="416" y1="65" x2="432" y2="65" stroke="#6d28d9" stroke-width="2" marker-end="url(#arrFlow)"/>
+
+        <!-- Label -->
+        <text x="250" y="18" text-anchor="middle" fill="#4a1d96" font-family="Nunito,sans-serif" font-size="11" font-weight="800">Making a soluble salt using excess solid</text>
+      </svg>
+      <p class="diagram-cap">Figure 3 — The excess solid method for making a soluble salt (e.g. copper sulfate from copper oxide + sulfuric acid).</p>
+    </div>
+
+    <h3>Precipitation method: step by step</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1rem 0">
+      <div class="diagram-wrap" style="margin:0">
+        <img src="images/acids/precipitation-step1.png" alt="Step 1: Add two soluble salts to water and mix" style="max-height:200px;border-radius:8px;width:100%;object-fit:contain">
+        <p class="diagram-cap">Step 1 — Mix the two soluble salt solutions together.</p>
+      </div>
+      <div class="diagram-wrap" style="margin:0">
+        <img src="images/acids/precipitation-step2.png" alt="Step 2: Filter to remove the precipitate" style="max-height:200px;border-radius:8px;width:100%;object-fit:contain">
+        <p class="diagram-cap">Step 2 — Filter through filter paper to collect the precipitate.</p>
+      </div>
+      <div class="diagram-wrap" style="margin:0">
+        <img src="images/acids/precipitation-step3.png" alt="Step 3: Wash with distilled water" style="max-height:200px;border-radius:8px;width:100%;object-fit:contain">
+        <p class="diagram-cap">Step 3 — Wash with distilled water to remove soluble impurities.</p>
+      </div>
+      <div class="diagram-wrap" style="margin:0">
+        <img src="images/acids/precipitation-step4.png" alt="Step 4: Dry the precipitate in an oven at 60°C" style="max-height:200px;border-radius:8px;width:100%;object-fit:contain">
+        <p class="diagram-cap">Step 4 — Dry the insoluble salt in an oven at 60&deg;C.</p>
+      </div>
+    </div>
+
+    <h3>Examples of each method</h3>
+    <table>
+      <tr><th>Salt</th><th>Method</th><th>Reactants</th></tr>
+      <tr><td>Copper sulfate</td><td>Excess solid (soluble salt)</td><td>Copper oxide + sulfuric acid</td></tr>
+      <tr><td>Zinc chloride</td><td>Excess solid (soluble salt)</td><td>Zinc + hydrochloric acid</td></tr>
+      <tr><td>Sodium chloride</td><td>Titration (soluble salt)</td><td>Sodium hydroxide + hydrochloric acid</td></tr>
+      <tr><td>Barium sulfate</td><td>Precipitation (insoluble salt)</td><td>Barium chloride + sodium sulfate</td></tr>
+      <tr><td>Lead iodide</td><td>Precipitation (insoluble salt)</td><td>Lead nitrate + potassium iodide</td></tr>
+    </table>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Why can't you use excess solid to make sodium chloride?</strong> Sodium hydroxide is soluble — if you add excess solid NaOH, you can't filter it out again! Instead you must use a titration to find the exact volume of acid needed to neutralise all the alkali.
+    </div>
+
+    <h3>Watch: making copper sulfate crystals</h3>
+    <a class="video-card" href="https://www.youtube.com/watch?v=hwYA-HOBR7M" target="_blank" rel="noopener">
+      <div class="video-play">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div class="video-info">
+        <span class="video-label">YouTube video</span>
+        <span class="video-title">GCSE Chemistry Core Practical: Making Copper Sulfate Crystals</span>
+        <span class="video-sub">Copper oxide + sulfuric acid + water bath + crystallisation</span>
+      </div>
+      <span class="video-arrow">&#8599;</span>
+    </a>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>A student wants to make lead iodide crystals. Which method should they use and why?</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal"><strong>Precipitation.</strong> Lead iodide is insoluble in water, so it forms a solid precipitate when lead nitrate solution and potassium iodide solution are mixed. It can then be filtered, washed and dried.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 4 — CORE PRACTICAL: TITRATION (CP6)
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#129514;</span>
+    <span class="spec-num">CP6</span>
+    <span class="spec-name">Core Practical: acid-alkali titration</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">A titration is a precise way to find exactly how much acid is needed to neutralise a known amount of alkali (or vice versa). You use a burette to add the acid drop by drop and an indicator to spot the exact end point.</p>
+
+    <h3>Equipment</h3>
+    <ul>
+      <li><strong>Burette</strong> — used to add the acid (or alkali) in measured amounts; graduated to 0.1 cm<sup>3</sup></li>
+      <li><strong>Pipette</strong> — delivers an exact volume of alkali into the conical flask (usually 25.0 cm<sup>3</sup>)</li>
+      <li><strong>Conical flask</strong> — holds the alkali and indicator; easy to swirl without spilling</li>
+      <li><strong>White tile</strong> — placed under the flask to see the colour change clearly</li>
+      <li><strong>Indicator</strong> — phenolphthalein (turns colourless in acid) or methyl orange (turns red in acid)</td></li>
+    </ul>
+
+    <div class="diagram-wrap">
+      <!-- SVG: Titration setup -->
+      <svg viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" style="max-width:320px">
+
+        <!-- Stand and clamp (simplified) -->
+        <rect x="30" y="20" width="8" height="300" rx="3" fill="#6b7280"/>
+        <!-- Clamp arm -->
+        <rect x="30" y="60" width="80" height="7" rx="3" fill="#9ca3af"/>
+        <rect x="104" y="55" width="10" height="18" rx="2" fill="#6b7280"/>
+
+        <!-- Burette -->
+        <rect x="108" y="28" width="22" height="220" rx="3" fill="none" stroke="#3b82f6" stroke-width="2"/>
+        <!-- Burette fill (acid solution) -->
+        <rect x="110" y="30" width="18" height="120" rx="2" fill="#bfdbfe" opacity="0.8"/>
+        <!-- Burette graduation lines -->
+        <g stroke="#93c5fd" stroke-width="1">
+          <line x1="119" y1="56" x2="130" y2="56"/>
+          <line x1="119" y1="80" x2="130" y2="80"/>
+          <line x1="119" y1="104" x2="130" y2="104"/>
+          <line x1="119" y1="128" x2="130" y2="128"/>
+        </g>
+        <!-- Tap -->
+        <rect x="105" y="242" width="28" height="12" rx="4" fill="#374151"/>
+        <!-- Nozzle drip -->
+        <line x1="119" y1="254" x2="119" y2="268" stroke="#374151" stroke-width="2"/>
+        <circle cx="119" cy="272" r="3.5" fill="#3b82f6" opacity="0.8"/>
+
+        <!-- Conical flask -->
+        <path d="M88,278 L108,278 L130,318 L66,318 Z" fill="none" stroke="#374151" stroke-width="2"/>
+        <path d="M89,280 L109,280 L128,314 L68,314 Z" fill="#fce7f3" opacity="0.7"/>
+        <!-- Solution in flask (pink = phenolphthalein neutral) -->
+        <path d="M73,308 Q98,302 125,308 L128,314 Q98,312 68,314 Z" fill="#f9a8d4" opacity="0.8"/>
+        <!-- Indicator colour label -->
+        <text x="98" y="303" text-anchor="middle" fill="#9d174d" font-family="Nunito,sans-serif" font-size="8.5" font-weight="700">pink alkali</text>
+
+        <!-- White tile -->
+        <rect x="54" y="318" width="90" height="10" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+
+        <!-- Labels -->
+        <text x="148" y="44"  fill="#1e40af" font-family="Nunito,sans-serif" font-size="10" font-weight="800">Burette</text>
+        <text x="148" y="57"  fill="#1e40af" font-family="Nunito,sans-serif" font-size="9">(acid, read to</text>
+        <text x="148" y="69"  fill="#1e40af" font-family="Nunito,sans-serif" font-size="9">0.05 cm&#179;)</text>
+
+        <text x="148" y="248" fill="#374151" font-family="Nunito,sans-serif" font-size="10" font-weight="800">Tap</text>
+        <text x="148" y="260" fill="#374151" font-family="Nunito,sans-serif" font-size="9">(control drips)</text>
+
+        <text x="148" y="295" fill="#9d174d" font-family="Nunito,sans-serif" font-size="10" font-weight="800">Conical flask</text>
+        <text x="148" y="307" fill="#9d174d" font-family="Nunito,sans-serif" font-size="9">(alkali +</text>
+        <text x="148" y="318" fill="#9d174d" font-family="Nunito,sans-serif" font-size="9">indicator)</text>
+
+        <!-- 0 and 50 label on burette -->
+        <text x="96" y="36" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="9" font-weight="700">0</text>
+        <text x="96" y="248" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="9" font-weight="700">50</text>
+
+        <!-- Title -->
+        <text x="170" y="14" text-anchor="middle" fill="#4a1d96" font-family="Nunito,sans-serif" font-size="11" font-weight="900">Titration Setup</text>
+      </svg>
+      <p class="diagram-cap">Figure 4 — A standard acid-alkali titration: the burette holds the acid; the conical flask holds the alkali with indicator.</p>
+    </div>
+
+    <h3>The method: step by step</h3>
+    <ol class="steps">
+      <li>Rinse the pipette with the alkali solution; use it to transfer exactly 25.0 cm<sup>3</sup> of alkali into the conical flask.</li>
+      <li>Add a few drops of indicator (phenolphthalein turns pink in alkali).</li>
+      <li>Fill the burette with acid. Record the initial burette reading.</li>
+      <li>Add acid from the burette slowly, swirling the flask constantly.</li>
+      <li>Near the end point, add acid drop by drop. Stop when one drop causes a permanent colour change (pink &#8594; colourless for phenolphthalein).</li>
+      <li>Record the final burette reading. Calculate the titre: final &#8722; initial reading.</li>
+      <li>Repeat until you have at least two concordant results (within 0.10 cm<sup>3</sup> of each other).</li>
+      <li>Calculate the mean titre using only the concordant results.</li>
+    </ol>
+
+    <h3>The titration curve</h3>
+    <p>If you plot pH against volume of acid added, you get a characteristic S-shaped curve. The steepest part (where pH changes rapidly) marks the <strong>equivalence point</strong> — where acid and alkali have exactly neutralised each other.</p>
+
+    <div class="diagram-wrap">
+      <img src="images/acids/titration-curve.png" alt="Titration curve showing S-shaped pH change as acid is added to alkali" style="max-height:280px;border-radius:8px">
+      <p class="diagram-cap">Figure 6 — A typical titration curve (acid added to alkali). pH starts high, drops steeply near the equivalence point, then levels off.</p>
+    </div>
+
+    <h3>Recording and processing results</h3>
+    <table>
+      <tr><th></th><th>Rough</th><th>Run 1</th><th>Run 2</th><th>Run 3</th></tr>
+      <tr><td>Initial reading (cm<sup>3</sup>)</td><td>0.00</td><td>0.00</td><td>0.15</td><td>0.00</td></tr>
+      <tr><td>Final reading (cm<sup>3</sup>)</td><td>24.80</td><td>23.65</td><td>23.80</td><td>23.75</td></tr>
+      <tr><td><strong>Titre (cm<sup>3</sup>)</strong></td><td>24.80</td><td>23.65</td><td>23.65</td><td>23.75</td></tr>
+    </table>
+    <p>Concordant results are Runs 1 and 2 (both 23.65 cm<sup>3</sup>). Mean titre = (23.65 + 23.65) &#247; 2 = <strong>23.65 cm<sup>3</sup></strong>. The rough titre and Run 3 are not included.</p>
+
+    <h3>Watch: how to do a titration</h3>
+    <a class="video-card" href="https://www.bbc.co.uk/bitesize/topics/zxk3239/watch/zpn8s82" target="_blank" rel="noopener">
+      <div class="video-play" style="background:#ff6700">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div class="video-info">
+        <span class="video-label">BBC Bitesize video</span>
+        <span class="video-title">How to Titrate an Acid and an Alkali</span>
+        <span class="video-sub">Burette technique, end point, concordant results</span>
+      </div>
+      <span class="video-arrow">&#8599;</span>
+    </a>
+
+    <div class="pitfall-box">
+      <strong>&#9888;&#65039; Common mistakes in CP6 questions:</strong>
+      <ul style="margin:.5rem 0 0 1.2rem;font-size:.88rem;line-height:1.65">
+        <li>Including the rough titre in the mean — never do this; it is just a guide</li>
+        <li>Giving the mean to only 1 decimal place — always quote to 2 d.p. (same precision as the burette)</li>
+        <li>Using non-concordant results in the mean — only include results within 0.10 cm<sup>3</sup></li>
+        <li>Saying "the solution turns colourless" without specifying the indicator used</li>
+      </ul>
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>A student records titres of 24.15, 23.90, 23.95 and 23.85 cm<sup>3</sup>. Which results should she use to calculate the mean? What is the mean titre?</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal">Exclude <strong>24.15</strong> cm<sup>3</sup> (the rough/first titre — not concordant). The concordant results are 23.90, 23.95 and 23.85 cm<sup>3</sup> (all within 0.10 cm<sup>3</sup>).<br>Mean = (23.90 + 23.95 + 23.85) &#247; 3 = <strong>23.90 cm<sup>3</sup></strong>.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 5 — STRONG AND WEAK ACIDS [H]
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#9879;&#65039;</span>
+    <span class="spec-num">4.12–4.14</span>
+    <span class="spec-name">Strong and weak acids</span>
+    <span class="spec-tier">Higher only</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <div class="higher-box">
+      <span class="higher-badge">H</span> <strong>Higher tier only.</strong> Foundation students can skip this section — but it is great challenge extension content!
+    </div>
+
+    <p class="plain-english">A strong acid fully ionises in water — it splits apart completely into H<sup>+</sup> ions. A weak acid only partially ionises — most of it stays as intact molecules. Same concentration does NOT mean same pH!</p>
+
+    <h3>Ionisation: complete vs. partial</h3>
+
+    <div class="diagram-wrap">
+      <!-- SVG: Strong vs weak acid ionisation -->
+      <svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" style="max-width:460px">
+
+        <!-- Strong acid box (left) -->
+        <rect x="10" y="30" width="210" height="150" rx="8" fill="#fff" stroke="#dc2626" stroke-width="2"/>
+        <rect x="10" y="30" width="210" height="28" rx="8" fill="#dc2626"/>
+        <text x="115" y="49" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="11.5" font-weight="900">Strong acid (e.g. HCl)</text>
+
+        <!-- Arrow showing complete ionisation -->
+        <text x="115" y="92" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="11" font-weight="700">HCl &#8594; H&#8314; + Cl&#8315;</text>
+        <text x="115" y="110" text-anchor="middle" fill="#dc2626" font-family="Nunito,sans-serif" font-size="10" font-weight="800">(one-way arrow)</text>
+
+        <!-- H+ dots to show many free ions -->
+        <g fill="#ef4444" opacity="0.9">
+          <circle cx="55"  cy="145" r="6"/><text x="55"  y="149" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+          <circle cx="80"  cy="138" r="6"/><text x="80"  y="142" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+          <circle cx="105" cy="150" r="6"/><text x="105" y="154" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+          <circle cx="130" cy="140" r="6"/><text x="130" y="144" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+          <circle cx="155" cy="152" r="6"/><text x="155" y="156" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+          <circle cx="178" cy="142" r="6"/><text x="178" y="146" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+        </g>
+        <text x="115" y="175" text-anchor="middle" fill="#dc2626" font-family="Nunito,sans-serif" font-size="9.5" font-weight="700">Many H&#8314; ions &#8594; LOW pH</text>
+
+        <!-- Weak acid box (right) -->
+        <rect x="260" y="30" width="210" height="150" rx="8" fill="#fff" stroke="#f97316" stroke-width="2"/>
+        <rect x="260" y="30" width="210" height="28" rx="8" fill="#f97316"/>
+        <text x="365" y="49" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="11.5" font-weight="900">Weak acid (e.g. CH&#8323;COOH)</text>
+
+        <!-- Equilibrium arrow -->
+        <text x="365" y="88" text-anchor="middle" fill="#374151" font-family="Nunito,sans-serif" font-size="10" font-weight="700">CH&#8323;COOH &#8652; CH&#8323;COO&#8315; + H&#8314;</text>
+        <text x="365" y="108" text-anchor="middle" fill="#f97316" font-family="Nunito,sans-serif" font-size="10" font-weight="800">(reversible &#8652; arrow)</text>
+
+        <!-- Fewer H+ circles and mostly intact molecules -->
+        <g fill="#f97316" opacity="0.9">
+          <circle cx="290" cy="148" r="6"/><text x="290" y="152" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+          <circle cx="360" cy="152" r="6"/><text x="360" y="156" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+          <circle cx="430" cy="148" r="6"/><text x="430" y="152" text-anchor="middle" fill="white" font-family="Nunito,sans-serif" font-size="8" font-weight="800">H&#8314;</text>
+        </g>
+        <!-- Intact molecule ovals -->
+        <ellipse cx="325" cy="142" rx="20" ry="10" fill="#fed7aa" opacity="0.85"/>
+        <text x="325" y="146" text-anchor="middle" fill="#7c2d12" font-family="Nunito,sans-serif" font-size="7.5" font-weight="700">HA(aq)</text>
+        <ellipse cx="395" cy="142" rx="20" ry="10" fill="#fed7aa" opacity="0.85"/>
+        <text x="395" y="146" text-anchor="middle" fill="#7c2d12" font-family="Nunito,sans-serif" font-size="7.5" font-weight="700">HA(aq)</text>
+        <text x="365" y="175" text-anchor="middle" fill="#f97316" font-family="Nunito,sans-serif" font-size="9.5" font-weight="700">Fewer H&#8314; ions &#8594; HIGHER pH</text>
+
+        <!-- VS label in middle -->
+        <text x="240" y="115" text-anchor="middle" fill="#6b7280" font-family="Nunito,sans-serif" font-size="14" font-weight="900">VS</text>
+
+        <!-- Caption row -->
+        <text x="240" y="196" text-anchor="middle" fill="#4a1d96" font-family="Nunito,sans-serif" font-size="10.5" font-weight="800">Same concentration — different pH!</text>
+      </svg>
+      <p class="diagram-cap">Figure 5 — Strong acid (left) fully ionises; weak acid (right) only partially ionises. Both at the same concentration, the strong acid has a much lower pH.</p>
+    </div>
+
+    <h3>Key comparison table</h3>
+    <table>
+      <tr><th></th><th>Strong acid</th><th>Weak acid</th></tr>
+      <tr><td><strong>Examples</strong></td><td>HCl, H<sub>2</sub>SO<sub>4</sub>, HNO<sub>3</sub></td><td>CH<sub>3</sub>COOH (ethanoic), HF, citric acid, carbonic acid</td></tr>
+      <tr><td><strong>Ionisation</strong></td><td>Complete: HA &#8594; H<sup>+</sup> + A<sup>&#8722;</sup></td><td>Partial: HA &#8652; H<sup>+</sup> + A<sup>&#8722;</sup></td></tr>
+      <tr><td><strong>pH (same concentration)</strong></td><td>Lower (more H<sup>+</sup> ions)</td><td>Higher (fewer H<sup>+</sup> ions)</td></tr>
+      <tr><td><strong>Reactivity with metals</strong></td><td>Faster (more H<sup>+</sup> available)</td><td>Slower at same concentration</td></tr>
+      <tr><td><strong>Electrical conductivity</strong></td><td>Higher (more ions)</td><td>Lower (fewer ions)</td></tr>
+    </table>
+
+    <h3>Effect of dilution</h3>
+    <p>When you dilute an acid by a factor of 10 (e.g. add 9 parts water to 1 part acid), the H<sup>+</sup> concentration decreases by a factor of 10. This increases the pH by <strong>exactly 1 unit</strong> for a strong acid. For a weak acid, diluting also shifts the equilibrium to the right, producing <em>more</em> ions — so the pH increases by <em>less than</em> 1 unit per 10&#215; dilution.</p>
+
+    <div class="diagram-wrap">
+      <img src="images/acids/concentration-diagram.png" alt="Three beakers showing increasing particle concentration from dilute to concentrated" style="max-height:220px;border-radius:8px">
+      <p class="diagram-cap">Figure 7 — Concentration refers to how many particles are dissolved per litre. Strength refers to how completely those particles ionise. These are independent properties.</p>
+    </div>
+
+    <div class="takeaway-box">
+      <strong>&#128170; Key point:</strong> "Strong" and "concentrated" are NOT the same thing! A strong acid is fully ionised. A concentrated acid simply has a lot of acid dissolved per litre. You can have a dilute strong acid (e.g. 0.001 mol/dm<sup>3</sup> HCl) or a concentrated weak acid (e.g. glacial ethanoic acid).
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Quick check</div>
+      <p>Two solutions both have concentration 0.1 mol/dm<sup>3</sup>. Solution A is hydrochloric acid; solution B is ethanoic acid. Which has the lower pH? Explain why.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answer</button>
+      <div class="answer-reveal"><strong>Solution A (hydrochloric acid) has the lower pH.</strong> HCl is a strong acid and fully ionises, producing a high concentration of H<sup>+</sup> ions. Ethanoic acid is a weak acid and only partially ionises, so at the same concentration it has far fewer H<sup>+</sup> ions, giving a higher pH.</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 6 — EXAM TECHNIQUE
+═══════════════════════════════════════════════════ -->
+<div class="spec-card">
+  <div class="spec-header">
+    <span class="sec-icon">&#127941;</span>
+    <span class="spec-num">All topics</span>
+    <span class="spec-name">Exam technique and top tips</span>
+    <span class="spec-tier">F + H</span>
+    <span class="spec-arrow">&#x25BC;</span>
+  </div>
+  <div class="spec-body">
+
+    <p class="plain-english">Acids questions are worth a lot of marks on Paper 1. Lose the easy ones and it dents your grade. Here are the patterns from mark schemes and examiner reports.</p>
+
+    <h3>The SHAPE checklist for reactions of acids</h3>
+    <p>Every time you write a reaction of an acid, run through <strong>SHAPE</strong>:</p>
+
+    <div class="panic-grid">
+      <div class="panic-card"><span class="panic-letter">S</span><span class="panic-word">Salt — name it correctly</span></div>
+      <div class="panic-card"><span class="panic-letter">H</span><span class="panic-word">H&#8322; if it's metal + acid</span></div>
+      <div class="panic-card"><span class="panic-letter">A</span><span class="panic-word">Acid type → anion name</span></div>
+      <div class="panic-card"><span class="panic-letter">P</span><span class="panic-word">Products — all three for carbonate</span></div>
+      <div class="panic-card"><span class="panic-letter">E</span><span class="panic-word">Equation balanced?</span></div>
+    </div>
+
+    <h3>Most common exam errors (from Edexcel examiner reports)</h3>
+    <table>
+      <tr><th>Mistake</th><th>Fix it</th></tr>
+      <tr><td>Forgetting CO<sub>2</sub> in carbonate reactions</td><td>If carbonate is a reactant, CO<sub>2</sub> must be a product — no exceptions</td></tr>
+      <tr><td>Naming the salt wrong (e.g. "sulfuric salt" instead of sulfate)</td><td>Learn the three acid names: chloride / sulfate / nitrate</td></tr>
+      <tr><td>Confusing "strong" with "concentrated"</td><td>Strong = fully ionised; concentrated = high mol/dm<sup>3</sup></td></tr>
+      <tr><td>Including the rough titre in the mean</td><td>Only use concordant repeats (within 0.10 cm<sup>3</sup>)</td></tr>
+      <tr><td>Writing H<sub>2</sub> when the acid reacts with an oxide (not a metal)</td><td>Acid + oxide &#8594; salt + water only (no hydrogen gas!)</td></tr>
+      <tr><td>Saying the indicator tells you the exact pH</td><td>Only universal indicator gives approximate pH; litmus is acid/alkali only</td></tr>
+    </table>
+
+    <h3>6-mark question strategy</h3>
+    <p>Acids commonly appears as a 6-mark extended writing question on the preparation of a named salt. Use this structure:</p>
+    <ol class="steps">
+      <li>State the method you will use and why (excess solid, precipitation, or titration).</li>
+      <li>Name the two reactants you need and their states.</li>
+      <li>Describe the practical steps in logical order (mixing, filtering, evaporating, drying).</li>
+      <li>State the evidence that the reaction is complete (no more solid dissolves; OR precipitate forms on mixing).</li>
+      <li>Describe the purification step (filtration / washing with distilled water).</li>
+      <li>Describe the drying step and the final product obtained.</li>
+    </ol>
+
+    <div class="tip-box">
+      <strong>&#128161; Tip:</strong> Examiners award marks for key words like <em>excess</em>, <em>filter</em>, <em>evaporate</em>, <em>crystallise</em>, <em>concordant</em>, and <em>permanent colour change</em>. Practise using these words in your answers.
+    </div>
+
+    <div class="quick-check">
+      <div class="quick-check-title">&#9989; Final check — can you answer all of these?</div>
+      <p>1. What colour does phenolphthalein turn at the end point of a titration (acid added to alkali)?<br>
+         2. Name the three products when hydrochloric acid reacts with calcium carbonate.<br>
+         3. Give one difference between a strong and a weak acid of equal concentration.</p>
+      <button class="reveal-btn" onclick="toggleAnswer(this)">Show answers</button>
+      <div class="answer-reveal">
+        <strong>1.</strong> Colourless (it goes from pink to colourless as the alkali is neutralised).<br>
+        <strong>2.</strong> Calcium chloride + water + carbon dioxide (CaCl<sub>2</sub> + H<sub>2</sub>O + CO<sub>2</sub>).<br>
+        <strong>3.</strong> The strong acid has a lower pH / greater electrical conductivity / reacts faster with metals — because it is fully ionised and has a higher concentration of H<sup>+</sup> ions.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <a href="home.html">Chemistry Cracked</a> &nbsp;·&nbsp; Edexcel GCSE Chemistry (1CH0) &nbsp;·&nbsp; Topic 3: Chemical Changes
+</footer>
+
+<script>
+function toggleAnswer(btn){
+  var box=btn.nextElementSibling;
+  var isOpen=box.classList.contains('show');
+  box.classList.toggle('show',!isOpen);
+  btn.textContent=isOpen?'Show answer':'Hide answer';
+}
+document.querySelectorAll('.spec-header').forEach(function(hdr){
+  hdr.addEventListener('click',function(){
+    var body=hdr.nextElementSibling;
+    var open=body.classList.contains('open');
+    body.classList.toggle('open',!open);
+    hdr.classList.toggle('open',!open);
+  });
+});
+</script>
+</body>
+</html>
