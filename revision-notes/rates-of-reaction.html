@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rates of Reaction Revision Sheet | Mrs Platt's Chemistry</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Nunito', Arial, sans-serif; font-size: 10.5pt; color: #1a1a1a; background: #fff; padding: 18px; max-width: 900px; margin: 0 auto; }
+
+  .header { background: #1a3c6b; color: #fff; border-radius: 6px; padding: 12px 18px 10px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .header h1 { font-size: 16pt; font-weight: 800; }
+  .header .meta { font-size: 9pt; opacity: 0.85; }
+
+  h2 { font-size: 10.5pt; font-weight: 800; color: #fff; background: #1a3c6b; padding: 4px 10px; margin: 14px 0 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10pt; }
+  th { background: #1a3c6b; color: #fff; padding: 5px 10px; text-align: left; font-weight: 700; }
+  td { padding: 5px 10px; border: 1px solid #c5d3e8; vertical-align: top; line-height: 1.4; }
+  tr:nth-child(even) td { background: #edf2fb; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 6px 0; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 6px 0; }
+  .fact-box { background: #eef2fa; border: 1px solid #c5d3e8; border-radius: 5px; padding: 9px 12px; font-size: 10pt; }
+  .fact-box h3 { font-size: 10pt; font-weight: 800; color: #1a3c6b; margin-bottom: 6px; border-bottom: 1px solid #c5d3e8; padding-bottom: 3px; }
+
+  p { margin-bottom: 5px; line-height: 1.45; }
+  ul { margin: 4px 0 4px 16px; }
+  ul li { margin-bottom: 3px; line-height: 1.4; }
+  ol { margin: 4px 0 4px 16px; }
+  ol li { margin-bottom: 3px; line-height: 1.4; }
+
+  .warn { background: #fce4ec; border-left: 4px solid #c62828; padding: 6px 10px; margin: 6px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+  .warn strong { color: #b71c1c; }
+  .tip { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 6px 10px; margin: 6px 0; border-radius: 0 4px 4px 0; font-size: 9.5pt; }
+  .tip strong { color: #1b5e20; }
+
+  .h-tag { display: inline-block; background: #fce4ec; color: #b71c1c; font-size: 7.5pt; font-weight: 800; padding: 1px 5px; border-radius: 8px; border: 1px solid #ef9a9a; vertical-align: middle; margin-left: 3px; }
+
+  .qa-block { margin-bottom: 10px; }
+  .question { background: #eef2fa; border-left: 4px solid #1a3c6b; padding: 6px 10px; font-size: 10pt; font-weight: 700; }
+  .question .marks { float: right; font-weight: 400; font-size: 9pt; color: #555; }
+  .answer { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 6px 10px; font-size: 10pt; }
+  .answer .a-label { font-size: 8pt; font-weight: 800; color: #1b5e20; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+  .tick-list { list-style: none; padding: 0; margin: 0; }
+  .tick-list li { padding-left: 18px; position: relative; margin-bottom: 2px; line-height: 1.4; }
+  .tick-list li::before { content: "✓"; position: absolute; left: 0; color: #2e7d32; font-weight: 800; }
+
+  .formula-pill { background: #1a3c6b; color: #fff; padding: 4px 16px; border-radius: 20px; font-weight: 700; display: inline-block; margin: 4px 2px; font-size: 10.5pt; }
+
+  .img-col { display: flex; flex-direction: column; align-self: center; }
+  .img-label { font-family: 'Nunito', Arial, sans-serif; font-size: 8.5pt; font-weight: 700; color: #1a3c6b; text-align: center; margin-top: 5px; }
+  .svg-cap { font-size: 8.5pt; color: #555; margin-top: 3px; font-style: italic; text-align: center; }
+
+  .dl-bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; background: #eef2fa; border: 1px solid #c5d3e8; border-radius: 6px; padding: 9px 14px; margin-bottom: 14px; font-size: 9.5pt; color: #444; }
+  .dl-bar span { flex: 1; font-weight: 600; }
+  .dl-btn { display: inline-flex; align-items: center; gap: 5px; background: #1a3c6b; color: #fff; border: none; border-radius: 5px; padding: 6px 14px; font-size: 9pt; font-weight: 700; cursor: pointer; font-family: inherit; text-decoration: none; transition: background .15s; }
+  .dl-btn:hover { background: #16305a; }
+  .dl-btn.print-btn { background: #2e7d32; }
+  .dl-btn.print-btn:hover { background: #1b5e20; }
+
+  sup, sub { font-size: 0.74em; }
+
+  @media print {
+    .dl-bar, .cc-topbar { display: none; }
+    @page { size: A4; margin: 13mm 15mm; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { padding: 0; max-width: none; font-size: 10pt; }
+    h2 { page-break-after: avoid; }
+    .qa-block, .two-col, .three-col { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<style>
+  .cc-topbar{background:#4a1d96;color:#fff;padding:.55rem 1.4rem;display:flex;align-items:center;gap:.8rem;font-family:'Nunito',Arial,sans-serif}
+  .cc-topbar a{color:rgba(255,255,255,.8);text-decoration:none;font-size:.82rem;font-weight:700;border:1px solid rgba(255,255,255,.3);padding:.2rem .65rem;border-radius:20px;transition:background .15s}
+  .cc-topbar a:hover{background:rgba(255,255,255,.12)}
+  .cc-topbar span{font-size:.85rem;font-weight:600;opacity:.65}
+</style>
+<div class="cc-topbar">
+  <a href="index.html">&#8592; Revision Notes</a>
+  <span>Mrs Platt's Revision Notes</span>
+</div>
+
+<div class="dl-bar">
+  <span>Rates of Reaction Revision Sheet &nbsp;&bull;&nbsp; Edexcel GCSE Chemistry (1CH0) &nbsp;&bull;&nbsp; Paper 2</span>
+  <button class="dl-btn print-btn" onclick="window.print()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    Print
+  </button>
+  <a class="dl-btn" href="rates-of-reaction.html" download="Rates of Reaction Revision Sheet.html">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Download
+  </a>
+</div>
+
+<h1 style="font-size:18pt;font-weight:800;color:#1a3c6b;margin-bottom:4px;">Rates of Reaction</h1>
+<p style="font-size:9pt;color:#555;margin-bottom:12px;">Edexcel GCSE Chemistry &nbsp;&#183;&nbsp; Topic 7.1 &nbsp;&#183;&nbsp; Paper 2 &nbsp;&#183;&nbsp; Spec 7.1&#8211;7.7 &nbsp;&#183;&nbsp; CP6</p>
+
+
+<!-- ═══ 1. RATE OF REACTION ═══ -->
+<h2>1. Rate of Reaction</h2>
+
+<div class="two-col">
+  <div class="fact-box">
+    <h3>Definition</h3>
+    <p>The <strong>rate of reaction</strong> is the change in the amount of a reactant or product <strong>per unit time</strong>.</p>
+    <p style="text-align:center;margin-top:8px;">
+      <span class="formula-pill">Rate = change in quantity &#247; time</span>
+    </p>
+  </div>
+  <div class="fact-box">
+    <h3>Units of rate</h3>
+    <table style="font-size:9.5pt;margin-top:2px;">
+      <tr><th>What you measure</th><th>Unit of rate</th></tr>
+      <tr><td>Volume of gas produced</td><td>cm&#179;/s</td></tr>
+      <tr><td>Mass change</td><td>g/s</td></tr>
+      <tr><td>Concentration</td><td>mol/dm&#179;/s</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="tip"><strong>Mean rate</strong> = total change &#247; total time (one value across the whole reaction). &nbsp;&nbsp;<strong>Initial rate</strong> = rate at t&#8239;=&#8239;0 — steepest point on the graph.</div>
+
+
+<!-- ═══ 2. MEASURING RATE ═══ -->
+<h2>2. Measuring Rate of Reaction</h2>
+
+<table>
+  <tr><th>Method</th><th>What is measured</th><th>Example reaction</th><th>Key apparatus</th></tr>
+  <tr><td><strong>Gas syringe</strong></td><td>Volume of gas (cm&#179;) at intervals</td><td>Marble chips + HCl &#8594; CO&#8322;</td><td>Conical flask, <strong>bung</strong>, delivery tube, gas syringe</td></tr>
+  <tr><td><strong>Mass loss</strong></td><td>Decrease in mass (g) at intervals</td><td>Marble chips + HCl; CO&#8322; escapes</td><td>Conical flask, balance, cotton wool plug</td></tr>
+  <tr><td><strong>Disappearing cross</strong></td><td>Time for precipitate to obscure cross</td><td>Na&#8322;S&#8322;O&#8323; + HCl &#8594; S precipitate</td><td>Conical flask on paper cross, stopwatch</td></tr>
+</table>
+
+<div class="two-col" style="align-items:center;margin-top:8px;">
+  <div>
+    <div class="warn" style="margin-bottom:6px;"><strong>Gas syringe vs collecting over water:</strong> Use a gas syringe for CO&#8322; &#8212; CO&#8322; dissolves in water, so collecting over water gives an <em>underestimate</em> of the true volume produced.</div>
+    <div class="tip"><strong>The bung is critical.</strong> Without a bung the gas escapes before reaching the syringe. Every apparatus diagram must show a sealed flask. Missing the bung = 0 marks for gas collection.</div>
+  </div>
+  <div class="img-col">
+    <img src="../img/rates/gas-syringe.png" style="width:100%;max-width:460px;border-radius:4px;" alt="Gas syringe apparatus diagram">
+    <div class="img-label">Gas syringe apparatus: CO&#8322; from marble chips + HCl is collected and measured</div>
+  </div>
+</div>
+
+
+<!-- ═══ 3. COLLISION THEORY ═══ -->
+<h2>3. Collision Theory</h2>
+
+<div class="two-col" style="margin-bottom:8px;">
+  <div class="fact-box">
+    <h3>Key terms</h3>
+    <ul>
+      <li><strong>Collision theory:</strong> reactions only happen when particles collide with sufficient energy and the correct orientation</li>
+      <li><strong>Successful collision:</strong> one that actually results in a reaction</li>
+      <li><strong>Activation energy (E&#7491;):</strong> the minimum energy colliding particles must have for a reaction to occur</li>
+    </ul>
+  </div>
+  <div class="fact-box">
+    <h3>Two conditions for a successful collision</h3>
+    <ol>
+      <li>Particles must collide with energy <strong>&#8805; activation energy (E&#7491;)</strong></li>
+      <li>Particles must collide with the <strong>correct orientation</strong></li>
+    </ol>
+    <p style="margin-top:6px;font-size:9.5pt;">Most collisions are <em>unsuccessful</em> &#8212; particles simply bounce off each other unchanged.</p>
+  </div>
+</div>
+
+<!-- Temperature particle diagram -->
+<div class="two-col" style="align-items:center;gap:14px;">
+  <div class="img-col">
+    <img src="../img/rates/temperature-particles.png" style="width:100%;max-width:400px;border-radius:4px;" alt="Temperature particles diagram">
+    <div class="img-label">Temperature &#8593;: particles move faster &#8594; more frequent collisions AND more particles have energy &#8805; E&#7491;</div>
+  </div>
+
+  <!-- Concentration particle diagram -->
+  <div class="img-col">
+    <img src="../img/rates/concentration-particles.png" style="width:100%;max-width:400px;border-radius:4px;" alt="Concentration particles diagram">
+    <div class="img-label">Concentration &#8593;: more particles per cm&#179; &#8594; collisions happen more frequently (frequency effect only)</div>
+  </div>
+</div>
+
+<div class="warn" style="margin-top:6px;"><strong>Frequency vs energy:</strong> Concentration, pressure and surface area only increase the <strong>frequency</strong> of collisions &#8212; NOT the energy. Only temperature changes both. Writing &#8220;particles have more energy&#8221; for concentration or surface area <strong>loses marks every time</strong>.</div>
+
+
+<!-- ═══ 4. FACTORS AFFECTING RATE ═══ -->
+<h2>4. Factors Affecting Rate</h2>
+
+<div class="two-col" style="align-items:start;">
+  <table>
+    <tr><th>Factor</th><th>Frequency &#8593;?</th><th>Energy &#8593;?</th><th>Net effect</th></tr>
+    <tr><td><strong>Temperature &#8593;</strong></td><td>&#10003; Yes</td><td><strong>&#10003; Yes</strong> (more &#8805; E&#7491;)</td><td>Large increase</td></tr>
+    <tr><td><strong>Concentration &#8593;</strong></td><td>&#10003; Yes</td><td>&#10007; No</td><td>Increases</td></tr>
+    <tr><td><strong>Pressure &#8593;</strong> (gases)</td><td>&#10003; Yes</td><td>&#10007; No</td><td>Increases</td></tr>
+    <tr><td><strong>Surface area &#8593;</strong></td><td>&#10003; Yes</td><td>&#10007; No</td><td>Increases</td></tr>
+    <tr><td><strong>Catalyst added</strong></td><td>&#10007; No</td><td>Lowers E&#7491;</td><td>Increases</td></tr>
+  </table>
+  <div class="img-col">
+    <img src="../img/rates/surface-area-particles.png" style="width:100%;max-width:400px;border-radius:4px;" alt="Surface area particles diagram">
+    <div class="img-label">Surface area &#8593;: more solid particles exposed &#8594; acid collides with surface more frequently</div>
+  </div>
+</div>
+
+<div class="tip" style="margin-top:6px;"><strong>Same mass = same final amount of product.</strong> Crushing marble speeds the reaction but does NOT change the total CO&#8322; produced. On a graph, both curves reach the same plateau height &#8212; they just get there at different speeds.</div>
+
+
+<!-- ═══ 5. CATALYSTS ═══ -->
+<h2>5. Catalysts</h2>
+
+<div class="two-col" style="align-items:center;">
+  <div>
+    <div class="fact-box" style="margin-bottom:8px;">
+      <h3>Full definition &#8212; all 4 parts needed for full marks</h3>
+      <ol>
+        <li>Speeds up the <strong>rate of reaction</strong></li>
+        <li>Does <strong>not change the products</strong></li>
+        <li>Is <strong>chemically unchanged</strong> at the end</li>
+        <li>Is <strong>unchanged in mass</strong> at the end</li>
+      </ol>
+    </div>
+    <div class="fact-box">
+      <h3>How a catalyst works</h3>
+      <p>Provides an <strong>alternative reaction pathway</strong> with a <strong>lower activation energy (E&#7491;)</strong>. A greater proportion of colliding particles now have energy &#8805; E&#7491;, so more collisions are successful per second.</p>
+    </div>
+  </div>
+  <div class="img-col">
+    <img src="../img/rates/energy-profile.png" style="width:100%;max-width:360px;border-radius:4px;" alt="Energy profile diagram">
+    <div class="img-label">A catalyst lowers E&#7491; &#8212; same reactants and products energy level, just a lower peak</div>
+  </div>
+</div>
+
+<table style="margin-top:8px;">
+  <tr><th>Process</th><th>Equation</th><th>Catalyst</th></tr>
+  <tr><td>Haber process</td><td>N&#8322; + 3H&#8322; &#8651; 2NH&#8323;</td><td>Iron (Fe)</td></tr>
+  <tr><td>Contact process</td><td>2SO&#8322; + O&#8322; &#8651; 2SO&#8323;</td><td>Vanadium(V) oxide (V&#8322;O&#8325;)</td></tr>
+  <tr><td>Decomposition of H&#8322;O&#8322;</td><td>2H&#8322;O&#8322; &#8594; 2H&#8322;O + O&#8322;</td><td>Manganese(IV) oxide (MnO&#8322;)</td></tr>
+</table>
+
+<div class="warn" style="margin-top:6px;"><strong>A catalyst is NOT a reactant.</strong> It does not change the amount of product, the products formed, or the overall energy change (&#916;H). Never write &#8220;the catalyst is used up.&#8221;</div>
+
+
+<!-- ═══ 6. CORE PRACTICAL CP6 ═══ -->
+<h2>6. Core Practical CP6: Investigating Rate of Reaction</h2>
+
+<div class="two-col" style="margin-bottom:8px;">
+  <div class="fact-box">
+    <h3>Method A: marble chips + HCl (gas collection)</h3>
+    <p style="font-size:9pt;font-family:monospace;margin-bottom:5px;">CaCO&#8323;(s) + 2HCl(aq) &#8594; CaCl&#8322;(aq) + H&#8322;O(l) + CO&#8322;(g)</p>
+    <ol style="font-size:9.5pt;">
+      <li>Measure fixed volume of HCl into flask</li>
+      <li>Add marble chips; <strong>immediately replace bung</strong></li>
+      <li>Start stopwatch; record CO&#8322; volume every 30&#8239;s</li>
+      <li>Plot volume (y) vs time (x); compare gradients</li>
+    </ol>
+    <p style="font-size:9pt;margin-top:5px;"><strong>IV:</strong> conc./size of chips &nbsp;|&nbsp; <strong>DV:</strong> vol. CO&#8322; &nbsp;|&nbsp; <strong>CV:</strong> temp, mass of chips</p>
+  </div>
+  <div class="fact-box">
+    <h3>Method B: Na&#8322;S&#8322;O&#8323; + HCl (disappearing cross)</h3>
+    <p style="font-size:9pt;font-family:monospace;margin-bottom:5px;">Na&#8322;S&#8322;O&#8323;(aq) + 2HCl(aq) &#8594; 2NaCl + SO&#8322;(g) + S(s) + H&#8322;O(l)</p>
+    <ol style="font-size:9.5pt;">
+      <li>Place flask on paper with black cross underneath</li>
+      <li>Add HCl; <strong>start stopwatch immediately</strong></li>
+      <li>Look down through flask; stop when cross disappears</li>
+      <li>Rate = <strong>1/time</strong></li>
+    </ol>
+    <p style="font-size:9pt;margin-top:5px;"><strong>IV:</strong> temperature &nbsp;|&nbsp; <strong>DV:</strong> time (then 1/t) &nbsp;|&nbsp; <strong>CV:</strong> volumes, conc., same observer</p>
+  </div>
+</div>
+
+<!-- Disappearing cross image -->
+<div style="text-align:center;margin:8px 0 4px;">
+  <img src="../img/rates/disappearing-cross.png" style="width:100%;max-width:500px;border-radius:4px;" alt="Disappearing cross experiment diagram">
+</div>
+<p class="svg-cap">Left: transparent solution &#8212; cross visible through flask. Right: sulfur precipitate forms &#8212; solution becomes opaque and cross disappears.</p>
+
+<div class="two-col" style="margin-top:6px;">
+  <div class="warn"><strong>SO&#8322; safety:</strong> Method B produces sulfur dioxide &#8212; toxic and a respiratory irritant. Use a well-ventilated room. Do not heat above 60&#8239;&#176;C.</div>
+  <div class="tip"><strong>Why 1/time?</strong> Time &#8733; 1/rate. A shorter time = faster reaction = larger 1/time = higher point on your graph. Plot 1/time (y) vs temperature (x).</div>
+</div>
+
+
+<!-- ═══ 7. RATE GRAPHS ═══ -->
+<h2>7. Rate Graphs</h2>
+
+<div class="two-col" style="align-items:start;">
+  <div>
+    <div class="fact-box" style="margin-bottom:8px;">
+      <h3>Shape of a rate curve</h3>
+      <ul>
+        <li><strong>Start:</strong> steepest gradient &#8212; reactants at maximum concentration, highest collision frequency</li>
+        <li><strong>Middle:</strong> curve flattens as reactants are used up</li>
+        <li><strong>Plateau:</strong> flat &#8212; reaction stopped, limiting reactant fully used up</li>
+      </ul>
+    </div>
+    <table style="font-size:9.5pt;">
+      <tr><th>Change (same amount of reactant)</th><th>Gradient</th><th>Plateau</th></tr>
+      <tr><td>Higher temp / conc / catalyst / smaller pieces</td><td>Steeper</td><td><strong>Same height</strong></td></tr>
+      <tr><td>Less reactant (same conditions)</td><td>Similar</td><td><strong>Lower</strong></td></tr>
+    </table>
+  </div>
+  <div class="img-col">
+    <img src="../img/rates/rate-graph.png" style="width:100%;max-width:330px;border-radius:4px;" alt="Rate graph comparison diagram">
+    <div class="img-label">Same amount of marble chips &#8212; both curves level off at the same height</div>
+  </div>
+</div>
+
+<div class="warn" style="margin-top:6px;"><strong>Most common drawing error:</strong> When sketching a faster curve (same amount of reactant), candidates draw the plateau <em>higher</em>. It must level off at <strong>the same height</strong> &#8212; same reactant in means the same total amount of product out.</div>
+
+
+<!-- ═══ 8. MODEL ANSWERS ═══ -->
+<h2>8. Model Answers</h2>
+
+<div class="qa-block">
+  <div class="question">Explain why increasing the concentration of HCl increases the rate of reaction with marble chips. <span class="marks">(2 marks)</span></div>
+  <div class="answer">
+    <div class="a-label">Model answer</div>
+    <ul class="tick-list">
+      <li>There are more acid particles in the same volume of solution.</li>
+      <li>The frequency of collisions between acid particles and the marble increases, so more successful collisions occur per second and the rate increases.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="qa-block">
+  <div class="question">Explain why increasing the temperature increases the rate of reaction. <span class="marks">(3 marks)</span></div>
+  <div class="answer">
+    <div class="a-label">Model answer</div>
+    <ul class="tick-list">
+      <li>The particles gain kinetic energy and move faster, so they collide more frequently.</li>
+      <li>A greater proportion of particles now have energy greater than or equal to the activation energy (E&#7491;).</li>
+      <li>More collisions are successful per unit time, so the rate of reaction increases.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="qa-block">
+  <div class="question">Explain how a catalyst increases the rate of reaction. <span class="marks">(3 marks)</span></div>
+  <div class="answer">
+    <div class="a-label">Model answer</div>
+    <ul class="tick-list">
+      <li>The catalyst provides an alternative reaction pathway with a lower activation energy.</li>
+      <li>A greater proportion of colliding particles now have energy &#8805; activation energy.</li>
+      <li>More collisions are successful per second, so the rate increases.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="qa-block">
+  <div class="question">Calculate the mean rate of production of CO&#8322; between 0&#8239;s and 80&#8239;s. Volume at 0&#8239;s&#8239;=&#8239;0&#8239;cm&#179;. Volume at 80&#8239;s&#8239;=&#8239;48&#8239;cm&#179;. <span class="marks">(3 marks)</span></div>
+  <div class="answer">
+    <div class="a-label">Model answer</div>
+    <ul class="tick-list">
+      <li>Change in volume = 48 &#8722; 0 = 48&#8239;cm&#179;</li>
+      <li>Change in time = 80 &#8722; 0 = 80&#8239;s</li>
+      <li>Mean rate = 48 &#247; 80 = <strong>0.60&#8239;cm&#179;/s</strong></li>
+    </ul>
+  </div>
+</div>
+
+<div class="qa-block">
+  <div class="question">Explain why using smaller marble chips increases the rate of reaction with hydrochloric acid. <span class="marks">(2 marks)</span></div>
+  <div class="answer">
+    <div class="a-label">Model answer</div>
+    <ul class="tick-list">
+      <li>Smaller chips have a greater surface area to volume ratio, so more marble particles are exposed to the acid at any one time.</li>
+      <li>The frequency of collisions between acid particles and the marble increases, so more successful collisions occur per second.</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
